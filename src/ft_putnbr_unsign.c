@@ -1,10 +1,10 @@
 #include "../headers/ft_printf.h"
 
-void		ft_putnbr_unsig(int n)
+void		ft_putnbr_unsig(long long n)
 {
-	if (n == -2147483648)
+	if (n == LONG_LONG_MIN)
 	{
-		ft_putstr("2147483648");
+		ft_putstr("92233720368547758081");
 		return ;
 	}
 	if (n < 0)

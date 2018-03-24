@@ -1,12 +1,12 @@
 #include "../headers/ft_printf.h"
 
-int		calc_arg_len(int d, t_p *p)
+int		calc_arg_len(t_p *p)
 {
 	int len;
 
 	if (p->space && !p->width)
-		len = 1 + p->width - digit_len(d);
+		len = 1 + p->width - DLEN;
 	else
-		len = p->width - digit_len(d);
+		len = p->width - DLEN;
 	return (len);
 }

@@ -30,7 +30,8 @@ int			ft_printf(char *s, ...)
 			s++;
 			if (queue(&box, &p))
 			{
-				b += fetch_data(&l, &p);
+				fetch_data(&l, &p);
+				b += choose_datatype_handler(&p);
 			}
 		}
 		else
@@ -48,5 +49,14 @@ int			ft_printf(char *s, ...)
 //	printf("'width' == %d\n", p.width);
 //	printf("'precision' == %d\n", p.precision);
 //	printf("'size' == [%c]\n", p.size);
+//	int 	a;
+//	a = SHRT_MIN-1;
+//	printf("%s\n", ft_itoa(a));
+//	printf("%s\n", ft_itoa((short)a));
+
+//	printf("%zu\n", SIZE_MAX);
+//	printf("%llu\n", ULONG_LONG_MAX);
+//	printf("%hd\n", SHRT_MAX);
+
 	return (b); //bytes
 }
