@@ -55,7 +55,8 @@ char			*long_toa(long n)
         return (ft_zero(n));
     len = 0;
     flag = 0;
-    if (n < 0) {
+    if (n < 0) 
+    {
         n = n * -1;
         flag = 1;
         len++;

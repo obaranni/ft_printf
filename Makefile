@@ -5,22 +5,20 @@
 #                                                     +:+ +:+         +:+      #
 #    By: obaranni <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2018/02/27 16:59:45 by obaranni          #+#    #+#              #
-#    Updated: 2018/03/02 13:28:48 by obaranni         ###   ########.fr        #
+#    Created: 2018/05/19 11:12:50 by obaranni          #+#    #+#              #
+#    Updated: 2018/05/31 16:19:16 by obaranni         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = ft_printf
+NAME = libftprintf.a
 
 SRC_DIR = ./src/
 
 OBJ_DIR = ./obj/
 
-INC_DIR = ./headers/
+HEADER_DIR = ./headers/
 
 LIB_DIR = ./libft/
-
-#ERR_FLAGS = -Wall -Wextra -Werror
 
 LIBFT = $(LIB_DIR)libft.a
 
@@ -28,23 +26,30 @@ SRC = $(shell ls src)
 
 OBJ = $(SRC:.c=.o)
 
-SRC_FILES =	$(addprefix $(SRC_DIR),$(SRC))
+SRC_LIB = $(shell ls libft)
 
-OBJ_FILES =	$(addprefix $(OBJ_DIR),$(OBJ))
+OBJ_LIB = $(SRC_LIB:.c=.o)
 
-COMPALING_FLAGS = $(ERR_FLAGS) -I $(INC_DIR) -I $(LIB_DIR)
+SRC_FILES = $(addprefix $(SRC_DIR),$(SRC))
 
-LINKING_FLAGS = -Wno-format-invalid-specifier -Wno-format -Wno-macro-redefined -Wno-implicitly-unsigned-literal -lft -L $(LIB_DIR)
+OBJ_FILES = $(addprefix $(OBJ_DIR),$(OBJ))
+
+OBJ_LIB_FILES = $(addprefix $(LIB_DIR),$(OBJ_LIB))
+
+COMPALING_FLAGS = -I$(HEADER_DIR) -I$(LIB_DIR) -Wall -Wextra -Werror
+
+LINKING_FLAGS = -lft -L$(LIB_DIR)
 
 CC = gcc
 
-all: $(NAME)
+all:$(OBJ_FILES) $(NAME)
 
-$(NAME): $(OBJ_FILES) $(LIBFT)
-	$(CC) $(LINKING_FLAGS) $(OBJ_FILES) -o $(NAME)
+$(OBJ_DIR)%.o: $(SRC_DIR)%.c 
+	$(CC) $(COMPILING_FLAGS) -o $@ -c $<
 
-$(OBJ_DIR)%.o: $(SRC_DIR)%.c
-	$(CC) $(COMPALING_FLAGS) -o $@ -c $<
+$(NAME): $(LIBFT) $(OBJ_DIR)
+	 ar rc $(NAME) $(OBJ_FILES) $(OBJ_LIB_FILES)
+
 
 $(OBJ_FILES): | $(OBJ_DIR)
 

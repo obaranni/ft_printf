@@ -3,11 +3,13 @@
 
 int			queue(char ***box, t_p *p)
 {
-	read_flags(box, p);
+
+    read_flags(box, p);
 	read_width(box, p);
-	read_precision(box, p);
-	read_size(box, p);
-	if (read_conv_letter(box, p))
+    read_precision(box, p);
+    read_size(box, p);
+
+    if (read_conv_letter(box, p))
 		return (1);
 	else
 		return (0);
@@ -27,36 +29,21 @@ int			ft_printf(char *s, ...)
 	{
 		if (**box == '%')
 		{
-			s++;
+            s++;
 			if (queue(&box, &p))
 			{
-				fetch_data(&l, &p);
+                fetch_data(&l, &p);
 				b += choose_datatype_handler(&p);
 			}
-		}
+        }
 		else
 		{
 			write(1, s, 1);
 			b++;
 		}
-		s++;
+        if (*s)
+		    s++;
 	}
-//	printf("\n'0' == %d\n", p.zero);
-//	printf("' ' == %d\n", p.space);
-//	printf("'#' == %d\n", p.sharp);
-//	printf("'+' == %d\n", p.plus);
-//	printf("'-' == %d\n", p.minus);
-//	printf("'width' == %d\n", p.width);
-//	printf("'precision' == %d\n", p.precision);
-//	printf("'size' == [%c]\n", p.size);
-//	int 	a;
-//	a = SHRT_MIN-1;
-//	printf("%s\n", ft_itoa(a));
-//	printf("%s\n", ft_itoa((short)a));
-
-//	printf("%zu\n", SIZE_MAX);
-//	printf("%llu\n", ULONG_LONG_MAX);
-//	printf("%hd\n", SHRT_MAX);
-
+    va_end(l);
 	return (b); //bytes
 }

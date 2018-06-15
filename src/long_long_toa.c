@@ -3,31 +3,31 @@
 static char		*ft_longlongmin(void)
 {
     char		*min;
-    char		*str;
+//    char		*str;
+    char        str[] =   "-9223372036854775808";
 
     min = (char*)malloc(sizeof(char) * 21);
-    str = "-9223372036854775808";
+//    str = "-9223372036854775808";
     min = ft_strcpy(min, str);
     return (min);
 }
 
-static char		*ft_zero(long long n)
+static char		*ft_zero(ssize_t n)
 {
     char		*zer;
 
     zer = (char*)malloc(sizeof(char) * 2);
-    zer[0] = n + 48;
+    zer[0] = (char)(n + 48);
     zer[1] = '\0';
     return (zer);
 }
 
-static char		*ft_scan(int len, long long n, int flag)
+static char		*ft_scan(size_t len, ssize_t n, int flag)
 {
     char		*num;
 
-    num = (char*)malloc((sizeof(char) * len) + 1);
-    if (num == NULL)
-        return (NULL);
+    num = (char *)malloc(sizeof(char) * (len + 3000)); //sigabort at 19
+
     num[len] = '\0';
     while ((len != 0 && flag == 0) || (len != 1 && flag == 1))
     {
@@ -43,7 +43,8 @@ static char		*ft_scan(int len, long long n, int flag)
     return (num);
 }
 
-char			*long_long_toa(long long n)
+
+char			*long_long_toa(ssize_t n)
 {
     int			flag;
     int			len;
@@ -67,5 +68,5 @@ char			*long_long_toa(long long n)
         mem = mem / 10;
         len++;
     }
-    return (ft_scan(len, n, flag));
+    return (ft_scan(1, n, flag));
 }

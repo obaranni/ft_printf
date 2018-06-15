@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
 char				*ft_strsub(char const *s, unsigned int start, size_t len)
 {
@@ -20,11 +21,8 @@ char				*ft_strsub(char const *s, unsigned int start, size_t len)
 
 	if (s == NULL)
 		return (NULL);
-	sub = NULL;
 	i = 0;
-	sub = (char *)malloc(sizeof(char) * len + 1);
-	if (!sub)
-		return (NULL);
+	sub = (char *)malloc(sizeof(char) * (len + 1));//sigabort at 15 15.1
 	while (i < start)
 		i++;
 	j = 0;
