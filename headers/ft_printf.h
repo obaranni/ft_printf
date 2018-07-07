@@ -40,7 +40,7 @@ typedef struct		s_properties
 	int 			data_len;
 	int 			pos;
 }					t_p;
-char                *strings(t_p *p);
+int                 strings(t_p *p);
 char                *any_signed_dec_to_str(ssize_t nb);
 char				*any_unsigned_dec_to_str(size_t nb);
 int					print_precision(int prec);

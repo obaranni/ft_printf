@@ -162,10 +162,30 @@ int			main(void) {
         printf("Returned: %d\n", printf("32.1 Hello \"%D\"\n", LONG_MIN));
         printf("Returned: %d\n\n", ft_printf("32.1 Hello \"%D\"\n", LONG_MIN));
 
+        printf("Returned: %d\n", printf("32.1 Hello \"%s\"\n", "pidr"));
+        printf("Returned: %d\n\n", ft_printf("32.1 Hello \"%s\"\n", "pidr"));
 
+		printf("Returned: %d\n", printf("32.2 Hello NULL_STR \"%s\"\n", (char*)NULL));
+		printf("Returned: %d\n\n", ft_printf("32.2 Hello NULL_STR \"%s\"\n", (char*)NULL));
 
-        printf("Returned: %d\n", printf("31 % "));
-        printf("Returned: %d\n\n", ft_printf("31 % "));
+        printf("Returned: %d\n", printf("33 % "));
+        printf("Returned: %d\n\n", ft_printf("33 % "));
+
+		printf("Returned: %d\n", printf("33.1 \"{%}\""));
+		printf("Returned: %d\n\n", ft_printf("33.1 \"{%}\""));
+
+		printf("Returned: %d\n", printf("33.2 \"{%{\""));
+		printf("Returned: %d\n\n", ft_printf("33.2 \"{%{\""));
+
+		printf("Returned: %d\n", printf("33.3 \"{%[[[\""));
+		printf("Returned: %d\n\n", ft_printf("33.3 \"{%[[[\""));
+
+		printf("Returned: %d\n", printf("33.4 \"{%///\""));
+		printf("Returned: %d\n\n", ft_printf("33.4 \"{%///\""));
+
+		printf("Returned: %d\n", printf("33.5 \"{%00\""));
+		printf("Returned: %d\n\n", ft_printf("33.5 \"{%00\""));
+
 //        char *c;
 //        char d = 'a';
 //        c = &d;

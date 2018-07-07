@@ -35,6 +35,11 @@ int			ft_printf(char *s, ...)
                 fetch_data(&l, &p);
 				b += choose_datatype_handler(&p);
 			}
+			else if (**box)
+			{
+				write(1, s, 1);
+				b++;
+			}
         }
 		else
 		{

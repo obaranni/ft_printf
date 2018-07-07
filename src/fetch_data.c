@@ -8,7 +8,7 @@ int 		fetch_data(va_list *l, t_p *p)
     else if (ft_strchr("uU", p->conv_let))
         p->data_uns = va_arg(*l, size_t);
     else if (ft_strchr("s", p->conv_let))
-        p->data_uns = va_arg(*l, size_t);
+        p->data = va_arg(*l, char*);
 
     return (0);
 }

@@ -12,6 +12,5 @@ int 	choose_datatype_handler(t_p *p)
     else if (!ft_strchr("sSpdDioOuUxXcC", p->conv_let) &&
        ((((p->conv_let) >= 'A' && p->conv_let) <= 'z') || ((p->conv_let) == '%')))
         return (letter(p));
-
     return (0);
 }
