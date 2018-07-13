@@ -29,11 +29,8 @@ add_executable( ft_printf
                 src/int_to_sign_dec.c
                 src/type_cast.c
                 src/choose_datatype_handler.c
-                src/short_toa.c src/long_toa.c
-        src/size_t_toa.c
-                libft/ft_itoa
-                src/intmax_t_toa.c
-                src/printf_sig_dec.c
+        libft/ft_itoa
+        src/printf_sig_dec.c
                 src/print_width.c
                 src/print_prcision.c
                 src/int_to_unsign_dec.c src/any_signed_dec_to_str.c src/print_letter.c src/print_usig_dec.c src/strings.c src/hex.c src/octal.c src/itoa_base_size.c src/char.c)
