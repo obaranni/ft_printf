@@ -26,6 +26,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/ft_printf.dir/src/long_toa.c.o"
   "CMakeFiles/ft_printf.dir/src/long_long_toa.c.o"
   "CMakeFiles/ft_printf.dir/src/size_t_toa.c.o"
+  "CMakeFiles/ft_printf.dir/libft/ft_itoa.c.o"
   "CMakeFiles/ft_printf.dir/src/intmax_t_toa.c.o"
   "CMakeFiles/ft_printf.dir/src/printf_sig_dec.c.o"
   "CMakeFiles/ft_printf.dir/src/print_width.c.o"
@@ -34,6 +35,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/ft_printf.dir/src/any_signed_dec_to_str.c.o"
   "CMakeFiles/ft_printf.dir/src/print_letter.c.o"
   "CMakeFiles/ft_printf.dir/src/strings.c.o"
+  "CMakeFiles/ft_printf.dir/src/hex.c.o"
+  "CMakeFiles/ft_printf.dir/src/octal.c.o"
+  "CMakeFiles/ft_printf.dir/src/itoa_base_size.c.o"
+  "CMakeFiles/ft_printf.dir/src/char.c.o"
   "ft_printf.pdb"
   "ft_printf"
 )

@@ -7,6 +7,9 @@ CMakeFiles/ft_printf.dir/libft/ft_atoi.c.o
 CMakeFiles/ft_printf.dir/libft/ft_isdigit.c.o
  /Users/obaranni/projects/ft_printf/libft/ft_isdigit.c
  /Users/obaranni/projects/ft_printf/libft/libft.h
+CMakeFiles/ft_printf.dir/libft/ft_itoa.c.o
+ /Users/obaranni/projects/ft_printf/libft/ft_itoa.c
+ /Users/obaranni/projects/ft_printf/libft/libft.h
 CMakeFiles/ft_printf.dir/libft/ft_putchar.c.o
  /Users/obaranni/projects/ft_printf/libft/ft_putchar.c
  /Users/obaranni/projects/ft_printf/libft/libft.h
@@ -41,6 +44,10 @@ CMakeFiles/ft_printf.dir/src/calculate_argument_lenth.c.o
  /Users/obaranni/projects/ft_printf/headers/ft_printf.h
  /Users/obaranni/projects/ft_printf/libft/libft.h
  /Users/obaranni/projects/ft_printf/src/calculate_argument_lenth.c
+CMakeFiles/ft_printf.dir/src/char.c.o
+ /Users/obaranni/projects/ft_printf/headers/ft_printf.h
+ /Users/obaranni/projects/ft_printf/libft/libft.h
+ /Users/obaranni/projects/ft_printf/src/char.c
 CMakeFiles/ft_printf.dir/src/choose_datatype_handler.c.o
  /Users/obaranni/projects/ft_printf/headers/ft_printf.h
  /Users/obaranni/projects/ft_printf/libft/libft.h
@@ -57,6 +64,10 @@ CMakeFiles/ft_printf.dir/src/flags.c.o
  /Users/obaranni/projects/ft_printf/headers/ft_printf.h
  /Users/obaranni/projects/ft_printf/libft/libft.h
  /Users/obaranni/projects/ft_printf/src/flags.c
+CMakeFiles/ft_printf.dir/src/hex.c.o
+ /Users/obaranni/projects/ft_printf/headers/ft_printf.h
+ /Users/obaranni/projects/ft_printf/libft/libft.h
+ /Users/obaranni/projects/ft_printf/src/hex.c
 CMakeFiles/ft_printf.dir/src/int_to_sign_dec.c.o
  /Users/obaranni/projects/ft_printf/headers/ft_printf.h
  /Users/obaranni/projects/ft_printf/libft/libft.h
@@ -67,6 +78,10 @@ CMakeFiles/ft_printf.dir/src/int_to_unsign_dec.c.o
  /Users/obaranni/projects/ft_printf/src/int_to_unsign_dec.c
 CMakeFiles/ft_printf.dir/src/intmax_t_toa.c.o
  /Users/obaranni/projects/ft_printf/src/intmax_t_toa.c
+CMakeFiles/ft_printf.dir/src/itoa_base_size.c.o
+ /Users/obaranni/projects/ft_printf/headers/ft_printf.h
+ /Users/obaranni/projects/ft_printf/libft/libft.h
+ /Users/obaranni/projects/ft_printf/src/itoa_base_size.c
 CMakeFiles/ft_printf.dir/src/long_long_toa.c.o
  /Users/obaranni/projects/ft_printf/headers/ft_printf.h
  /Users/obaranni/projects/ft_printf/libft/libft.h
@@ -79,6 +94,10 @@ CMakeFiles/ft_printf.dir/src/mainloop.c.o
  /Users/obaranni/projects/ft_printf/headers/ft_printf.h
  /Users/obaranni/projects/ft_printf/libft/libft.h
  /Users/obaranni/projects/ft_printf/src/mainloop.c
+CMakeFiles/ft_printf.dir/src/octal.c.o
+ /Users/obaranni/projects/ft_printf/headers/ft_printf.h
+ /Users/obaranni/projects/ft_printf/libft/libft.h
+ /Users/obaranni/projects/ft_printf/src/octal.c
 CMakeFiles/ft_printf.dir/src/precision.c.o
  /Users/obaranni/projects/ft_printf/headers/ft_printf.h
  /Users/obaranni/projects/ft_printf/libft/libft.h

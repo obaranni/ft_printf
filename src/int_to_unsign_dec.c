@@ -30,13 +30,6 @@ int		int_to_unsign_dec(t_p *p)
 	}
 	if (p->minus)
 	{
-		if (NEG)
-			write(1, "-", 1);
-		if (POS && p->plus)
-		{
-			write(1, "+", 1);
-			arg_len--;
-		}
 		print_precision(p->precision);
 		print_usig_dec(p);
 		print_width(arg_len, p);

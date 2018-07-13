@@ -9,6 +9,13 @@ int 		fetch_data(va_list *l, t_p *p)
         p->data_uns = va_arg(*l, size_t);
     else if (ft_strchr("s", p->conv_let))
         p->data = va_arg(*l, char*);
-
+	else if (ft_strchr("p", p->conv_let))
+		p->data_uns = va_arg(*l, size_t);
+	else if (ft_strchr("xX", p->conv_let))
+		p->data_uns = (size_t)va_arg(*l, size_t);
+	else if (ft_strchr("oO", p->conv_let))
+		p->data_uns = (size_t)va_arg(*l, size_t);
+	else if (ft_strchr("cC", p->conv_let))
+		p->data_uns = (size_t)va_arg(*l, unsigned char);
     return (0);
 }

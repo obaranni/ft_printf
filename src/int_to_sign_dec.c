@@ -30,6 +30,8 @@ int		int_to_sign_dec(t_p *p)
 		write(1, " ", 1);
 		arg_len--;
 	}
+
+
 	if (p->minus)
 	{
 		if (NEG)

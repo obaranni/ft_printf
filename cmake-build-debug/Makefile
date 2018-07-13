@@ -177,6 +177,33 @@ libft/ft_isdigit.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/libft/ft_isdigit.c.s
 .PHONY : libft/ft_isdigit.c.s
 
+libft/ft_itoa.o: libft/ft_itoa.c.o
+
+.PHONY : libft/ft_itoa.o
+
+# target to build an object file
+libft/ft_itoa.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/libft/ft_itoa.c.o
+.PHONY : libft/ft_itoa.c.o
+
+libft/ft_itoa.i: libft/ft_itoa.c.i
+
+.PHONY : libft/ft_itoa.i
+
+# target to preprocess a source file
+libft/ft_itoa.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/libft/ft_itoa.c.i
+.PHONY : libft/ft_itoa.c.i
+
+libft/ft_itoa.s: libft/ft_itoa.c.s
+
+.PHONY : libft/ft_itoa.s
+
+# target to generate assembly for a file
+libft/ft_itoa.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/libft/ft_itoa.c.s
+.PHONY : libft/ft_itoa.c.s
+
 libft/ft_putchar.o: libft/ft_putchar.c.o
 
 .PHONY : libft/ft_putchar.o
@@ -447,6 +474,33 @@ src/calculate_argument_lenth.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/calculate_argument_lenth.c.s
 .PHONY : src/calculate_argument_lenth.c.s
 
+src/char.o: src/char.c.o
+
+.PHONY : src/char.o
+
+# target to build an object file
+src/char.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/char.c.o
+.PHONY : src/char.c.o
+
+src/char.i: src/char.c.i
+
+.PHONY : src/char.i
+
+# target to preprocess a source file
+src/char.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/char.c.i
+.PHONY : src/char.c.i
+
+src/char.s: src/char.c.s
+
+.PHONY : src/char.s
+
+# target to generate assembly for a file
+src/char.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/char.c.s
+.PHONY : src/char.c.s
+
 src/choose_datatype_handler.o: src/choose_datatype_handler.c.o
 
 .PHONY : src/choose_datatype_handler.o
@@ -555,6 +609,33 @@ src/flags.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/flags.c.s
 .PHONY : src/flags.c.s
 
+src/hex.o: src/hex.c.o
+
+.PHONY : src/hex.o
+
+# target to build an object file
+src/hex.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/hex.c.o
+.PHONY : src/hex.c.o
+
+src/hex.i: src/hex.c.i
+
+.PHONY : src/hex.i
+
+# target to preprocess a source file
+src/hex.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/hex.c.i
+.PHONY : src/hex.c.i
+
+src/hex.s: src/hex.c.s
+
+.PHONY : src/hex.s
+
+# target to generate assembly for a file
+src/hex.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/hex.c.s
+.PHONY : src/hex.c.s
+
 src/int_to_sign_dec.o: src/int_to_sign_dec.c.o
 
 .PHONY : src/int_to_sign_dec.o
@@ -636,6 +717,33 @@ src/intmax_t_toa.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/intmax_t_toa.c.s
 .PHONY : src/intmax_t_toa.c.s
 
+src/itoa_base_size.o: src/itoa_base_size.c.o
+
+.PHONY : src/itoa_base_size.o
+
+# target to build an object file
+src/itoa_base_size.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/itoa_base_size.c.o
+.PHONY : src/itoa_base_size.c.o
+
+src/itoa_base_size.i: src/itoa_base_size.c.i
+
+.PHONY : src/itoa_base_size.i
+
+# target to preprocess a source file
+src/itoa_base_size.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/itoa_base_size.c.i
+.PHONY : src/itoa_base_size.c.i
+
+src/itoa_base_size.s: src/itoa_base_size.c.s
+
+.PHONY : src/itoa_base_size.s
+
+# target to generate assembly for a file
+src/itoa_base_size.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/itoa_base_size.c.s
+.PHONY : src/itoa_base_size.c.s
+
 src/long_long_toa.o: src/long_long_toa.c.o
 
 .PHONY : src/long_long_toa.o
@@ -716,6 +824,33 @@ src/mainloop.s: src/mainloop.c.s
 src/mainloop.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/mainloop.c.s
 .PHONY : src/mainloop.c.s
+
+src/octal.o: src/octal.c.o
+
+.PHONY : src/octal.o
+
+# target to build an object file
+src/octal.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/octal.c.o
+.PHONY : src/octal.c.o
+
+src/octal.i: src/octal.c.i
+
+.PHONY : src/octal.i
+
+# target to preprocess a source file
+src/octal.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/octal.c.i
+.PHONY : src/octal.c.i
+
+src/octal.s: src/octal.c.s
+
+.PHONY : src/octal.s
+
+# target to generate assembly for a file
+src/octal.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/octal.c.s
+.PHONY : src/octal.c.s
 
 src/precision.o: src/precision.c.o
 
@@ -1083,6 +1218,9 @@ help:
 	@echo "... libft/ft_isdigit.o"
 	@echo "... libft/ft_isdigit.i"
 	@echo "... libft/ft_isdigit.s"
+	@echo "... libft/ft_itoa.o"
+	@echo "... libft/ft_itoa.i"
+	@echo "... libft/ft_itoa.s"
 	@echo "... libft/ft_putchar.o"
 	@echo "... libft/ft_putchar.i"
 	@echo "... libft/ft_putchar.s"
@@ -1113,6 +1251,9 @@ help:
 	@echo "... src/calculate_argument_lenth.o"
 	@echo "... src/calculate_argument_lenth.i"
 	@echo "... src/calculate_argument_lenth.s"
+	@echo "... src/char.o"
+	@echo "... src/char.i"
+	@echo "... src/char.s"
 	@echo "... src/choose_datatype_handler.o"
 	@echo "... src/choose_datatype_handler.i"
 	@echo "... src/choose_datatype_handler.s"
@@ -1125,6 +1266,9 @@ help:
 	@echo "... src/flags.o"
 	@echo "... src/flags.i"
 	@echo "... src/flags.s"
+	@echo "... src/hex.o"
+	@echo "... src/hex.i"
+	@echo "... src/hex.s"
 	@echo "... src/int_to_sign_dec.o"
 	@echo "... src/int_to_sign_dec.i"
 	@echo "... src/int_to_sign_dec.s"
@@ -1134,6 +1278,9 @@ help:
 	@echo "... src/intmax_t_toa.o"
 	@echo "... src/intmax_t_toa.i"
 	@echo "... src/intmax_t_toa.s"
+	@echo "... src/itoa_base_size.o"
+	@echo "... src/itoa_base_size.i"
+	@echo "... src/itoa_base_size.s"
 	@echo "... src/long_long_toa.o"
 	@echo "... src/long_long_toa.i"
 	@echo "... src/long_long_toa.s"
@@ -1143,6 +1290,9 @@ help:
 	@echo "... src/mainloop.o"
 	@echo "... src/mainloop.i"
 	@echo "... src/mainloop.s"
+	@echo "... src/octal.o"
+	@echo "... src/octal.i"
+	@echo "... src/octal.s"
 	@echo "... src/precision.o"
 	@echo "... src/precision.i"
 	@echo "... src/precision.s"

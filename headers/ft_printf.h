@@ -18,6 +18,7 @@
 # include <limits.h>
 # include <stdlib.h>
 # include <stdarg.h>
+# include <locale.h>
 
 # define POS p->pos
 # define NEG !(p->pos)
@@ -39,7 +40,11 @@ typedef struct		s_properties
     ssize_t         data_sig;
 	int 			data_len;
 	int 			pos;
+    int             prec_finded;
 }					t_p;
+int					hex(t_p *p);
+int					print_char(t_p *p);
+int					octal(t_p *p);
 int                 strings(t_p *p);
 char                *any_signed_dec_to_str(ssize_t nb);
 char				*any_unsigned_dec_to_str(size_t nb);
@@ -53,6 +58,7 @@ int 				find_sig_digit_len(t_p *p);
 int 				find_usig_digit_len(t_p *p);
 int 				choose_datatype_handler(t_p *p);
 int 				type_cast(t_p *p);
+char				*itoa_base(size_t n, int base, int size);
 void				print_width(int arg_len, t_p *p);
 int					int_to_sign_dec(t_p *p);
 int					int_to_unsign_dec(t_p *p);
