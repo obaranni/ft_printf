@@ -6,7 +6,7 @@
 #    By: obaranni <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/05/19 11:12:50 by obaranni          #+#    #+#              #
-#    Updated: 2018/05/31 16:19:16 by obaranni         ###   ########.fr        #
+#    Updated: 2018/07/13 17:01:52 by obaranni         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,7 +36,7 @@ OBJ_FILES = $(addprefix $(OBJ_DIR),$(OBJ))
 
 OBJ_LIB_FILES = $(addprefix $(LIB_DIR),$(OBJ_LIB))
 
-COMPALING_FLAGS = -I$(HEADER_DIR) -I$(LIB_DIR) -Wall -Wextra -Werror
+COMPALING_FLAGS = -I$(HEADER_DIR) -I$(LIB_DIR)  # -Wall -Wextra -Werror
 
 LINKING_FLAGS = -lft -L$(LIB_DIR)
 
