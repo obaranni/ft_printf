@@ -690,33 +690,6 @@ src/int_to_unsign_dec.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/int_to_unsign_dec.c.s
 .PHONY : src/int_to_unsign_dec.c.s
 
-src/intmax_t_toa.o: src/intmax_t_toa.c.o
-
-.PHONY : src/intmax_t_toa.o
-
-# target to build an object file
-src/intmax_t_toa.c.o:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/intmax_t_toa.c.o
-.PHONY : src/intmax_t_toa.c.o
-
-src/intmax_t_toa.i: src/intmax_t_toa.c.i
-
-.PHONY : src/intmax_t_toa.i
-
-# target to preprocess a source file
-src/intmax_t_toa.c.i:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/intmax_t_toa.c.i
-.PHONY : src/intmax_t_toa.c.i
-
-src/intmax_t_toa.s: src/intmax_t_toa.c.s
-
-.PHONY : src/intmax_t_toa.s
-
-# target to generate assembly for a file
-src/intmax_t_toa.c.s:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/intmax_t_toa.c.s
-.PHONY : src/intmax_t_toa.c.s
-
 src/itoa_base_size.o: src/itoa_base_size.c.o
 
 .PHONY : src/itoa_base_size.o
@@ -743,60 +716,6 @@ src/itoa_base_size.s: src/itoa_base_size.c.s
 src/itoa_base_size.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/itoa_base_size.c.s
 .PHONY : src/itoa_base_size.c.s
-
-src/long_long_toa.o: src/long_long_toa.c.o
-
-.PHONY : src/long_long_toa.o
-
-# target to build an object file
-src/long_long_toa.c.o:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/long_long_toa.c.o
-.PHONY : src/long_long_toa.c.o
-
-src/long_long_toa.i: src/long_long_toa.c.i
-
-.PHONY : src/long_long_toa.i
-
-# target to preprocess a source file
-src/long_long_toa.c.i:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/long_long_toa.c.i
-.PHONY : src/long_long_toa.c.i
-
-src/long_long_toa.s: src/long_long_toa.c.s
-
-.PHONY : src/long_long_toa.s
-
-# target to generate assembly for a file
-src/long_long_toa.c.s:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/long_long_toa.c.s
-.PHONY : src/long_long_toa.c.s
-
-src/long_toa.o: src/long_toa.c.o
-
-.PHONY : src/long_toa.o
-
-# target to build an object file
-src/long_toa.c.o:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/long_toa.c.o
-.PHONY : src/long_toa.c.o
-
-src/long_toa.i: src/long_toa.c.i
-
-.PHONY : src/long_toa.i
-
-# target to preprocess a source file
-src/long_toa.c.i:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/long_toa.c.i
-.PHONY : src/long_toa.c.i
-
-src/long_toa.s: src/long_toa.c.s
-
-.PHONY : src/long_toa.s
-
-# target to generate assembly for a file
-src/long_toa.c.s:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/long_toa.c.s
-.PHONY : src/long_toa.c.s
 
 src/mainloop.o: src/mainloop.c.o
 
@@ -1041,60 +960,6 @@ src/read_conversion_letter.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/read_conversion_letter.c.s
 .PHONY : src/read_conversion_letter.c.s
 
-src/short_toa.o: src/short_toa.c.o
-
-.PHONY : src/short_toa.o
-
-# target to build an object file
-src/short_toa.c.o:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/short_toa.c.o
-.PHONY : src/short_toa.c.o
-
-src/short_toa.i: src/short_toa.c.i
-
-.PHONY : src/short_toa.i
-
-# target to preprocess a source file
-src/short_toa.c.i:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/short_toa.c.i
-.PHONY : src/short_toa.c.i
-
-src/short_toa.s: src/short_toa.c.s
-
-.PHONY : src/short_toa.s
-
-# target to generate assembly for a file
-src/short_toa.c.s:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/short_toa.c.s
-.PHONY : src/short_toa.c.s
-
-src/size_t_toa.o: src/size_t_toa.c.o
-
-.PHONY : src/size_t_toa.o
-
-# target to build an object file
-src/size_t_toa.c.o:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/size_t_toa.c.o
-.PHONY : src/size_t_toa.c.o
-
-src/size_t_toa.i: src/size_t_toa.c.i
-
-.PHONY : src/size_t_toa.i
-
-# target to preprocess a source file
-src/size_t_toa.c.i:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/size_t_toa.c.i
-.PHONY : src/size_t_toa.c.i
-
-src/size_t_toa.s: src/size_t_toa.c.s
-
-.PHONY : src/size_t_toa.s
-
-# target to generate assembly for a file
-src/size_t_toa.c.s:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/size_t_toa.c.s
-.PHONY : src/size_t_toa.c.s
-
 src/sizes.o: src/sizes.c.o
 
 .PHONY : src/sizes.o
@@ -1275,18 +1140,9 @@ help:
 	@echo "... src/int_to_unsign_dec.o"
 	@echo "... src/int_to_unsign_dec.i"
 	@echo "... src/int_to_unsign_dec.s"
-	@echo "... src/intmax_t_toa.o"
-	@echo "... src/intmax_t_toa.i"
-	@echo "... src/intmax_t_toa.s"
 	@echo "... src/itoa_base_size.o"
 	@echo "... src/itoa_base_size.i"
 	@echo "... src/itoa_base_size.s"
-	@echo "... src/long_long_toa.o"
-	@echo "... src/long_long_toa.i"
-	@echo "... src/long_long_toa.s"
-	@echo "... src/long_toa.o"
-	@echo "... src/long_toa.i"
-	@echo "... src/long_toa.s"
 	@echo "... src/mainloop.o"
 	@echo "... src/mainloop.i"
 	@echo "... src/mainloop.s"
@@ -1314,12 +1170,6 @@ help:
 	@echo "... src/read_conversion_letter.o"
 	@echo "... src/read_conversion_letter.i"
 	@echo "... src/read_conversion_letter.s"
-	@echo "... src/short_toa.o"
-	@echo "... src/short_toa.i"
-	@echo "... src/short_toa.s"
-	@echo "... src/size_t_toa.o"
-	@echo "... src/size_t_toa.i"
-	@echo "... src/size_t_toa.s"
 	@echo "... src/sizes.o"
 	@echo "... src/sizes.i"
 	@echo "... src/sizes.s"

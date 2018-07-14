@@ -28,6 +28,8 @@ int		int_to_unsign_dec(t_p *p)
 		write(1, " ", 1);
 		arg_len--;
 	}
+
+
 	if (p->minus)
 	{
 		print_precision(p->precision);

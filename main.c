@@ -17,8 +17,7 @@
 int			main(void) {
     int i = 0;
     char *s;
-    while (i++ != 1)
-    {
+    while (i++ != 1) {
 
 //        printf("Returned: %d\n", printf("1 Hello \"%2.10d\"\n", 89));
 //        printf("Returned: %d\n\n", ft_printf("1 Hello \"%2.10d\"\n", 89));
@@ -143,8 +142,24 @@ int			main(void) {
 //        printf("Returned: %d\n", printf("30.4 Hello \"%%\"\n", 1));
 //        printf("Returned: %d\n\n", ft_printf("30.4 Hello \"%%\"\n", 1));
 //
-        printf("Returned: %d\n", printf("\"%%\"\n"));
-        printf("Returned: %d\n\n", ft_printf("\"%%\"\n"));
+
+//        for (int i = 0; i < 10000000; i++) {
+//            printf("Returned: %d\n", printf("\"%%\"\n"));
+//            printf("Returned: %d\n\n", ft_printf("\"%%\"\n"));
+//            printf("Returned: %d\n", printf("\"%%\"\n"));
+//            printf("Returned: %d\n\n", ft_printf("\"%%\"\n"));
+//            printf("Returned: %d\n", printf("\"%%\"\n"));
+//            printf("Returned: %d\n\n", ft_printf("\"% %\"\n"));
+//            printf("Returned: %d\n", printf("\"%%\"\n"));
+//            printf("Returned: %d\n\n", ft_printf("\"%%\"\n"));
+//            printf("Returned: %d\n", printf("\"%%\"\n"));
+//            printf("Returned: %d\n\n", ft_printf("\"%%\"\n"));
+//        }
+
+        printf("Returned: %d", ft_printf("%%"));
+//        write(1,"\n",1);
+        printf("Returned: %d", printf("%%"));
+
 
 //        printf("Returned: %d\n", printf("31 Hello \"%U\"\n", ULONG_LONG_MAX));
 //        printf("Returned: %d\n\n", ft_printf("31 Hello \"%U\"\n", ULONG_LONG_MAX));

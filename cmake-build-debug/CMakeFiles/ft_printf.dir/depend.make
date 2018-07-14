@@ -76,19 +76,9 @@ CMakeFiles/ft_printf.dir/src/int_to_unsign_dec.c.o: ../headers/ft_printf.h
 CMakeFiles/ft_printf.dir/src/int_to_unsign_dec.c.o: ../libft/libft.h
 CMakeFiles/ft_printf.dir/src/int_to_unsign_dec.c.o: ../src/int_to_unsign_dec.c
 
-CMakeFiles/ft_printf.dir/src/intmax_t_toa.c.o: ../src/intmax_t_toa.c
-
 CMakeFiles/ft_printf.dir/src/itoa_base_size.c.o: ../headers/ft_printf.h
 CMakeFiles/ft_printf.dir/src/itoa_base_size.c.o: ../libft/libft.h
 CMakeFiles/ft_printf.dir/src/itoa_base_size.c.o: ../src/itoa_base_size.c
-
-CMakeFiles/ft_printf.dir/src/long_long_toa.c.o: ../headers/ft_printf.h
-CMakeFiles/ft_printf.dir/src/long_long_toa.c.o: ../libft/libft.h
-CMakeFiles/ft_printf.dir/src/long_long_toa.c.o: ../src/long_long_toa.c
-
-CMakeFiles/ft_printf.dir/src/long_toa.c.o: ../headers/ft_printf.h
-CMakeFiles/ft_printf.dir/src/long_toa.c.o: ../libft/libft.h
-CMakeFiles/ft_printf.dir/src/long_toa.c.o: ../src/long_toa.c
 
 CMakeFiles/ft_printf.dir/src/mainloop.c.o: ../headers/ft_printf.h
 CMakeFiles/ft_printf.dir/src/mainloop.c.o: ../libft/libft.h
@@ -125,14 +115,6 @@ CMakeFiles/ft_printf.dir/src/printf_sig_dec.c.o: ../src/printf_sig_dec.c
 CMakeFiles/ft_printf.dir/src/read_conversion_letter.c.o: ../headers/ft_printf.h
 CMakeFiles/ft_printf.dir/src/read_conversion_letter.c.o: ../libft/libft.h
 CMakeFiles/ft_printf.dir/src/read_conversion_letter.c.o: ../src/read_conversion_letter.c
-
-CMakeFiles/ft_printf.dir/src/short_toa.c.o: ../headers/ft_printf.h
-CMakeFiles/ft_printf.dir/src/short_toa.c.o: ../libft/libft.h
-CMakeFiles/ft_printf.dir/src/short_toa.c.o: ../src/short_toa.c
-
-CMakeFiles/ft_printf.dir/src/size_t_toa.c.o: ../headers/ft_printf.h
-CMakeFiles/ft_printf.dir/src/size_t_toa.c.o: ../libft/libft.h
-CMakeFiles/ft_printf.dir/src/size_t_toa.c.o: ../src/size_t_toa.c
 
 CMakeFiles/ft_printf.dir/src/sizes.c.o: ../headers/ft_printf.h
 CMakeFiles/ft_printf.dir/src/sizes.c.o: ../libft/libft.h

@@ -123,7 +123,7 @@ int			hex(t_p *p)
 	else
 		str = itoa_base(p->data_uns, 16, 'a' - 10);
 	len = print_hex(p, str);
-//	if (str)
-//		free(str);
+	if (str)
+		free(str);
 	return (len);
 }

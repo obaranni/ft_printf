@@ -13,8 +13,8 @@ int 	choose_datatype_handler(t_p *p)
 		return (hex(p));
 	else if (ft_strchr("oO", p->conv_let))
 		return (octal(p));
-	else if (ft_strchr("cC", p->conv_let))
-		return (print_char(p));
+//	else if (ft_strchr("cC", p->conv_let))
+//		return (print_char(p));
     else if (!ft_strchr("sSpdDioOuUxXcC", p->conv_let) &&
        ((((p->conv_let) >= 'A' && p->conv_let) <= 'z') || ((p->conv_let) == '%')))
         return (letter(p));

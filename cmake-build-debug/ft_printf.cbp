@@ -146,16 +146,7 @@
 		<Unit filename="/Users/obaranni/projects/ft_printf/src/int_to_unsign_dec.c">
 			<Option target="ft_printf"/>
 		</Unit>
-		<Unit filename="/Users/obaranni/projects/ft_printf/src/intmax_t_toa.c">
-			<Option target="ft_printf"/>
-		</Unit>
 		<Unit filename="/Users/obaranni/projects/ft_printf/src/itoa_base_size.c">
-			<Option target="ft_printf"/>
-		</Unit>
-		<Unit filename="/Users/obaranni/projects/ft_printf/src/long_long_toa.c">
-			<Option target="ft_printf"/>
-		</Unit>
-		<Unit filename="/Users/obaranni/projects/ft_printf/src/long_toa.c">
 			<Option target="ft_printf"/>
 		</Unit>
 		<Unit filename="/Users/obaranni/projects/ft_printf/src/mainloop.c">
@@ -183,12 +174,6 @@
 			<Option target="ft_printf"/>
 		</Unit>
 		<Unit filename="/Users/obaranni/projects/ft_printf/src/read_conversion_letter.c">
-			<Option target="ft_printf"/>
-		</Unit>
-		<Unit filename="/Users/obaranni/projects/ft_printf/src/short_toa.c">
-			<Option target="ft_printf"/>
-		</Unit>
-		<Unit filename="/Users/obaranni/projects/ft_printf/src/size_t_toa.c">
 			<Option target="ft_printf"/>
 		</Unit>
 		<Unit filename="/Users/obaranni/projects/ft_printf/src/sizes.c">

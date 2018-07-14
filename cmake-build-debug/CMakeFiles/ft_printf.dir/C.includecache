@@ -116,17 +116,7 @@ headers/ft_printf.h
 ../headers/ft_printf.h
 /Users/obaranni/projects/ft_printf/headers/ft_printf.h
 
-/Users/obaranni/projects/ft_printf/src/intmax_t_toa.c
-
 /Users/obaranni/projects/ft_printf/src/itoa_base_size.c
-../headers/ft_printf.h
-/Users/obaranni/projects/ft_printf/headers/ft_printf.h
-
-/Users/obaranni/projects/ft_printf/src/long_long_toa.c
-../headers/ft_printf.h
-/Users/obaranni/projects/ft_printf/headers/ft_printf.h
-
-/Users/obaranni/projects/ft_printf/src/long_toa.c
 ../headers/ft_printf.h
 /Users/obaranni/projects/ft_printf/headers/ft_printf.h
 
@@ -163,14 +153,6 @@ headers/ft_printf.h
 /Users/obaranni/projects/ft_printf/headers/ft_printf.h
 
 /Users/obaranni/projects/ft_printf/src/read_conversion_letter.c
-../headers/ft_printf.h
-/Users/obaranni/projects/ft_printf/headers/ft_printf.h
-
-/Users/obaranni/projects/ft_printf/src/short_toa.c
-../headers/ft_printf.h
-/Users/obaranni/projects/ft_printf/headers/ft_printf.h
-
-/Users/obaranni/projects/ft_printf/src/size_t_toa.c
 ../headers/ft_printf.h
 /Users/obaranni/projects/ft_printf/headers/ft_printf.h
 

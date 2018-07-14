@@ -12,8 +12,8 @@ int			octal(t_p *p)
 		str = itoa_base(p->data_uns, 8, 87);
 	ft_putstr(str);
 	len = (int)ft_strlen(str);
-//	if (str)
-//		free(str);
+	if (str)
+		free(str);
 	if (p->conv_let == 'p')
 		return (len + 2);
 	return (len);
