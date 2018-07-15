@@ -43,8 +43,8 @@ typedef struct		s_properties
 	int 			pos;
     int             prec_finded;
 }					t_p;
+char                *ft_itoa_base(size_t value, size_t base);
 char				*itoa_base_sized(size_t n, int base, int size);
-static char         *ft_itoa_base(size_t value, size_t base);
 int					hex(t_p *p);
 int					print_char(t_p *p);
 int                 uni_string(t_p *p);

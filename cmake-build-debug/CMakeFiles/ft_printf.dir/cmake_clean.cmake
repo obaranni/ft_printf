@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ft_printf.dir/main.c.o"
+  "CMakeFiles/ft_printf.dir/src/ft_itoa_base.c.o"
   "CMakeFiles/ft_printf.dir/src/mainloop.c.o"
   "CMakeFiles/ft_printf.dir/src/flags.c.o"
   "CMakeFiles/ft_printf.dir/src/width.c.o"
@@ -36,7 +37,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/ft_printf.dir/src/print_char.c.o"
   "CMakeFiles/ft_printf.dir/src/print_width_char.c.o"
   "CMakeFiles/ft_printf.dir/src/print_uni_string.c.o"
-  "CMakeFiles/ft_printf.dir/src/ft_itoa_base.c.o"
   "ft_printf.pdb"
   "ft_printf"
 )

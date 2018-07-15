@@ -45,7 +45,7 @@ static void    f(size_t value, size_t base, char *s, int *i)
     s[(*i)++] = set_char(value % base);
 }
 
-static char    *ft_itoa_base(size_t value, size_t base)
+char        *ft_itoa_base(size_t value, size_t base)
 {
     char    *s;
     int        i;

@@ -12,7 +12,6 @@ void           masks(t_p *p)
     char       *bites;
 
     bites = ft_itoa_base((size_t)p->data_uint, 2);
-
     int i = 0;
     while (p->data_uint[i])
     {
@@ -28,6 +27,7 @@ void           masks(t_p *p)
         i++;
     }
     printf("\n");
+    free(bites);
 }
 
 int            uni_string(t_p *p) {

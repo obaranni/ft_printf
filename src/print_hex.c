@@ -126,12 +126,12 @@ int			hex(t_p *p)
 	str = 0;
 	if (p->conv_let != 'p')
 		cast_hex(p);
-;	if (p->conv_let == 'X')
+	if (p->conv_let == 'X')
 		str = itoa_base_sized(p->data_uns, 16, 'A' - 10);
 	else
 		str = itoa_base_sized(p->data_uns, 16, 'a' - 10);
 	len = print_hex(p, str);
-	if (str)
-		free(str);
+//	if (str)
+//		free(str);
 	return (len);
 }

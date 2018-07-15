@@ -6,6 +6,7 @@ set(CMAKE_CXX_STANDARD 99)
 add_executable( ft_printf
                 headers/ft_printf.h
         main.c
+                 src/ft_itoa_base.c
 #                /Users/obaranni/printf/src/printf_main2.c
                 src/mainloop.c
                 src/flags.c
@@ -43,5 +44,4 @@ add_executable( ft_printf
         src/itoa_base_size.c
         src/print_char.c
         src/print_width_char.c
-        src/print_uni_string.c
-        src/ft_itoa_base.c)
+        src/print_uni_string.c)
