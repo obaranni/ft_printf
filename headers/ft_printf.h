@@ -2,7 +2,7 @@
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
+/*                                                    +:+ + :+         +:+    */
 /*   By: obaranni <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/27 17:07:18 by obaranni          #+#    #+#             */
@@ -26,6 +26,7 @@
 
 typedef struct		s_properties
 {
+    unsigned int    *data_uint;
     char			*data;
 	int 			zero;
 	int 			sharp;
@@ -42,14 +43,18 @@ typedef struct		s_properties
 	int 			pos;
     int             prec_finded;
 }					t_p;
+char				*itoa_base_sized(size_t n, int base, int size);
+static char         *ft_itoa_base(size_t value, size_t base);
 int					hex(t_p *p);
 int					print_char(t_p *p);
+int                 uni_string(t_p *p);
 int					octal(t_p *p);
-int                 strings(t_p *p);
+int                 string(t_p *p);
 char                *any_signed_dec_to_str(ssize_t nb);
 char				*any_unsigned_dec_to_str(size_t nb);
 int					print_precision(int prec);
 void				print_width(int arg_len, t_p *p);
+void                print_width_char(int arg_len, t_p *p);
 char 				*long_long_toa(ssize_t n);
 int					print_sig_dec(t_p *p);
 int					print_usig_dec(t_p *p);
@@ -58,7 +63,6 @@ int 				find_sig_digit_len(t_p *p);
 int 				find_usig_digit_len(t_p *p);
 int 				choose_datatype_handler(t_p *p);
 int 				type_cast(t_p *p);
-char				*itoa_base(size_t n, int base, int size);
 void				print_width(int arg_len, t_p *p);
 int					int_to_sign_dec(t_p *p);
 int					int_to_unsign_dec(t_p *p);

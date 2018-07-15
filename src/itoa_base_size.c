@@ -1,5 +1,10 @@
 #include "../headers/ft_printf.h"
 
+/*
+ * uppercase - 55
+ * lowercase - 83
+ */
+
 char 			*zero()
 {
 	char 		*str;
@@ -10,7 +15,7 @@ char 			*zero()
 	return (str);
 }
 
-char			*itoa_base(size_t n, int base, int size)
+char			*itoa_base_sized(size_t n, int base, int size)
 {
 	char 		*res;
 	size_t  	tmp;

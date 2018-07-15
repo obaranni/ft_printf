@@ -177,33 +177,6 @@ libft/ft_isdigit.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/libft/ft_isdigit.c.s
 .PHONY : libft/ft_isdigit.c.s
 
-libft/ft_itoa.o: libft/ft_itoa.c.o
-
-.PHONY : libft/ft_itoa.o
-
-# target to build an object file
-libft/ft_itoa.c.o:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/libft/ft_itoa.c.o
-.PHONY : libft/ft_itoa.c.o
-
-libft/ft_itoa.i: libft/ft_itoa.c.i
-
-.PHONY : libft/ft_itoa.i
-
-# target to preprocess a source file
-libft/ft_itoa.c.i:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/libft/ft_itoa.c.i
-.PHONY : libft/ft_itoa.c.i
-
-libft/ft_itoa.s: libft/ft_itoa.c.s
-
-.PHONY : libft/ft_itoa.s
-
-# target to generate assembly for a file
-libft/ft_itoa.c.s:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/libft/ft_itoa.c.s
-.PHONY : libft/ft_itoa.c.s
-
 libft/ft_putchar.o: libft/ft_putchar.c.o
 
 .PHONY : libft/ft_putchar.o
@@ -230,6 +203,33 @@ libft/ft_putchar.s: libft/ft_putchar.c.s
 libft/ft_putchar.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/libft/ft_putchar.c.s
 .PHONY : libft/ft_putchar.c.s
+
+libft/ft_putnbr.o: libft/ft_putnbr.c.o
+
+.PHONY : libft/ft_putnbr.o
+
+# target to build an object file
+libft/ft_putnbr.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/libft/ft_putnbr.c.o
+.PHONY : libft/ft_putnbr.c.o
+
+libft/ft_putnbr.i: libft/ft_putnbr.c.i
+
+.PHONY : libft/ft_putnbr.i
+
+# target to preprocess a source file
+libft/ft_putnbr.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/libft/ft_putnbr.c.i
+.PHONY : libft/ft_putnbr.c.i
+
+libft/ft_putnbr.s: libft/ft_putnbr.c.s
+
+.PHONY : libft/ft_putnbr.s
+
+# target to generate assembly for a file
+libft/ft_putnbr.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/libft/ft_putnbr.c.s
+.PHONY : libft/ft_putnbr.c.s
 
 libft/ft_putstr.o: libft/ft_putstr.c.o
 
@@ -474,33 +474,6 @@ src/calculate_argument_lenth.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/calculate_argument_lenth.c.s
 .PHONY : src/calculate_argument_lenth.c.s
 
-src/char.o: src/char.c.o
-
-.PHONY : src/char.o
-
-# target to build an object file
-src/char.c.o:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/char.c.o
-.PHONY : src/char.c.o
-
-src/char.i: src/char.c.i
-
-.PHONY : src/char.i
-
-# target to preprocess a source file
-src/char.c.i:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/char.c.i
-.PHONY : src/char.c.i
-
-src/char.s: src/char.c.s
-
-.PHONY : src/char.s
-
-# target to generate assembly for a file
-src/char.c.s:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/char.c.s
-.PHONY : src/char.c.s
-
 src/choose_datatype_handler.o: src/choose_datatype_handler.c.o
 
 .PHONY : src/choose_datatype_handler.o
@@ -609,32 +582,32 @@ src/flags.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/flags.c.s
 .PHONY : src/flags.c.s
 
-src/hex.o: src/hex.c.o
+src/ft_itoa_base.o: src/ft_itoa_base.c.o
 
-.PHONY : src/hex.o
+.PHONY : src/ft_itoa_base.o
 
 # target to build an object file
-src/hex.c.o:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/hex.c.o
-.PHONY : src/hex.c.o
+src/ft_itoa_base.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/ft_itoa_base.c.o
+.PHONY : src/ft_itoa_base.c.o
 
-src/hex.i: src/hex.c.i
+src/ft_itoa_base.i: src/ft_itoa_base.c.i
 
-.PHONY : src/hex.i
+.PHONY : src/ft_itoa_base.i
 
 # target to preprocess a source file
-src/hex.c.i:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/hex.c.i
-.PHONY : src/hex.c.i
+src/ft_itoa_base.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/ft_itoa_base.c.i
+.PHONY : src/ft_itoa_base.c.i
 
-src/hex.s: src/hex.c.s
+src/ft_itoa_base.s: src/ft_itoa_base.c.s
 
-.PHONY : src/hex.s
+.PHONY : src/ft_itoa_base.s
 
 # target to generate assembly for a file
-src/hex.c.s:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/hex.c.s
-.PHONY : src/hex.c.s
+src/ft_itoa_base.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/ft_itoa_base.c.s
+.PHONY : src/ft_itoa_base.c.s
 
 src/int_to_sign_dec.o: src/int_to_sign_dec.c.o
 
@@ -744,33 +717,6 @@ src/mainloop.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/mainloop.c.s
 .PHONY : src/mainloop.c.s
 
-src/octal.o: src/octal.c.o
-
-.PHONY : src/octal.o
-
-# target to build an object file
-src/octal.c.o:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/octal.c.o
-.PHONY : src/octal.c.o
-
-src/octal.i: src/octal.c.i
-
-.PHONY : src/octal.i
-
-# target to preprocess a source file
-src/octal.c.i:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/octal.c.i
-.PHONY : src/octal.c.i
-
-src/octal.s: src/octal.c.s
-
-.PHONY : src/octal.s
-
-# target to generate assembly for a file
-src/octal.c.s:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/octal.c.s
-.PHONY : src/octal.c.s
-
 src/precision.o: src/precision.c.o
 
 .PHONY : src/precision.o
@@ -797,6 +743,60 @@ src/precision.s: src/precision.c.s
 src/precision.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/precision.c.s
 .PHONY : src/precision.c.s
+
+src/print_char.o: src/print_char.c.o
+
+.PHONY : src/print_char.o
+
+# target to build an object file
+src/print_char.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_char.c.o
+.PHONY : src/print_char.c.o
+
+src/print_char.i: src/print_char.c.i
+
+.PHONY : src/print_char.i
+
+# target to preprocess a source file
+src/print_char.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_char.c.i
+.PHONY : src/print_char.c.i
+
+src/print_char.s: src/print_char.c.s
+
+.PHONY : src/print_char.s
+
+# target to generate assembly for a file
+src/print_char.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_char.c.s
+.PHONY : src/print_char.c.s
+
+src/print_hex.o: src/print_hex.c.o
+
+.PHONY : src/print_hex.o
+
+# target to build an object file
+src/print_hex.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_hex.c.o
+.PHONY : src/print_hex.c.o
+
+src/print_hex.i: src/print_hex.c.i
+
+.PHONY : src/print_hex.i
+
+# target to preprocess a source file
+src/print_hex.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_hex.c.i
+.PHONY : src/print_hex.c.i
+
+src/print_hex.s: src/print_hex.c.s
+
+.PHONY : src/print_hex.s
+
+# target to generate assembly for a file
+src/print_hex.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_hex.c.s
+.PHONY : src/print_hex.c.s
 
 src/print_letter.o: src/print_letter.c.o
 
@@ -825,6 +825,33 @@ src/print_letter.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_letter.c.s
 .PHONY : src/print_letter.c.s
 
+src/print_octal.o: src/print_octal.c.o
+
+.PHONY : src/print_octal.o
+
+# target to build an object file
+src/print_octal.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_octal.c.o
+.PHONY : src/print_octal.c.o
+
+src/print_octal.i: src/print_octal.c.i
+
+.PHONY : src/print_octal.i
+
+# target to preprocess a source file
+src/print_octal.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_octal.c.i
+.PHONY : src/print_octal.c.i
+
+src/print_octal.s: src/print_octal.c.s
+
+.PHONY : src/print_octal.s
+
+# target to generate assembly for a file
+src/print_octal.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_octal.c.s
+.PHONY : src/print_octal.c.s
+
 src/print_prcision.o: src/print_prcision.c.o
 
 .PHONY : src/print_prcision.o
@@ -851,6 +878,60 @@ src/print_prcision.s: src/print_prcision.c.s
 src/print_prcision.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_prcision.c.s
 .PHONY : src/print_prcision.c.s
+
+src/print_string.o: src/print_string.c.o
+
+.PHONY : src/print_string.o
+
+# target to build an object file
+src/print_string.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_string.c.o
+.PHONY : src/print_string.c.o
+
+src/print_string.i: src/print_string.c.i
+
+.PHONY : src/print_string.i
+
+# target to preprocess a source file
+src/print_string.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_string.c.i
+.PHONY : src/print_string.c.i
+
+src/print_string.s: src/print_string.c.s
+
+.PHONY : src/print_string.s
+
+# target to generate assembly for a file
+src/print_string.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_string.c.s
+.PHONY : src/print_string.c.s
+
+src/print_uni_string.o: src/print_uni_string.c.o
+
+.PHONY : src/print_uni_string.o
+
+# target to build an object file
+src/print_uni_string.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_uni_string.c.o
+.PHONY : src/print_uni_string.c.o
+
+src/print_uni_string.i: src/print_uni_string.c.i
+
+.PHONY : src/print_uni_string.i
+
+# target to preprocess a source file
+src/print_uni_string.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_uni_string.c.i
+.PHONY : src/print_uni_string.c.i
+
+src/print_uni_string.s: src/print_uni_string.c.s
+
+.PHONY : src/print_uni_string.s
+
+# target to generate assembly for a file
+src/print_uni_string.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_uni_string.c.s
+.PHONY : src/print_uni_string.c.s
 
 src/print_usig_dec.o: src/print_usig_dec.c.o
 
@@ -905,6 +986,33 @@ src/print_width.s: src/print_width.c.s
 src/print_width.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_width.c.s
 .PHONY : src/print_width.c.s
+
+src/print_width_char.o: src/print_width_char.c.o
+
+.PHONY : src/print_width_char.o
+
+# target to build an object file
+src/print_width_char.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_width_char.c.o
+.PHONY : src/print_width_char.c.o
+
+src/print_width_char.i: src/print_width_char.c.i
+
+.PHONY : src/print_width_char.i
+
+# target to preprocess a source file
+src/print_width_char.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_width_char.c.i
+.PHONY : src/print_width_char.c.i
+
+src/print_width_char.s: src/print_width_char.c.s
+
+.PHONY : src/print_width_char.s
+
+# target to generate assembly for a file
+src/print_width_char.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_width_char.c.s
+.PHONY : src/print_width_char.c.s
 
 src/printf_sig_dec.o: src/printf_sig_dec.c.o
 
@@ -987,33 +1095,6 @@ src/sizes.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/sizes.c.s
 .PHONY : src/sizes.c.s
 
-src/strings.o: src/strings.c.o
-
-.PHONY : src/strings.o
-
-# target to build an object file
-src/strings.c.o:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/strings.c.o
-.PHONY : src/strings.c.o
-
-src/strings.i: src/strings.c.i
-
-.PHONY : src/strings.i
-
-# target to preprocess a source file
-src/strings.c.i:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/strings.c.i
-.PHONY : src/strings.c.i
-
-src/strings.s: src/strings.c.s
-
-.PHONY : src/strings.s
-
-# target to generate assembly for a file
-src/strings.c.s:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/strings.c.s
-.PHONY : src/strings.c.s
-
 src/type_cast.o: src/type_cast.c.o
 
 .PHONY : src/type_cast.o
@@ -1083,12 +1164,12 @@ help:
 	@echo "... libft/ft_isdigit.o"
 	@echo "... libft/ft_isdigit.i"
 	@echo "... libft/ft_isdigit.s"
-	@echo "... libft/ft_itoa.o"
-	@echo "... libft/ft_itoa.i"
-	@echo "... libft/ft_itoa.s"
 	@echo "... libft/ft_putchar.o"
 	@echo "... libft/ft_putchar.i"
 	@echo "... libft/ft_putchar.s"
+	@echo "... libft/ft_putnbr.o"
+	@echo "... libft/ft_putnbr.i"
+	@echo "... libft/ft_putnbr.s"
 	@echo "... libft/ft_putstr.o"
 	@echo "... libft/ft_putstr.i"
 	@echo "... libft/ft_putstr.s"
@@ -1116,9 +1197,6 @@ help:
 	@echo "... src/calculate_argument_lenth.o"
 	@echo "... src/calculate_argument_lenth.i"
 	@echo "... src/calculate_argument_lenth.s"
-	@echo "... src/char.o"
-	@echo "... src/char.i"
-	@echo "... src/char.s"
 	@echo "... src/choose_datatype_handler.o"
 	@echo "... src/choose_datatype_handler.i"
 	@echo "... src/choose_datatype_handler.s"
@@ -1131,9 +1209,9 @@ help:
 	@echo "... src/flags.o"
 	@echo "... src/flags.i"
 	@echo "... src/flags.s"
-	@echo "... src/hex.o"
-	@echo "... src/hex.i"
-	@echo "... src/hex.s"
+	@echo "... src/ft_itoa_base.o"
+	@echo "... src/ft_itoa_base.i"
+	@echo "... src/ft_itoa_base.s"
 	@echo "... src/int_to_sign_dec.o"
 	@echo "... src/int_to_sign_dec.i"
 	@echo "... src/int_to_sign_dec.s"
@@ -1146,24 +1224,39 @@ help:
 	@echo "... src/mainloop.o"
 	@echo "... src/mainloop.i"
 	@echo "... src/mainloop.s"
-	@echo "... src/octal.o"
-	@echo "... src/octal.i"
-	@echo "... src/octal.s"
 	@echo "... src/precision.o"
 	@echo "... src/precision.i"
 	@echo "... src/precision.s"
+	@echo "... src/print_char.o"
+	@echo "... src/print_char.i"
+	@echo "... src/print_char.s"
+	@echo "... src/print_hex.o"
+	@echo "... src/print_hex.i"
+	@echo "... src/print_hex.s"
 	@echo "... src/print_letter.o"
 	@echo "... src/print_letter.i"
 	@echo "... src/print_letter.s"
+	@echo "... src/print_octal.o"
+	@echo "... src/print_octal.i"
+	@echo "... src/print_octal.s"
 	@echo "... src/print_prcision.o"
 	@echo "... src/print_prcision.i"
 	@echo "... src/print_prcision.s"
+	@echo "... src/print_string.o"
+	@echo "... src/print_string.i"
+	@echo "... src/print_string.s"
+	@echo "... src/print_uni_string.o"
+	@echo "... src/print_uni_string.i"
+	@echo "... src/print_uni_string.s"
 	@echo "... src/print_usig_dec.o"
 	@echo "... src/print_usig_dec.i"
 	@echo "... src/print_usig_dec.s"
 	@echo "... src/print_width.o"
 	@echo "... src/print_width.i"
 	@echo "... src/print_width.s"
+	@echo "... src/print_width_char.o"
+	@echo "... src/print_width_char.i"
+	@echo "... src/print_width_char.s"
 	@echo "... src/printf_sig_dec.o"
 	@echo "... src/printf_sig_dec.i"
 	@echo "... src/printf_sig_dec.s"
@@ -1173,9 +1266,6 @@ help:
 	@echo "... src/sizes.o"
 	@echo "... src/sizes.i"
 	@echo "... src/sizes.s"
-	@echo "... src/strings.o"
-	@echo "... src/strings.i"
-	@echo "... src/strings.s"
 	@echo "... src/type_cast.o"
 	@echo "... src/type_cast.i"
 	@echo "... src/type_cast.s"

@@ -25,7 +25,9 @@ int			ft_printf(char *s, ...)
 	b = 0;
 	box = &s;
 	va_start(l, s);
-//	setlocale(LC_CTYPE,"de_DE.UTF-8");
+	setlocale(LC_CTYPE,"de_DE.UTF-8");
+
+
 	while (**box)
 	{
 		if (**box == '%')
@@ -34,7 +36,7 @@ int			ft_printf(char *s, ...)
 			if (queue(&box, &p))
 			{
                 fetch_data(&l, &p);
-				b += choose_datatype_handler(&p);
+                b += choose_datatype_handler(&p);
 			}
 			else if (**box)
 			{

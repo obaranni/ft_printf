@@ -1,6 +1,6 @@
 #include "../headers/ft_printf.h"
 
-int            strings(t_p *p)
+int            string(t_p *p)
 {
 	if (!p->data)
 	{

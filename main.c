@@ -17,6 +17,7 @@
 int			main(void) {
     int i = 0;
     char *s;
+    setlocale(LC_CTYPE,"de_DE.UTF-8");
     while (i++ != 1) {
 
 //        printf("Returned: %d\n", printf("1 Hello \"%2.10d\"\n", 89));
@@ -142,25 +143,6 @@ int			main(void) {
 //        printf("Returned: %d\n", printf("30.4 Hello \"%%\"\n", 1));
 //        printf("Returned: %d\n\n", ft_printf("30.4 Hello \"%%\"\n", 1));
 //
-
-//        for (int i = 0; i < 10000000; i++) {
-//            printf("Returned: %d\n", printf("\"%%\"\n"));
-//            printf("Returned: %d\n\n", ft_printf("\"%%\"\n"));
-//            printf("Returned: %d\n", printf("\"%%\"\n"));
-//            printf("Returned: %d\n\n", ft_printf("\"%%\"\n"));
-//            printf("Returned: %d\n", printf("\"%%\"\n"));
-//            printf("Returned: %d\n\n", ft_printf("\"% %\"\n"));
-//            printf("Returned: %d\n", printf("\"%%\"\n"));
-//            printf("Returned: %d\n\n", ft_printf("\"%%\"\n"));
-//            printf("Returned: %d\n", printf("\"%%\"\n"));
-//            printf("Returned: %d\n\n", ft_printf("\"%%\"\n"));
-//        }
-
-        printf("Returned: %d", ft_printf("%%"));
-//        write(1,"\n",1);
-        printf("Returned: %d", printf("%%"));
-
-
 //        printf("Returned: %d\n", printf("31 Hello \"%U\"\n", ULONG_LONG_MAX));
 //        printf("Returned: %d\n\n", ft_printf("31 Hello \"%U\"\n", ULONG_LONG_MAX));
 //
@@ -190,7 +172,7 @@ int			main(void) {
 //
 //		printf("Returned: %d\n", printf("32.2 Hello NULL_STR \"%s\"\n", (char*)NULL));
 //		printf("Returned: %d\n\n", ft_printf("32.2 Hello NULL_STR \"%s\"\n", (char*)NULL));
-
+//
 //        printf("Returned: %d\n", printf("33 % "));
 //        printf("Returned: %d\n\n", ft_printf("33 % "));
 //
@@ -208,7 +190,7 @@ int			main(void) {
 //
 //		printf("Returned: %d\n", printf("33.5 \"{%00\""));
 //		printf("Returned: %d\n\n", ft_printf("33.5 \"{%00\""));
-//
+
 //		printf("Returned: %d\n", printf("34 Hello \"%p\"\n", &i));
 //		printf("Returned: %d\n\n", ft_printf("34 Hello \"%p\"\n", &i));
 //
@@ -247,6 +229,9 @@ int			main(void) {
 //
 //		printf("Returned: %d\n", printf("35.10 Hello \"%#x %#x\"\n", 0, 0));
 //		printf("Returned: %d\n\n", ft_printf("35.10 Hello \"%#x %#x\"\n", 0, 0));
+//
+//        printf("Returned: %d\n", printf("35.10 Hello \"%5.x %5.0x\"\n", 0, 0));
+//        printf("Returned: %d\n\n", ft_printf("35.10 Hello \"%5.x %5.0x\"\n", 0, 0));
 
 //		printf("Returned: %d\n", printf("36 Hello \"%o\"\n", 42));
 //		printf("Returned: %d\n\n", ft_printf("35 Hello \"%o\"\n", 42));
@@ -256,7 +241,7 @@ int			main(void) {
 //
 //		printf("Returned: %d\n", printf("36.2 Hello \"%O\"\n", 4294967296));
 //		printf("Returned: %d\n\n", ft_printf("35.2 Hello \"%O\"\n", 4294967296));
-
+//
 //		printf("Returned: %d\n", printf("37 Hello \"%c\"\n", 42));
 //		printf("Returned: %d\n\n", ft_printf("37 Hello \"%c\"\n", 42));
 //
@@ -265,8 +250,27 @@ int			main(void) {
 //
 //        printf("Returned: %d\n", printf("37 Hello \"%s\"\n", "may the four be with two"));
 //        printf("Returned: %d\n\n", ft_printf("37 Hello \"%s\"\n", "may the four be with two"));
-//
-//		printf("%lc", 0x1F625);
+
+//        printf("Returned: %d\n", printf("38.1 Hello \"%S\"\n", L"米"));
+        printf("Returned: %d\n\n", ft_printf("38.1 Hello \"%S\"\n", L"米"));
+
+//        printf("Returned: %d\n", printf("38.2 Hello \"%S\"\n", L"我是一只猫。"));
+        printf("Returned: %d\n\n", ft_printf("38.2 Hello \"%S\"\n", L"我是一只猫。"));
+
+//        printf("Returned: %d\n", printf("38.3 Hello \"%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S\"\n", L"Α α", L"Β β", L"Γ γ", L"Δ δ", L"Ε ε", L"Ζ ζ", L"Η η", L"Θ θ", L"Ι ι", L"Κ κ", L"Λ λ", L"Μ μ",
+//                                             L"Ν ν", L"Ξ ξ", L"Ο ο", L"Π π", L"Ρ ρ", L"Σ σ", L"Τ τ", L"Υ υ", L"Φ φ", L"Χ χ", L"Ψ ψ", L"Ω ω", L""));
+        printf("Returned: %d\n\n", ft_printf("38.3 Hello \"%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S\"\n", L"Α α", L"Β β", L"Γ γ", L"Δ δ", L"Ε ε", L"Ζ ζ", L"Η η", L"Θ θ", L"Ι ι", L"Κ κ", L"Λ λ", L"Μ μ",
+                                                 L"Ν ν", L"Ξ ξ", L"Ο ο", L"Π π", L"Ρ ρ", L"Σ σ", L"Τ τ", L"Υ υ", L"Φ φ", L"Χ χ", L"Ψ ψ", L"Ω ω", L""));
+
+//        printf("Returned: %d\n", printf("38.4 Hello \"a%Sb%sc%S\"\n", L"我", "42", L"猫"));
+        printf("Returned: %d\n\n", ft_printf("38.4 Hello \"a%Sb%sc%S\"\n", L"我", "42", L"猫"));
+
+//        printf("Returned: %d\n", printf("38.5 Hello \"{%S}\"\n", NULL));
+        printf("Returned: %d\n\n", ft_printf("38.5 Hello \"{%S}\"\n", NULL));
+
+        char happy[] = { 0xe2, 0x98, 0xba };  /* U+263A */
+
+        write(1, happy, 3);
 
 
 //        char *c;

@@ -11,7 +11,6 @@ int		letter(t_p *p)
     else
         arg_len = 0;
     res = arg_len;
-    p->plus = 0;
     if (p->minus)
     {
         if (NEG)
@@ -24,13 +23,15 @@ int		letter(t_p *p)
         print_precision(p->precision);
         ft_putchar(p->conv_let);
         res++;
-        print_width(arg_len, p);
+        print_width_char(arg_len, p);
     }
     else
     {
-        print_width(arg_len, p);
+        print_width_char(arg_len, p);
         print_precision(p->precision);
-        ft_putchar(p->conv_let);
+
+        write(1, &p->conv_let, 1);
+
         res++;
     }
     return (res);

@@ -7,11 +7,11 @@ CMakeFiles/ft_printf.dir/libft/ft_atoi.c.o
 CMakeFiles/ft_printf.dir/libft/ft_isdigit.c.o
  /Users/obaranni/projects/ft_printf/libft/ft_isdigit.c
  /Users/obaranni/projects/ft_printf/libft/libft.h
-CMakeFiles/ft_printf.dir/libft/ft_itoa.c.o
- /Users/obaranni/projects/ft_printf/libft/ft_itoa.c
- /Users/obaranni/projects/ft_printf/libft/libft.h
 CMakeFiles/ft_printf.dir/libft/ft_putchar.c.o
  /Users/obaranni/projects/ft_printf/libft/ft_putchar.c
+ /Users/obaranni/projects/ft_printf/libft/libft.h
+CMakeFiles/ft_printf.dir/libft/ft_putnbr.c.o
+ /Users/obaranni/projects/ft_printf/libft/ft_putnbr.c
  /Users/obaranni/projects/ft_printf/libft/libft.h
 CMakeFiles/ft_printf.dir/libft/ft_putstr.c.o
  /Users/obaranni/projects/ft_printf/libft/ft_putstr.c
@@ -44,10 +44,6 @@ CMakeFiles/ft_printf.dir/src/calculate_argument_lenth.c.o
  /Users/obaranni/projects/ft_printf/headers/ft_printf.h
  /Users/obaranni/projects/ft_printf/libft/libft.h
  /Users/obaranni/projects/ft_printf/src/calculate_argument_lenth.c
-CMakeFiles/ft_printf.dir/src/char.c.o
- /Users/obaranni/projects/ft_printf/headers/ft_printf.h
- /Users/obaranni/projects/ft_printf/libft/libft.h
- /Users/obaranni/projects/ft_printf/src/char.c
 CMakeFiles/ft_printf.dir/src/choose_datatype_handler.c.o
  /Users/obaranni/projects/ft_printf/headers/ft_printf.h
  /Users/obaranni/projects/ft_printf/libft/libft.h
@@ -64,10 +60,10 @@ CMakeFiles/ft_printf.dir/src/flags.c.o
  /Users/obaranni/projects/ft_printf/headers/ft_printf.h
  /Users/obaranni/projects/ft_printf/libft/libft.h
  /Users/obaranni/projects/ft_printf/src/flags.c
-CMakeFiles/ft_printf.dir/src/hex.c.o
+CMakeFiles/ft_printf.dir/src/ft_itoa_base.c.o
  /Users/obaranni/projects/ft_printf/headers/ft_printf.h
  /Users/obaranni/projects/ft_printf/libft/libft.h
- /Users/obaranni/projects/ft_printf/src/hex.c
+ /Users/obaranni/projects/ft_printf/src/ft_itoa_base.c
 CMakeFiles/ft_printf.dir/src/int_to_sign_dec.c.o
  /Users/obaranni/projects/ft_printf/headers/ft_printf.h
  /Users/obaranni/projects/ft_printf/libft/libft.h
@@ -84,22 +80,38 @@ CMakeFiles/ft_printf.dir/src/mainloop.c.o
  /Users/obaranni/projects/ft_printf/headers/ft_printf.h
  /Users/obaranni/projects/ft_printf/libft/libft.h
  /Users/obaranni/projects/ft_printf/src/mainloop.c
-CMakeFiles/ft_printf.dir/src/octal.c.o
- /Users/obaranni/projects/ft_printf/headers/ft_printf.h
- /Users/obaranni/projects/ft_printf/libft/libft.h
- /Users/obaranni/projects/ft_printf/src/octal.c
 CMakeFiles/ft_printf.dir/src/precision.c.o
  /Users/obaranni/projects/ft_printf/headers/ft_printf.h
  /Users/obaranni/projects/ft_printf/libft/libft.h
  /Users/obaranni/projects/ft_printf/src/precision.c
+CMakeFiles/ft_printf.dir/src/print_char.c.o
+ /Users/obaranni/projects/ft_printf/headers/ft_printf.h
+ /Users/obaranni/projects/ft_printf/libft/libft.h
+ /Users/obaranni/projects/ft_printf/src/print_char.c
+CMakeFiles/ft_printf.dir/src/print_hex.c.o
+ /Users/obaranni/projects/ft_printf/headers/ft_printf.h
+ /Users/obaranni/projects/ft_printf/libft/libft.h
+ /Users/obaranni/projects/ft_printf/src/print_hex.c
 CMakeFiles/ft_printf.dir/src/print_letter.c.o
  /Users/obaranni/projects/ft_printf/headers/ft_printf.h
  /Users/obaranni/projects/ft_printf/libft/libft.h
  /Users/obaranni/projects/ft_printf/src/print_letter.c
+CMakeFiles/ft_printf.dir/src/print_octal.c.o
+ /Users/obaranni/projects/ft_printf/headers/ft_printf.h
+ /Users/obaranni/projects/ft_printf/libft/libft.h
+ /Users/obaranni/projects/ft_printf/src/print_octal.c
 CMakeFiles/ft_printf.dir/src/print_prcision.c.o
  /Users/obaranni/projects/ft_printf/headers/ft_printf.h
  /Users/obaranni/projects/ft_printf/libft/libft.h
  /Users/obaranni/projects/ft_printf/src/print_prcision.c
+CMakeFiles/ft_printf.dir/src/print_string.c.o
+ /Users/obaranni/projects/ft_printf/headers/ft_printf.h
+ /Users/obaranni/projects/ft_printf/libft/libft.h
+ /Users/obaranni/projects/ft_printf/src/print_string.c
+CMakeFiles/ft_printf.dir/src/print_uni_string.c.o
+ /Users/obaranni/projects/ft_printf/headers/ft_printf.h
+ /Users/obaranni/projects/ft_printf/libft/libft.h
+ /Users/obaranni/projects/ft_printf/src/print_uni_string.c
 CMakeFiles/ft_printf.dir/src/print_usig_dec.c.o
  /Users/obaranni/projects/ft_printf/headers/ft_printf.h
  /Users/obaranni/projects/ft_printf/libft/libft.h
@@ -108,6 +120,10 @@ CMakeFiles/ft_printf.dir/src/print_width.c.o
  /Users/obaranni/projects/ft_printf/headers/ft_printf.h
  /Users/obaranni/projects/ft_printf/libft/libft.h
  /Users/obaranni/projects/ft_printf/src/print_width.c
+CMakeFiles/ft_printf.dir/src/print_width_char.c.o
+ /Users/obaranni/projects/ft_printf/headers/ft_printf.h
+ /Users/obaranni/projects/ft_printf/libft/libft.h
+ /Users/obaranni/projects/ft_printf/src/print_width_char.c
 CMakeFiles/ft_printf.dir/src/printf_sig_dec.c.o
  /Users/obaranni/projects/ft_printf/headers/ft_printf.h
  /Users/obaranni/projects/ft_printf/libft/libft.h
@@ -120,10 +136,6 @@ CMakeFiles/ft_printf.dir/src/sizes.c.o
  /Users/obaranni/projects/ft_printf/headers/ft_printf.h
  /Users/obaranni/projects/ft_printf/libft/libft.h
  /Users/obaranni/projects/ft_printf/src/sizes.c
-CMakeFiles/ft_printf.dir/src/strings.c.o
- /Users/obaranni/projects/ft_printf/headers/ft_printf.h
- /Users/obaranni/projects/ft_printf/libft/libft.h
- /Users/obaranni/projects/ft_printf/src/strings.c
 CMakeFiles/ft_printf.dir/src/type_cast.c.o
  /Users/obaranni/projects/ft_printf/headers/ft_printf.h
  /Users/obaranni/projects/ft_printf/libft/libft.h

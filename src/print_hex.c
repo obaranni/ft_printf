@@ -64,7 +64,10 @@ int 		print_hex(t_p *p, char *str)
 	p->plus = 0;
 	if (p->precision > 0)
 		p->zero = 0;
-//	p->precision -= DLEN;
+    if (p->precision > DLEN)
+	    p->precision -= DLEN;
+    else
+        p->precision = 0;
 	if (p->precision > 0)
 	{
 		p->width -= p->precision;
@@ -101,10 +104,15 @@ int 		print_hex(t_p *p, char *str)
 			ft_putstr("0x");
 		else if (p->sharp && p->data_uns != 0 && p->conv_let == 'X' && !(p->width - p->data_len > 0 && p->zero == 1))
 			ft_putstr("0X");
-//        printf("*%d  %d  %d*", p->prec_finded, p->precision, (int)p->data_uns);
         if (!(p->prec_finded && p->precision == 0 && p->data_uns == 0))
 		    ft_putstr(str);
 	}
+//    printf("\n%d  %d  %lu\n", p->width, p->precision, p->data_uns);
+    if (!p->data_uns && p->prec_finded && !p->precision && p->width)
+    {
+        write(1, " ", 1);
+        res += 1;
+    }
     if (p->prec_finded && p->precision == 0 && p->data_uns == 0)
         return (res - 1);
 	return (res);
@@ -119,9 +127,9 @@ int			hex(t_p *p)
 	if (p->conv_let != 'p')
 		cast_hex(p);
 ;	if (p->conv_let == 'X')
-		str = itoa_base(p->data_uns, 16, 'A' - 10);
+		str = itoa_base_sized(p->data_uns, 16, 'A' - 10);
 	else
-		str = itoa_base(p->data_uns, 16, 'a' - 10);
+		str = itoa_base_sized(p->data_uns, 16, 'a' - 10);
 	len = print_hex(p, str);
 	if (str)
 		free(str);

@@ -1,12 +1,10 @@
 #include "../headers/ft_printf.h"
 
-static int    f_len(ssize_t nbr)
+static int    f_len(size_t nbr)
 {
     int        size;
 
     size = 1;
-    if (nbr < 0)
-        nbr = -nbr;
     while (nbr > 9)
     {
         nbr = nbr / 10;
@@ -15,7 +13,7 @@ static int    f_len(ssize_t nbr)
     return (size);
 }
 
-static char    set_char(ssize_t i)
+static char    set_char(size_t i)
 {
     char    c;
 
@@ -39,14 +37,15 @@ static char    set_char(ssize_t i)
     return (c);
 }
 
-static void    f(ssize_t value, ssize_t base, char *s, int *i)
+static void    f(size_t value, size_t base, char *s, int *i)
 {
-    if (value <= -base || value >= base)
+//    printf("value %z    base %z   i %d, %s\n", value, base, *i, s);
+    if (value >= base)
         f(value / base, base, s, i);
     s[(*i)++] = set_char(value % base);
 }
 
-static char    *ft_itoa_base_nominus(ssize_t value, ssize_t base)
+static char    *ft_itoa_base(size_t value, size_t base)
 {
     char    *s;
     int        i;
@@ -59,9 +58,4 @@ static char    *ft_itoa_base_nominus(ssize_t value, ssize_t base)
     f(value, base, s, &i);
     s[i] = '\0';
     return (s);
-}
-
-char        *any_signed_dec_to_str(ssize_t nb)
-{
-    return (ft_itoa_base_nominus(nb, 10));
 }
