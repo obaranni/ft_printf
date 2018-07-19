@@ -72,6 +72,10 @@ string.h
 headers/ft_printf.h
 /Users/obaranni/projects/ft_printf/headers/ft_printf.h
 
+/Users/obaranni/projects/ft_printf/src/any_octal_to_str.c
+../headers/ft_printf.h
+/Users/obaranni/projects/ft_printf/headers/ft_printf.h
+
 /Users/obaranni/projects/ft_printf/src/any_signed_dec_to_str.c
 ../headers/ft_printf.h
 /Users/obaranni/projects/ft_printf/headers/ft_printf.h
@@ -88,7 +92,15 @@ headers/ft_printf.h
 ../headers/ft_printf.h
 /Users/obaranni/projects/ft_printf/headers/ft_printf.h
 
+/Users/obaranni/projects/ft_printf/src/count_uni_string_len.c
+../headers/ft_printf.h
+/Users/obaranni/projects/ft_printf/headers/ft_printf.h
+
 /Users/obaranni/projects/ft_printf/src/digit_len.c
+../headers/ft_printf.h
+/Users/obaranni/projects/ft_printf/headers/ft_printf.h
+
+/Users/obaranni/projects/ft_printf/src/duplicate_array.c
 ../headers/ft_printf.h
 /Users/obaranni/projects/ft_printf/headers/ft_printf.h
 
@@ -104,19 +116,15 @@ headers/ft_printf.h
 ../headers/ft_printf.h
 /Users/obaranni/projects/ft_printf/headers/ft_printf.h
 
-/Users/obaranni/projects/ft_printf/src/int_to_sign_dec.c
-../headers/ft_printf.h
-/Users/obaranni/projects/ft_printf/headers/ft_printf.h
-
-/Users/obaranni/projects/ft_printf/src/int_to_unsign_dec.c
-../headers/ft_printf.h
-/Users/obaranni/projects/ft_printf/headers/ft_printf.h
-
 /Users/obaranni/projects/ft_printf/src/itoa_base_size.c
 ../headers/ft_printf.h
 /Users/obaranni/projects/ft_printf/headers/ft_printf.h
 
 /Users/obaranni/projects/ft_printf/src/mainloop.c
+../headers/ft_printf.h
+/Users/obaranni/projects/ft_printf/headers/ft_printf.h
+
+/Users/obaranni/projects/ft_printf/src/masks_for_unicode.c
 ../headers/ft_printf.h
 /Users/obaranni/projects/ft_printf/headers/ft_printf.h
 
@@ -144,7 +152,15 @@ headers/ft_printf.h
 ../headers/ft_printf.h
 /Users/obaranni/projects/ft_printf/headers/ft_printf.h
 
+/Users/obaranni/projects/ft_printf/src/print_sign_dec.c
+../headers/ft_printf.h
+/Users/obaranni/projects/ft_printf/headers/ft_printf.h
+
 /Users/obaranni/projects/ft_printf/src/print_string.c
+../headers/ft_printf.h
+/Users/obaranni/projects/ft_printf/headers/ft_printf.h
+
+/Users/obaranni/projects/ft_printf/src/print_uni_char.c
 ../headers/ft_printf.h
 /Users/obaranni/projects/ft_printf/headers/ft_printf.h
 
@@ -152,7 +168,7 @@ headers/ft_printf.h
 ../headers/ft_printf.h
 /Users/obaranni/projects/ft_printf/headers/ft_printf.h
 
-/Users/obaranni/projects/ft_printf/src/print_usig_dec.c
+/Users/obaranni/projects/ft_printf/src/print_unsign_dec.c
 ../headers/ft_printf.h
 /Users/obaranni/projects/ft_printf/headers/ft_printf.h
 
@@ -164,7 +180,19 @@ headers/ft_printf.h
 ../headers/ft_printf.h
 /Users/obaranni/projects/ft_printf/headers/ft_printf.h
 
-/Users/obaranni/projects/ft_printf/src/printf_sig_dec.c
+/Users/obaranni/projects/ft_printf/src/printing_octal.c
+../headers/ft_printf.h
+/Users/obaranni/projects/ft_printf/headers/ft_printf.h
+
+/Users/obaranni/projects/ft_printf/src/printing_sig_dec.c
+../headers/ft_printf.h
+/Users/obaranni/projects/ft_printf/headers/ft_printf.h
+
+/Users/obaranni/projects/ft_printf/src/printing_unicode.c
+../headers/ft_printf.h
+/Users/obaranni/projects/ft_printf/headers/ft_printf.h
+
+/Users/obaranni/projects/ft_printf/src/printing_usig_dec.c
 ../headers/ft_printf.h
 /Users/obaranni/projects/ft_printf/headers/ft_printf.h
 

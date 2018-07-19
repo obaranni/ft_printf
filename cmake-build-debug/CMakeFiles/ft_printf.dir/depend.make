@@ -32,6 +32,10 @@ CMakeFiles/ft_printf.dir/main.c.o: ../headers/ft_printf.h
 CMakeFiles/ft_printf.dir/main.c.o: ../libft/libft.h
 CMakeFiles/ft_printf.dir/main.c.o: ../main.c
 
+CMakeFiles/ft_printf.dir/src/any_octal_to_str.c.o: ../headers/ft_printf.h
+CMakeFiles/ft_printf.dir/src/any_octal_to_str.c.o: ../libft/libft.h
+CMakeFiles/ft_printf.dir/src/any_octal_to_str.c.o: ../src/any_octal_to_str.c
+
 CMakeFiles/ft_printf.dir/src/any_signed_dec_to_str.c.o: ../headers/ft_printf.h
 CMakeFiles/ft_printf.dir/src/any_signed_dec_to_str.c.o: ../libft/libft.h
 CMakeFiles/ft_printf.dir/src/any_signed_dec_to_str.c.o: ../src/any_signed_dec_to_str.c
@@ -48,9 +52,17 @@ CMakeFiles/ft_printf.dir/src/choose_datatype_handler.c.o: ../headers/ft_printf.h
 CMakeFiles/ft_printf.dir/src/choose_datatype_handler.c.o: ../libft/libft.h
 CMakeFiles/ft_printf.dir/src/choose_datatype_handler.c.o: ../src/choose_datatype_handler.c
 
+CMakeFiles/ft_printf.dir/src/count_uni_string_len.c.o: ../headers/ft_printf.h
+CMakeFiles/ft_printf.dir/src/count_uni_string_len.c.o: ../libft/libft.h
+CMakeFiles/ft_printf.dir/src/count_uni_string_len.c.o: ../src/count_uni_string_len.c
+
 CMakeFiles/ft_printf.dir/src/digit_len.c.o: ../headers/ft_printf.h
 CMakeFiles/ft_printf.dir/src/digit_len.c.o: ../libft/libft.h
 CMakeFiles/ft_printf.dir/src/digit_len.c.o: ../src/digit_len.c
+
+CMakeFiles/ft_printf.dir/src/duplicate_array.c.o: ../headers/ft_printf.h
+CMakeFiles/ft_printf.dir/src/duplicate_array.c.o: ../libft/libft.h
+CMakeFiles/ft_printf.dir/src/duplicate_array.c.o: ../src/duplicate_array.c
 
 CMakeFiles/ft_printf.dir/src/fetch_data.c.o: ../headers/ft_printf.h
 CMakeFiles/ft_printf.dir/src/fetch_data.c.o: ../libft/libft.h
@@ -64,14 +76,6 @@ CMakeFiles/ft_printf.dir/src/ft_itoa_base.c.o: ../headers/ft_printf.h
 CMakeFiles/ft_printf.dir/src/ft_itoa_base.c.o: ../libft/libft.h
 CMakeFiles/ft_printf.dir/src/ft_itoa_base.c.o: ../src/ft_itoa_base.c
 
-CMakeFiles/ft_printf.dir/src/int_to_sign_dec.c.o: ../headers/ft_printf.h
-CMakeFiles/ft_printf.dir/src/int_to_sign_dec.c.o: ../libft/libft.h
-CMakeFiles/ft_printf.dir/src/int_to_sign_dec.c.o: ../src/int_to_sign_dec.c
-
-CMakeFiles/ft_printf.dir/src/int_to_unsign_dec.c.o: ../headers/ft_printf.h
-CMakeFiles/ft_printf.dir/src/int_to_unsign_dec.c.o: ../libft/libft.h
-CMakeFiles/ft_printf.dir/src/int_to_unsign_dec.c.o: ../src/int_to_unsign_dec.c
-
 CMakeFiles/ft_printf.dir/src/itoa_base_size.c.o: ../headers/ft_printf.h
 CMakeFiles/ft_printf.dir/src/itoa_base_size.c.o: ../libft/libft.h
 CMakeFiles/ft_printf.dir/src/itoa_base_size.c.o: ../src/itoa_base_size.c
@@ -79,6 +83,10 @@ CMakeFiles/ft_printf.dir/src/itoa_base_size.c.o: ../src/itoa_base_size.c
 CMakeFiles/ft_printf.dir/src/mainloop.c.o: ../headers/ft_printf.h
 CMakeFiles/ft_printf.dir/src/mainloop.c.o: ../libft/libft.h
 CMakeFiles/ft_printf.dir/src/mainloop.c.o: ../src/mainloop.c
+
+CMakeFiles/ft_printf.dir/src/masks_for_unicode.c.o: ../headers/ft_printf.h
+CMakeFiles/ft_printf.dir/src/masks_for_unicode.c.o: ../libft/libft.h
+CMakeFiles/ft_printf.dir/src/masks_for_unicode.c.o: ../src/masks_for_unicode.c
 
 CMakeFiles/ft_printf.dir/src/precision.c.o: ../headers/ft_printf.h
 CMakeFiles/ft_printf.dir/src/precision.c.o: ../libft/libft.h
@@ -104,17 +112,25 @@ CMakeFiles/ft_printf.dir/src/print_prcision.c.o: ../headers/ft_printf.h
 CMakeFiles/ft_printf.dir/src/print_prcision.c.o: ../libft/libft.h
 CMakeFiles/ft_printf.dir/src/print_prcision.c.o: ../src/print_prcision.c
 
+CMakeFiles/ft_printf.dir/src/print_sign_dec.c.o: ../headers/ft_printf.h
+CMakeFiles/ft_printf.dir/src/print_sign_dec.c.o: ../libft/libft.h
+CMakeFiles/ft_printf.dir/src/print_sign_dec.c.o: ../src/print_sign_dec.c
+
 CMakeFiles/ft_printf.dir/src/print_string.c.o: ../headers/ft_printf.h
 CMakeFiles/ft_printf.dir/src/print_string.c.o: ../libft/libft.h
 CMakeFiles/ft_printf.dir/src/print_string.c.o: ../src/print_string.c
+
+CMakeFiles/ft_printf.dir/src/print_uni_char.c.o: ../headers/ft_printf.h
+CMakeFiles/ft_printf.dir/src/print_uni_char.c.o: ../libft/libft.h
+CMakeFiles/ft_printf.dir/src/print_uni_char.c.o: ../src/print_uni_char.c
 
 CMakeFiles/ft_printf.dir/src/print_uni_string.c.o: ../headers/ft_printf.h
 CMakeFiles/ft_printf.dir/src/print_uni_string.c.o: ../libft/libft.h
 CMakeFiles/ft_printf.dir/src/print_uni_string.c.o: ../src/print_uni_string.c
 
-CMakeFiles/ft_printf.dir/src/print_usig_dec.c.o: ../headers/ft_printf.h
-CMakeFiles/ft_printf.dir/src/print_usig_dec.c.o: ../libft/libft.h
-CMakeFiles/ft_printf.dir/src/print_usig_dec.c.o: ../src/print_usig_dec.c
+CMakeFiles/ft_printf.dir/src/print_unsign_dec.c.o: ../headers/ft_printf.h
+CMakeFiles/ft_printf.dir/src/print_unsign_dec.c.o: ../libft/libft.h
+CMakeFiles/ft_printf.dir/src/print_unsign_dec.c.o: ../src/print_unsign_dec.c
 
 CMakeFiles/ft_printf.dir/src/print_width.c.o: ../headers/ft_printf.h
 CMakeFiles/ft_printf.dir/src/print_width.c.o: ../libft/libft.h
@@ -124,9 +140,21 @@ CMakeFiles/ft_printf.dir/src/print_width_char.c.o: ../headers/ft_printf.h
 CMakeFiles/ft_printf.dir/src/print_width_char.c.o: ../libft/libft.h
 CMakeFiles/ft_printf.dir/src/print_width_char.c.o: ../src/print_width_char.c
 
-CMakeFiles/ft_printf.dir/src/printf_sig_dec.c.o: ../headers/ft_printf.h
-CMakeFiles/ft_printf.dir/src/printf_sig_dec.c.o: ../libft/libft.h
-CMakeFiles/ft_printf.dir/src/printf_sig_dec.c.o: ../src/printf_sig_dec.c
+CMakeFiles/ft_printf.dir/src/printing_octal.c.o: ../headers/ft_printf.h
+CMakeFiles/ft_printf.dir/src/printing_octal.c.o: ../libft/libft.h
+CMakeFiles/ft_printf.dir/src/printing_octal.c.o: ../src/printing_octal.c
+
+CMakeFiles/ft_printf.dir/src/printing_sig_dec.c.o: ../headers/ft_printf.h
+CMakeFiles/ft_printf.dir/src/printing_sig_dec.c.o: ../libft/libft.h
+CMakeFiles/ft_printf.dir/src/printing_sig_dec.c.o: ../src/printing_sig_dec.c
+
+CMakeFiles/ft_printf.dir/src/printing_unicode.c.o: ../headers/ft_printf.h
+CMakeFiles/ft_printf.dir/src/printing_unicode.c.o: ../libft/libft.h
+CMakeFiles/ft_printf.dir/src/printing_unicode.c.o: ../src/printing_unicode.c
+
+CMakeFiles/ft_printf.dir/src/printing_usig_dec.c.o: ../headers/ft_printf.h
+CMakeFiles/ft_printf.dir/src/printing_usig_dec.c.o: ../libft/libft.h
+CMakeFiles/ft_printf.dir/src/printing_usig_dec.c.o: ../src/printing_usig_dec.c
 
 CMakeFiles/ft_printf.dir/src/read_conversion_letter.c.o: ../headers/ft_printf.h
 CMakeFiles/ft_printf.dir/src/read_conversion_letter.c.o: ../libft/libft.h

@@ -5,12 +5,9 @@ int		int_to_sign_dec(t_p *p)
 	int 	arg_len;
 	int 	res;
 
-    if (p->conv_let == 'D')
-        p->size = 'z';
-	init_sign(p);
-
-	find_sig_digit_len(p);
 	flags_priority(p);
+	init_sign(p);
+	find_sig_digit_len(p);
 	arg_len = calc_arg_len(p);
 	res = arg_len + p->data_len;
 	if ((NEG && p->width < p->data_len) ||
@@ -42,14 +39,14 @@ int		int_to_sign_dec(t_p *p)
 			arg_len--;
 		}
 		print_precision(p->precision);
-		print_sig_dec(p);
+		printing_sig_dec(p);
 		print_width(arg_len, p);
 	}
 	else
 	{
 		print_width(arg_len, p);
 		print_precision(p->precision);
-		print_sig_dec(p);
+		printing_sig_dec(p);
 	}
 //	if (p->space && !p->minus)
 //		res--;

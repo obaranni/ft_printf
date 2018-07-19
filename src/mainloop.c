@@ -25,9 +25,6 @@ int			ft_printf(char *s, ...)
 	b = 0;
 	box = &s;
 	va_start(l, s);
-	setlocale(LC_CTYPE,"de_DE.UTF-8");
-
-
 	while (**box)
 	{
 		if (**box == '%')

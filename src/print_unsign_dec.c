@@ -5,13 +5,11 @@ int		int_to_unsign_dec(t_p *p)
 	int 	arg_len;
 	int 	res;
 
-    if (p->conv_let == 'U')
-        p->size = 'z';
-	find_usig_digit_len(p);
 	flags_priority(p);
+	p->pos = 1;
+	find_usig_digit_len(p);
 	arg_len = calc_arg_len(p);
 	res = arg_len + DLEN;
-	p->plus = 0;
 	if (p->precision > 0)
 		p->zero = 0;
 	p->precision -= DLEN;
@@ -33,14 +31,14 @@ int		int_to_unsign_dec(t_p *p)
 	if (p->minus)
 	{
 		print_precision(p->precision);
-		print_usig_dec(p);
+		printing_usig_dec(p);
 		print_width(arg_len, p);
 	}
 	else
 	{
 		print_width(arg_len, p);
 		print_precision(p->precision);
-		print_usig_dec(p);
+		printing_usig_dec(p);
 	}
 	return (res);
 }

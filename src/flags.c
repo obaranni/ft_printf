@@ -8,8 +8,8 @@ int 		flags_priority(t_p *p)
 		p->space = 0;
 	if (p->space && !p->pos)
 		p->space = 0;
-//	if (p->plus)
-//		p->minus = 0;
+	if (ft_strchr("DOU", p->conv_let))
+		p->size = 'z';
 	return (0);
 }
 

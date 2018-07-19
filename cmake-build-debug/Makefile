@@ -393,6 +393,33 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/main.c.s
 .PHONY : main.c.s
 
+src/any_octal_to_str.o: src/any_octal_to_str.c.o
+
+.PHONY : src/any_octal_to_str.o
+
+# target to build an object file
+src/any_octal_to_str.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/any_octal_to_str.c.o
+.PHONY : src/any_octal_to_str.c.o
+
+src/any_octal_to_str.i: src/any_octal_to_str.c.i
+
+.PHONY : src/any_octal_to_str.i
+
+# target to preprocess a source file
+src/any_octal_to_str.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/any_octal_to_str.c.i
+.PHONY : src/any_octal_to_str.c.i
+
+src/any_octal_to_str.s: src/any_octal_to_str.c.s
+
+.PHONY : src/any_octal_to_str.s
+
+# target to generate assembly for a file
+src/any_octal_to_str.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/any_octal_to_str.c.s
+.PHONY : src/any_octal_to_str.c.s
+
 src/any_signed_dec_to_str.o: src/any_signed_dec_to_str.c.o
 
 .PHONY : src/any_signed_dec_to_str.o
@@ -501,6 +528,33 @@ src/choose_datatype_handler.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/choose_datatype_handler.c.s
 .PHONY : src/choose_datatype_handler.c.s
 
+src/count_uni_string_len.o: src/count_uni_string_len.c.o
+
+.PHONY : src/count_uni_string_len.o
+
+# target to build an object file
+src/count_uni_string_len.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/count_uni_string_len.c.o
+.PHONY : src/count_uni_string_len.c.o
+
+src/count_uni_string_len.i: src/count_uni_string_len.c.i
+
+.PHONY : src/count_uni_string_len.i
+
+# target to preprocess a source file
+src/count_uni_string_len.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/count_uni_string_len.c.i
+.PHONY : src/count_uni_string_len.c.i
+
+src/count_uni_string_len.s: src/count_uni_string_len.c.s
+
+.PHONY : src/count_uni_string_len.s
+
+# target to generate assembly for a file
+src/count_uni_string_len.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/count_uni_string_len.c.s
+.PHONY : src/count_uni_string_len.c.s
+
 src/digit_len.o: src/digit_len.c.o
 
 .PHONY : src/digit_len.o
@@ -527,6 +581,33 @@ src/digit_len.s: src/digit_len.c.s
 src/digit_len.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/digit_len.c.s
 .PHONY : src/digit_len.c.s
+
+src/duplicate_array.o: src/duplicate_array.c.o
+
+.PHONY : src/duplicate_array.o
+
+# target to build an object file
+src/duplicate_array.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/duplicate_array.c.o
+.PHONY : src/duplicate_array.c.o
+
+src/duplicate_array.i: src/duplicate_array.c.i
+
+.PHONY : src/duplicate_array.i
+
+# target to preprocess a source file
+src/duplicate_array.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/duplicate_array.c.i
+.PHONY : src/duplicate_array.c.i
+
+src/duplicate_array.s: src/duplicate_array.c.s
+
+.PHONY : src/duplicate_array.s
+
+# target to generate assembly for a file
+src/duplicate_array.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/duplicate_array.c.s
+.PHONY : src/duplicate_array.c.s
 
 src/fetch_data.o: src/fetch_data.c.o
 
@@ -609,60 +690,6 @@ src/ft_itoa_base.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/ft_itoa_base.c.s
 .PHONY : src/ft_itoa_base.c.s
 
-src/int_to_sign_dec.o: src/int_to_sign_dec.c.o
-
-.PHONY : src/int_to_sign_dec.o
-
-# target to build an object file
-src/int_to_sign_dec.c.o:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/int_to_sign_dec.c.o
-.PHONY : src/int_to_sign_dec.c.o
-
-src/int_to_sign_dec.i: src/int_to_sign_dec.c.i
-
-.PHONY : src/int_to_sign_dec.i
-
-# target to preprocess a source file
-src/int_to_sign_dec.c.i:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/int_to_sign_dec.c.i
-.PHONY : src/int_to_sign_dec.c.i
-
-src/int_to_sign_dec.s: src/int_to_sign_dec.c.s
-
-.PHONY : src/int_to_sign_dec.s
-
-# target to generate assembly for a file
-src/int_to_sign_dec.c.s:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/int_to_sign_dec.c.s
-.PHONY : src/int_to_sign_dec.c.s
-
-src/int_to_unsign_dec.o: src/int_to_unsign_dec.c.o
-
-.PHONY : src/int_to_unsign_dec.o
-
-# target to build an object file
-src/int_to_unsign_dec.c.o:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/int_to_unsign_dec.c.o
-.PHONY : src/int_to_unsign_dec.c.o
-
-src/int_to_unsign_dec.i: src/int_to_unsign_dec.c.i
-
-.PHONY : src/int_to_unsign_dec.i
-
-# target to preprocess a source file
-src/int_to_unsign_dec.c.i:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/int_to_unsign_dec.c.i
-.PHONY : src/int_to_unsign_dec.c.i
-
-src/int_to_unsign_dec.s: src/int_to_unsign_dec.c.s
-
-.PHONY : src/int_to_unsign_dec.s
-
-# target to generate assembly for a file
-src/int_to_unsign_dec.c.s:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/int_to_unsign_dec.c.s
-.PHONY : src/int_to_unsign_dec.c.s
-
 src/itoa_base_size.o: src/itoa_base_size.c.o
 
 .PHONY : src/itoa_base_size.o
@@ -716,6 +743,33 @@ src/mainloop.s: src/mainloop.c.s
 src/mainloop.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/mainloop.c.s
 .PHONY : src/mainloop.c.s
+
+src/masks_for_unicode.o: src/masks_for_unicode.c.o
+
+.PHONY : src/masks_for_unicode.o
+
+# target to build an object file
+src/masks_for_unicode.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/masks_for_unicode.c.o
+.PHONY : src/masks_for_unicode.c.o
+
+src/masks_for_unicode.i: src/masks_for_unicode.c.i
+
+.PHONY : src/masks_for_unicode.i
+
+# target to preprocess a source file
+src/masks_for_unicode.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/masks_for_unicode.c.i
+.PHONY : src/masks_for_unicode.c.i
+
+src/masks_for_unicode.s: src/masks_for_unicode.c.s
+
+.PHONY : src/masks_for_unicode.s
+
+# target to generate assembly for a file
+src/masks_for_unicode.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/masks_for_unicode.c.s
+.PHONY : src/masks_for_unicode.c.s
 
 src/precision.o: src/precision.c.o
 
@@ -879,6 +933,33 @@ src/print_prcision.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_prcision.c.s
 .PHONY : src/print_prcision.c.s
 
+src/print_sign_dec.o: src/print_sign_dec.c.o
+
+.PHONY : src/print_sign_dec.o
+
+# target to build an object file
+src/print_sign_dec.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_sign_dec.c.o
+.PHONY : src/print_sign_dec.c.o
+
+src/print_sign_dec.i: src/print_sign_dec.c.i
+
+.PHONY : src/print_sign_dec.i
+
+# target to preprocess a source file
+src/print_sign_dec.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_sign_dec.c.i
+.PHONY : src/print_sign_dec.c.i
+
+src/print_sign_dec.s: src/print_sign_dec.c.s
+
+.PHONY : src/print_sign_dec.s
+
+# target to generate assembly for a file
+src/print_sign_dec.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_sign_dec.c.s
+.PHONY : src/print_sign_dec.c.s
+
 src/print_string.o: src/print_string.c.o
 
 .PHONY : src/print_string.o
@@ -905,6 +986,33 @@ src/print_string.s: src/print_string.c.s
 src/print_string.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_string.c.s
 .PHONY : src/print_string.c.s
+
+src/print_uni_char.o: src/print_uni_char.c.o
+
+.PHONY : src/print_uni_char.o
+
+# target to build an object file
+src/print_uni_char.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_uni_char.c.o
+.PHONY : src/print_uni_char.c.o
+
+src/print_uni_char.i: src/print_uni_char.c.i
+
+.PHONY : src/print_uni_char.i
+
+# target to preprocess a source file
+src/print_uni_char.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_uni_char.c.i
+.PHONY : src/print_uni_char.c.i
+
+src/print_uni_char.s: src/print_uni_char.c.s
+
+.PHONY : src/print_uni_char.s
+
+# target to generate assembly for a file
+src/print_uni_char.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_uni_char.c.s
+.PHONY : src/print_uni_char.c.s
 
 src/print_uni_string.o: src/print_uni_string.c.o
 
@@ -933,32 +1041,32 @@ src/print_uni_string.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_uni_string.c.s
 .PHONY : src/print_uni_string.c.s
 
-src/print_usig_dec.o: src/print_usig_dec.c.o
+src/print_unsign_dec.o: src/print_unsign_dec.c.o
 
-.PHONY : src/print_usig_dec.o
+.PHONY : src/print_unsign_dec.o
 
 # target to build an object file
-src/print_usig_dec.c.o:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_usig_dec.c.o
-.PHONY : src/print_usig_dec.c.o
+src/print_unsign_dec.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_unsign_dec.c.o
+.PHONY : src/print_unsign_dec.c.o
 
-src/print_usig_dec.i: src/print_usig_dec.c.i
+src/print_unsign_dec.i: src/print_unsign_dec.c.i
 
-.PHONY : src/print_usig_dec.i
+.PHONY : src/print_unsign_dec.i
 
 # target to preprocess a source file
-src/print_usig_dec.c.i:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_usig_dec.c.i
-.PHONY : src/print_usig_dec.c.i
+src/print_unsign_dec.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_unsign_dec.c.i
+.PHONY : src/print_unsign_dec.c.i
 
-src/print_usig_dec.s: src/print_usig_dec.c.s
+src/print_unsign_dec.s: src/print_unsign_dec.c.s
 
-.PHONY : src/print_usig_dec.s
+.PHONY : src/print_unsign_dec.s
 
 # target to generate assembly for a file
-src/print_usig_dec.c.s:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_usig_dec.c.s
-.PHONY : src/print_usig_dec.c.s
+src/print_unsign_dec.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_unsign_dec.c.s
+.PHONY : src/print_unsign_dec.c.s
 
 src/print_width.o: src/print_width.c.o
 
@@ -1014,32 +1122,113 @@ src/print_width_char.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_width_char.c.s
 .PHONY : src/print_width_char.c.s
 
-src/printf_sig_dec.o: src/printf_sig_dec.c.o
+src/printing_octal.o: src/printing_octal.c.o
 
-.PHONY : src/printf_sig_dec.o
+.PHONY : src/printing_octal.o
 
 # target to build an object file
-src/printf_sig_dec.c.o:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/printf_sig_dec.c.o
-.PHONY : src/printf_sig_dec.c.o
+src/printing_octal.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/printing_octal.c.o
+.PHONY : src/printing_octal.c.o
 
-src/printf_sig_dec.i: src/printf_sig_dec.c.i
+src/printing_octal.i: src/printing_octal.c.i
 
-.PHONY : src/printf_sig_dec.i
+.PHONY : src/printing_octal.i
 
 # target to preprocess a source file
-src/printf_sig_dec.c.i:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/printf_sig_dec.c.i
-.PHONY : src/printf_sig_dec.c.i
+src/printing_octal.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/printing_octal.c.i
+.PHONY : src/printing_octal.c.i
 
-src/printf_sig_dec.s: src/printf_sig_dec.c.s
+src/printing_octal.s: src/printing_octal.c.s
 
-.PHONY : src/printf_sig_dec.s
+.PHONY : src/printing_octal.s
 
 # target to generate assembly for a file
-src/printf_sig_dec.c.s:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/printf_sig_dec.c.s
-.PHONY : src/printf_sig_dec.c.s
+src/printing_octal.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/printing_octal.c.s
+.PHONY : src/printing_octal.c.s
+
+src/printing_sig_dec.o: src/printing_sig_dec.c.o
+
+.PHONY : src/printing_sig_dec.o
+
+# target to build an object file
+src/printing_sig_dec.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/printing_sig_dec.c.o
+.PHONY : src/printing_sig_dec.c.o
+
+src/printing_sig_dec.i: src/printing_sig_dec.c.i
+
+.PHONY : src/printing_sig_dec.i
+
+# target to preprocess a source file
+src/printing_sig_dec.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/printing_sig_dec.c.i
+.PHONY : src/printing_sig_dec.c.i
+
+src/printing_sig_dec.s: src/printing_sig_dec.c.s
+
+.PHONY : src/printing_sig_dec.s
+
+# target to generate assembly for a file
+src/printing_sig_dec.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/printing_sig_dec.c.s
+.PHONY : src/printing_sig_dec.c.s
+
+src/printing_unicode.o: src/printing_unicode.c.o
+
+.PHONY : src/printing_unicode.o
+
+# target to build an object file
+src/printing_unicode.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/printing_unicode.c.o
+.PHONY : src/printing_unicode.c.o
+
+src/printing_unicode.i: src/printing_unicode.c.i
+
+.PHONY : src/printing_unicode.i
+
+# target to preprocess a source file
+src/printing_unicode.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/printing_unicode.c.i
+.PHONY : src/printing_unicode.c.i
+
+src/printing_unicode.s: src/printing_unicode.c.s
+
+.PHONY : src/printing_unicode.s
+
+# target to generate assembly for a file
+src/printing_unicode.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/printing_unicode.c.s
+.PHONY : src/printing_unicode.c.s
+
+src/printing_usig_dec.o: src/printing_usig_dec.c.o
+
+.PHONY : src/printing_usig_dec.o
+
+# target to build an object file
+src/printing_usig_dec.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/printing_usig_dec.c.o
+.PHONY : src/printing_usig_dec.c.o
+
+src/printing_usig_dec.i: src/printing_usig_dec.c.i
+
+.PHONY : src/printing_usig_dec.i
+
+# target to preprocess a source file
+src/printing_usig_dec.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/printing_usig_dec.c.i
+.PHONY : src/printing_usig_dec.c.i
+
+src/printing_usig_dec.s: src/printing_usig_dec.c.s
+
+.PHONY : src/printing_usig_dec.s
+
+# target to generate assembly for a file
+src/printing_usig_dec.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/printing_usig_dec.c.s
+.PHONY : src/printing_usig_dec.c.s
 
 src/read_conversion_letter.o: src/read_conversion_letter.c.o
 
@@ -1188,6 +1377,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/any_octal_to_str.o"
+	@echo "... src/any_octal_to_str.i"
+	@echo "... src/any_octal_to_str.s"
 	@echo "... src/any_signed_dec_to_str.o"
 	@echo "... src/any_signed_dec_to_str.i"
 	@echo "... src/any_signed_dec_to_str.s"
@@ -1200,9 +1392,15 @@ help:
 	@echo "... src/choose_datatype_handler.o"
 	@echo "... src/choose_datatype_handler.i"
 	@echo "... src/choose_datatype_handler.s"
+	@echo "... src/count_uni_string_len.o"
+	@echo "... src/count_uni_string_len.i"
+	@echo "... src/count_uni_string_len.s"
 	@echo "... src/digit_len.o"
 	@echo "... src/digit_len.i"
 	@echo "... src/digit_len.s"
+	@echo "... src/duplicate_array.o"
+	@echo "... src/duplicate_array.i"
+	@echo "... src/duplicate_array.s"
 	@echo "... src/fetch_data.o"
 	@echo "... src/fetch_data.i"
 	@echo "... src/fetch_data.s"
@@ -1212,18 +1410,15 @@ help:
 	@echo "... src/ft_itoa_base.o"
 	@echo "... src/ft_itoa_base.i"
 	@echo "... src/ft_itoa_base.s"
-	@echo "... src/int_to_sign_dec.o"
-	@echo "... src/int_to_sign_dec.i"
-	@echo "... src/int_to_sign_dec.s"
-	@echo "... src/int_to_unsign_dec.o"
-	@echo "... src/int_to_unsign_dec.i"
-	@echo "... src/int_to_unsign_dec.s"
 	@echo "... src/itoa_base_size.o"
 	@echo "... src/itoa_base_size.i"
 	@echo "... src/itoa_base_size.s"
 	@echo "... src/mainloop.o"
 	@echo "... src/mainloop.i"
 	@echo "... src/mainloop.s"
+	@echo "... src/masks_for_unicode.o"
+	@echo "... src/masks_for_unicode.i"
+	@echo "... src/masks_for_unicode.s"
 	@echo "... src/precision.o"
 	@echo "... src/precision.i"
 	@echo "... src/precision.s"
@@ -1242,24 +1437,39 @@ help:
 	@echo "... src/print_prcision.o"
 	@echo "... src/print_prcision.i"
 	@echo "... src/print_prcision.s"
+	@echo "... src/print_sign_dec.o"
+	@echo "... src/print_sign_dec.i"
+	@echo "... src/print_sign_dec.s"
 	@echo "... src/print_string.o"
 	@echo "... src/print_string.i"
 	@echo "... src/print_string.s"
+	@echo "... src/print_uni_char.o"
+	@echo "... src/print_uni_char.i"
+	@echo "... src/print_uni_char.s"
 	@echo "... src/print_uni_string.o"
 	@echo "... src/print_uni_string.i"
 	@echo "... src/print_uni_string.s"
-	@echo "... src/print_usig_dec.o"
-	@echo "... src/print_usig_dec.i"
-	@echo "... src/print_usig_dec.s"
+	@echo "... src/print_unsign_dec.o"
+	@echo "... src/print_unsign_dec.i"
+	@echo "... src/print_unsign_dec.s"
 	@echo "... src/print_width.o"
 	@echo "... src/print_width.i"
 	@echo "... src/print_width.s"
 	@echo "... src/print_width_char.o"
 	@echo "... src/print_width_char.i"
 	@echo "... src/print_width_char.s"
-	@echo "... src/printf_sig_dec.o"
-	@echo "... src/printf_sig_dec.i"
-	@echo "... src/printf_sig_dec.s"
+	@echo "... src/printing_octal.o"
+	@echo "... src/printing_octal.i"
+	@echo "... src/printing_octal.s"
+	@echo "... src/printing_sig_dec.o"
+	@echo "... src/printing_sig_dec.i"
+	@echo "... src/printing_sig_dec.s"
+	@echo "... src/printing_unicode.o"
+	@echo "... src/printing_unicode.i"
+	@echo "... src/printing_unicode.s"
+	@echo "... src/printing_usig_dec.o"
+	@echo "... src/printing_usig_dec.i"
+	@echo "... src/printing_usig_dec.s"
 	@echo "... src/read_conversion_letter.o"
 	@echo "... src/read_conversion_letter.i"
 	@echo "... src/read_conversion_letter.s"

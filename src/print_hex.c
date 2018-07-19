@@ -48,7 +48,7 @@ int		calc_arg_len_hex(t_p *p)
 	return (len);
 }
 
-int 		print_hex(t_p *p, char *str)
+int 		print_hex_cont(t_p *p, char *str)
 {
 	int 	arg_len;
 	int 	res;
@@ -118,7 +118,7 @@ int 		print_hex(t_p *p, char *str)
 	return (res);
 }
 
-int			hex(t_p *p)
+int			print_hex(t_p *p)
 {
 	char 	*str;
 	int 	len;
@@ -130,8 +130,8 @@ int			hex(t_p *p)
 		str = itoa_base_sized(p->data_uns, 16, 'A' - 10);
 	else
 		str = itoa_base_sized(p->data_uns, 16, 'a' - 10);
-	len = print_hex(p, str);
-//	if (str)
-//		free(str);
+	len = print_hex_cont(p, str);
+	if (str)
+		free(str);
 	return (len);
 }

@@ -5,8 +5,10 @@ static int    f_len(ssize_t nbr)
     int        size;
 
     size = 1;
+	if (nbr == -9223372036854775808)
+		return (36);
     if (nbr < 0)
-        nbr = -nbr;
+        nbr *= -1;
     while (nbr > 9)
     {
         nbr = nbr / 10;
@@ -46,7 +48,7 @@ static void    f(ssize_t value, ssize_t base, char *s, int *i)
     s[(*i)++] = set_char(value % base);
 }
 
-static char    *ft_itoa_base_nominus(ssize_t value, ssize_t base)
+char        *ft_itoa_base_nominus(ssize_t value, ssize_t base)
 {
     char    *s;
     int        i;
@@ -57,11 +59,12 @@ static char    *ft_itoa_base_nominus(ssize_t value, ssize_t base)
     if (base < 2 || base > 16 || !(s = (char*)malloc(sizeof(char) * len)))
         return (0);
     f(value, base, s, &i);
-    s[i] = '\0';
+    s[len - 1] = '\0';
     return (s);
 }
 
 char        *any_signed_dec_to_str(ssize_t nb)
 {
-    return (ft_itoa_base_nominus(nb, 10));
+	return (ft_itoa_base_nominus(nb, 10));
+//    return (ft_itoa_base(nb, 10));
 }

@@ -12,6 +12,8 @@ int		print_char(t_p *p)
 		arg_len = 0;
 	res = arg_len;
 	p->plus = 0;
+	if (!p->data_uns)
+		p->precision = 0;
 	if (p->minus)
 	{
 		print_precision(p->precision);

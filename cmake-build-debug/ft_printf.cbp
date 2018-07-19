@@ -113,6 +113,9 @@
 		<Unit filename="/Users/obaranni/projects/ft_printf/main.c">
 			<Option target="ft_printf"/>
 		</Unit>
+		<Unit filename="/Users/obaranni/projects/ft_printf/src/any_octal_to_str.c">
+			<Option target="ft_printf"/>
+		</Unit>
 		<Unit filename="/Users/obaranni/projects/ft_printf/src/any_signed_dec_to_str.c">
 			<Option target="ft_printf"/>
 		</Unit>
@@ -125,7 +128,13 @@
 		<Unit filename="/Users/obaranni/projects/ft_printf/src/choose_datatype_handler.c">
 			<Option target="ft_printf"/>
 		</Unit>
+		<Unit filename="/Users/obaranni/projects/ft_printf/src/count_uni_string_len.c">
+			<Option target="ft_printf"/>
+		</Unit>
 		<Unit filename="/Users/obaranni/projects/ft_printf/src/digit_len.c">
+			<Option target="ft_printf"/>
+		</Unit>
+		<Unit filename="/Users/obaranni/projects/ft_printf/src/duplicate_array.c">
 			<Option target="ft_printf"/>
 		</Unit>
 		<Unit filename="/Users/obaranni/projects/ft_printf/src/fetch_data.c">
@@ -137,16 +146,13 @@
 		<Unit filename="/Users/obaranni/projects/ft_printf/src/ft_itoa_base.c">
 			<Option target="ft_printf"/>
 		</Unit>
-		<Unit filename="/Users/obaranni/projects/ft_printf/src/int_to_sign_dec.c">
-			<Option target="ft_printf"/>
-		</Unit>
-		<Unit filename="/Users/obaranni/projects/ft_printf/src/int_to_unsign_dec.c">
-			<Option target="ft_printf"/>
-		</Unit>
 		<Unit filename="/Users/obaranni/projects/ft_printf/src/itoa_base_size.c">
 			<Option target="ft_printf"/>
 		</Unit>
 		<Unit filename="/Users/obaranni/projects/ft_printf/src/mainloop.c">
+			<Option target="ft_printf"/>
+		</Unit>
+		<Unit filename="/Users/obaranni/projects/ft_printf/src/masks_for_unicode.c">
 			<Option target="ft_printf"/>
 		</Unit>
 		<Unit filename="/Users/obaranni/projects/ft_printf/src/precision.c">
@@ -167,13 +173,19 @@
 		<Unit filename="/Users/obaranni/projects/ft_printf/src/print_prcision.c">
 			<Option target="ft_printf"/>
 		</Unit>
+		<Unit filename="/Users/obaranni/projects/ft_printf/src/print_sign_dec.c">
+			<Option target="ft_printf"/>
+		</Unit>
 		<Unit filename="/Users/obaranni/projects/ft_printf/src/print_string.c">
+			<Option target="ft_printf"/>
+		</Unit>
+		<Unit filename="/Users/obaranni/projects/ft_printf/src/print_uni_char.c">
 			<Option target="ft_printf"/>
 		</Unit>
 		<Unit filename="/Users/obaranni/projects/ft_printf/src/print_uni_string.c">
 			<Option target="ft_printf"/>
 		</Unit>
-		<Unit filename="/Users/obaranni/projects/ft_printf/src/print_usig_dec.c">
+		<Unit filename="/Users/obaranni/projects/ft_printf/src/print_unsign_dec.c">
 			<Option target="ft_printf"/>
 		</Unit>
 		<Unit filename="/Users/obaranni/projects/ft_printf/src/print_width.c">
@@ -182,7 +194,16 @@
 		<Unit filename="/Users/obaranni/projects/ft_printf/src/print_width_char.c">
 			<Option target="ft_printf"/>
 		</Unit>
-		<Unit filename="/Users/obaranni/projects/ft_printf/src/printf_sig_dec.c">
+		<Unit filename="/Users/obaranni/projects/ft_printf/src/printing_octal.c">
+			<Option target="ft_printf"/>
+		</Unit>
+		<Unit filename="/Users/obaranni/projects/ft_printf/src/printing_sig_dec.c">
+			<Option target="ft_printf"/>
+		</Unit>
+		<Unit filename="/Users/obaranni/projects/ft_printf/src/printing_unicode.c">
+			<Option target="ft_printf"/>
+		</Unit>
+		<Unit filename="/Users/obaranni/projects/ft_printf/src/printing_usig_dec.c">
 			<Option target="ft_printf"/>
 		</Unit>
 		<Unit filename="/Users/obaranni/projects/ft_printf/src/read_conversion_letter.c">

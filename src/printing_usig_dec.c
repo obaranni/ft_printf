@@ -1,6 +1,6 @@
 #include "../headers/ft_printf.h"
 
-int				print_usig_dec(t_p *p)
+int				printing_usig_dec(t_p *p)
 {
     if (p->size == 'z')
         p->data = any_unsigned_dec_to_str((unsigned long long)p->data_uns);
@@ -18,6 +18,6 @@ int				print_usig_dec(t_p *p)
         p->data= any_unsigned_dec_to_str((unsigned int)p->data_uns);
 
     ft_putstr(p->data);
-//    free(p->data);
+    free(p->data);
     return (0);
 }

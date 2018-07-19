@@ -1,20 +1,63 @@
 #include "../headers/ft_printf.h"
 
-int			octal(t_p *p)
+int			print_octal(t_p *p)
 {
-	char 	*str;
-	int 	len;
+	int 	res;
 
-	str = 0;
-	if (p->conv_let == 'O')
-		str = itoa_base_sized(p->data_uns, 8, 55);
+
+	p->pos = 1;
+	p->plus = 0;
+	flags_priority(p);
+	forme_oct(p);
+
+
+	res = p->data_len;
+
+	if (p->precision > 0)
+		p->precision = p->precision - p->data_len;
+
+
+	if (p->sharp && p->precision > 0 && p->data_uns)
+		p->precision++;
+	else if (p->sharp && !p->precision && p->data_uns)
+		p->precision = 1;
+
+
+
+	if (p->precision > 0)
+	{
+		res += p->precision;
+		p->width -= p->precision;
+	}
+
+	if (p->width && p->data_uns)
+	{
+		p->width -= p->data_len;
+
+	}
+	if (p->width > 0)
+		res += p->width;
+
+
+	if (p->minus)
+	{
+		print_precision(p->precision);
+		if (!(!p->data_uns && p->prec_finded) || p->sharp)
+			ft_putstr(p->data);
+		else
+			res--;
+		print_width(p->width, p);
+	}
 	else
-		str = itoa_base_sized(p->data_uns, 8, 87);
-	ft_putstr(str);
-	len = (int)ft_strlen(str);
-//	if (str)
-//		free(str);
-	if (p->conv_let == 'p')
-		return (len + 2);
-	return (len);
+	{
+		print_width(p->width, p);
+		print_precision(p->precision);
+		if (!(!p->data_uns && p->prec_finded) || p->sharp)
+			ft_putstr(p->data);
+		else
+			res--;
+	}
+	if (p->data)
+		free(p->data);
+	return (res);
 }
