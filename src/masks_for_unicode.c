@@ -6,9 +6,7 @@ void           masks(unsigned int *u)
 	unsigned int b;
 
 	if (*u <= 0x7F)
-	{
 		*u = (*u & 0x7F);
-	}
 	else if (*u <= 0x7FF)
 	{
 		a = (*u & 0x3F) | ((*u & 0xFFFFC0) << 2) | 0x80;

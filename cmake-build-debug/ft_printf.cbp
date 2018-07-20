@@ -158,7 +158,7 @@
 		<Unit filename="/Users/obaranni/projects/ft_printf/src/precision.c">
 			<Option target="ft_printf"/>
 		</Unit>
-		<Unit filename="/Users/obaranni/projects/ft_printf/src/print_char.c">
+		<Unit filename="/Users/obaranni/projects/ft_printf/src/print_any_string.c">
 			<Option target="ft_printf"/>
 		</Unit>
 		<Unit filename="/Users/obaranni/projects/ft_printf/src/print_hex.c">

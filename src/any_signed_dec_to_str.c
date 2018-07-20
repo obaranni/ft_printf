@@ -6,7 +6,7 @@ static int    f_len(ssize_t nbr)
 
     size = 1;
 	if (nbr == -9223372036854775808)
-		return (36);
+		return (18);
     if (nbr < 0)
         nbr *= -1;
     while (nbr > 9)
@@ -59,7 +59,7 @@ char        *ft_itoa_base_nominus(ssize_t value, ssize_t base)
     if (base < 2 || base > 16 || !(s = (char*)malloc(sizeof(char) * len)))
         return (0);
     f(value, base, s, &i);
-    s[len - 1] = '\0';
+    s[i] = '\0';
     return (s);
 }
 

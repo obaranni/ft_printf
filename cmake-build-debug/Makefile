@@ -798,32 +798,32 @@ src/precision.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/precision.c.s
 .PHONY : src/precision.c.s
 
-src/print_char.o: src/print_char.c.o
+src/print_any_string.o: src/print_any_string.c.o
 
-.PHONY : src/print_char.o
+.PHONY : src/print_any_string.o
 
 # target to build an object file
-src/print_char.c.o:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_char.c.o
-.PHONY : src/print_char.c.o
+src/print_any_string.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_any_string.c.o
+.PHONY : src/print_any_string.c.o
 
-src/print_char.i: src/print_char.c.i
+src/print_any_string.i: src/print_any_string.c.i
 
-.PHONY : src/print_char.i
+.PHONY : src/print_any_string.i
 
 # target to preprocess a source file
-src/print_char.c.i:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_char.c.i
-.PHONY : src/print_char.c.i
+src/print_any_string.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_any_string.c.i
+.PHONY : src/print_any_string.c.i
 
-src/print_char.s: src/print_char.c.s
+src/print_any_string.s: src/print_any_string.c.s
 
-.PHONY : src/print_char.s
+.PHONY : src/print_any_string.s
 
 # target to generate assembly for a file
-src/print_char.c.s:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_char.c.s
-.PHONY : src/print_char.c.s
+src/print_any_string.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_any_string.c.s
+.PHONY : src/print_any_string.c.s
 
 src/print_hex.o: src/print_hex.c.o
 
@@ -1422,9 +1422,9 @@ help:
 	@echo "... src/precision.o"
 	@echo "... src/precision.i"
 	@echo "... src/precision.s"
-	@echo "... src/print_char.o"
-	@echo "... src/print_char.i"
-	@echo "... src/print_char.s"
+	@echo "... src/print_any_string.o"
+	@echo "... src/print_any_string.i"
+	@echo "... src/print_any_string.s"
 	@echo "... src/print_hex.o"
 	@echo "... src/print_hex.i"
 	@echo "... src/print_hex.s"

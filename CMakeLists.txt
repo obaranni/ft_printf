@@ -42,8 +42,7 @@ add_executable( ft_printf
         src/print_hex.c
         src/print_octal.c
         src/itoa_base_size.c
-        src/print_char.c
         src/print_width_char.c
         src/print_uni_string.c
         src/print_uni_char.c
-        src/masks_for_unicode.c src/printing_unicode.c src/duplicate_array.c src/count_uni_string_len.c src/printing_octal.c src/any_octal_to_str.c)
+        src/masks_for_unicode.c src/printing_unicode.c src/duplicate_array.c src/count_uni_string_len.c src/printing_octal.c src/any_octal_to_str.c src/print_any_string.c)

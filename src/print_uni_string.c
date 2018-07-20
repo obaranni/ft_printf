@@ -36,7 +36,7 @@ int				print_uni_string(t_p *p)
     else
     {
 		i = 0;
-		dup_arr(&p->data_uint, &p->data_uint_copy, 0);
+		dup_arr(&p->data_uint, &p->data_uint_copy);
 		while (p->data_uint_copy[i])
 		{
 			masks(&p->data_uint_copy[i]);

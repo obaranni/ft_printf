@@ -92,9 +92,9 @@ CMakeFiles/ft_printf.dir/src/precision.c.o: ../headers/ft_printf.h
 CMakeFiles/ft_printf.dir/src/precision.c.o: ../libft/libft.h
 CMakeFiles/ft_printf.dir/src/precision.c.o: ../src/precision.c
 
-CMakeFiles/ft_printf.dir/src/print_char.c.o: ../headers/ft_printf.h
-CMakeFiles/ft_printf.dir/src/print_char.c.o: ../libft/libft.h
-CMakeFiles/ft_printf.dir/src/print_char.c.o: ../src/print_char.c
+CMakeFiles/ft_printf.dir/src/print_any_string.c.o: ../headers/ft_printf.h
+CMakeFiles/ft_printf.dir/src/print_any_string.c.o: ../libft/libft.h
+CMakeFiles/ft_printf.dir/src/print_any_string.c.o: ../src/print_any_string.c
 
 CMakeFiles/ft_printf.dir/src/print_hex.c.o: ../headers/ft_printf.h
 CMakeFiles/ft_printf.dir/src/print_hex.c.o: ../libft/libft.h

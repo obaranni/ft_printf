@@ -34,7 +34,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/ft_printf.dir/src/print_hex.c.o"
   "CMakeFiles/ft_printf.dir/src/print_octal.c.o"
   "CMakeFiles/ft_printf.dir/src/itoa_base_size.c.o"
-  "CMakeFiles/ft_printf.dir/src/print_char.c.o"
   "CMakeFiles/ft_printf.dir/src/print_width_char.c.o"
   "CMakeFiles/ft_printf.dir/src/print_uni_string.c.o"
   "CMakeFiles/ft_printf.dir/src/print_uni_char.c.o"
@@ -44,6 +43,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/ft_printf.dir/src/count_uni_string_len.c.o"
   "CMakeFiles/ft_printf.dir/src/printing_octal.c.o"
   "CMakeFiles/ft_printf.dir/src/any_octal_to_str.c.o"
+  "CMakeFiles/ft_printf.dir/src/print_any_string.c.o"
   "ft_printf.pdb"
   "ft_printf"
 )

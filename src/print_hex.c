@@ -123,7 +123,6 @@ int			print_hex(t_p *p)
 	char 	*str;
 	int 	len;
 
-	str = 0;
 	if (p->conv_let != 'p')
 		cast_hex(p);
 	if (p->conv_let == 'X')
