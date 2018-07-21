@@ -28,6 +28,7 @@ typedef struct		s_properties
 {
     unsigned int    *data_uint;
 	unsigned int    *data_uint_copy;
+	unsigned int    *data_uint_copy_copy;
 	unsigned int	data_uni_char;
     char			*data;
 	int 			zero;

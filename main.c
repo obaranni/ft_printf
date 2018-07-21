@@ -327,6 +327,8 @@ int			main(void) {
 //		printf("Returned: %d\n", printf("38.5 Hello \"%010S\"\n", L"米   "));
 //		printf("Returned: %d\n\n", ft_printf("38.5 Hello \"%010S\"\n", L"米   "));
 
+		printf("Returned: %d\n", printf("%S", L"猫"));
+		printf("Returned: %d\n\n", ft_printf("%S", L"猫"));
 
 		printf("Returned: %d\n", printf("%S", L"我是一只猫。"));
 		printf("Returned: %d\n\n", ft_printf("%S", L"我是一只猫。"));
@@ -334,10 +336,10 @@ int			main(void) {
 		printf("Returned: %d\n", printf("38.5 Hello \"%S\"\n", L"我是一只猫。"));
 		printf("Returned: %d\n\n", ft_printf("38.5 Hello \"%S\"\n", L"我是一只猫。"));
 
-        printf("Returned: %d\n", printf("38.6 Hello \"%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S\"\n", L"Α α", L"Β β", L"Γ γ", L"Δ δ", L"Ε ε", L"Ζ ζ", L"Η η", L"Θ θ", L"Ι ι", L"Κ κ", L"Λ λ", L"Μ μ",
-                                             L"Ν ν", L"Ξ ξ", L"Ο ο", L"Π π", L"Ρ ρ", L"Σ σ", L"Τ τ", L"Υ υ", L"Φ φ", L"Χ χ", L"Ψ ψ", L"Ω ω", L""));
-        printf("Returned: %d\n\n", ft_printf("38.6 Hello \"%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S\"\n", L"Α α", L"Β β", L"Γ γ", L"Δ δ", L"Ε ε", L"Ζ ζ", L"Η η", L"Θ θ", L"Ι ι", L"Κ κ", L"Λ λ", L"Μ μ",
-                                                 L"Ν ν", L"Ξ ξ", L"Ο ο", L"Π π", L"Ρ ρ", L"Σ σ", L"Τ τ", L"Υ υ", L"Φ φ", L"Χ χ", L"Ψ ψ", L"Ω ω", L""));
+        printf("Returned: %d\n", printf("38.6 Hello \"%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S\"\n", L"Α α", L"Β β", L"Γ γ", L"Δ δ", L"Ε ε", L"Ζ ζ", L"Η η", L"Θ θ", L"Ι ι", L"Κ κ", L"Λ λ", L"Μ μ",
+                                             L"Ν ν", L"Ξ ξ", L"Ο ο", L"Π π", L"Ρ ρ", L"Σ σ", L"Τ τ", L"Υ υ", L"Φ φ", L"Χ χ", L"Ψ ψ", L"Ω ω", L"", L"我"));
+        printf("Returned: %d\n\n", ft_printf("38.6 Hello \"%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S%S\"\n", L"Α α", L"Β β", L"Γ γ", L"Δ δ", L"Ε ε", L"Ζ ζ", L"Η η", L"Θ θ", L"Ι ι", L"Κ κ", L"Λ λ", L"Μ μ",
+                                                 L"Ν ν", L"Ξ ξ", L"Ο ο", L"Π π", L"Ρ ρ", L"Σ σ", L"Τ τ", L"Υ υ", L"Φ φ", L"Χ χ", L"Ψ ψ", L"Ω ω", L"", L"我"));
 
         printf("Returned: %d\n", printf("38.7 Hello \"a%Sb%sc%S\"\n", L"我", "42", L"猫"));
         printf("Returned: %d\n\n", ft_printf("38.7 Hello \"a%Sb%sc%S\"\n", L"我", "42", L"猫"));
