@@ -45,6 +45,22 @@ void		printing_any_str(t_p *p)
 	free(p->data_uint_copy);
 }
 
+void		which_string(t_p *p)
+{
+	if (p->conv_let == 's')
+	{
+		str_preparation(p);
+		p->data_len = count_uni_string_len(&p->data_uint_copy);
+	}
+	else
+	{
+		dup_arr(&p->data_uint, &p->data_uint_copy);
+		p->data_len = count_uni_string_len(&p->data_uint_copy);
+		free(p->data_uint_copy);
+		dup_arr(&p->data_uint, &p->data_uint_copy);
+	}
+}
+
 int 		print_any_string(t_p *p)
 {
 	if ( (!p->data && p->conv_let == 's') || (!p->data_uint && p->conv_let == 'S'))
@@ -58,21 +74,7 @@ int 		print_any_string(t_p *p)
 		int i;
 
 		flags_priority(p);
-		if (p->conv_let == 's')
-		{
-			str_preparation(p);
-			p->data_len = count_uni_string_len(&p->data_uint_copy);
-		}
-		else
-		{
-			dup_arr(&p->data_uint, &p->data_uint_copy);
-			p->data_len = count_uni_string_len(&p->data_uint_copy);
-			dup_arr(&p->data_uint, &p->data_uint_copy);
-		}
-
-
-
-
+		which_string(p);
 
 		if (p->precision > p->data_len)
 			res = p->data_len + p->width;
@@ -99,12 +101,6 @@ int 		print_any_string(t_p *p)
 		i = 0;
 		if (p->minus)
 		{
-//			while ((i < p->precision && p->data_uint_copy[i]) || (p->data_uint_copy[i] && !p->precision))
-//			{
-//				masks(&p->data_uint_copy[i]);
-//				printing_unicode(&p->data_uint_copy[i]);
-//				i++;
-//			}
 			printing_any_str(p);
 			print_width_str(p);
 		}
@@ -112,12 +108,6 @@ int 		print_any_string(t_p *p)
 		{
 			print_width_str(p);
 			printing_any_str(p);
-//			while ((i < p->precision && p->data_uint_copy[i]) || (p->data_uint_copy[i] && !p->precision))
-//			{
-//				masks(&p->data_uint_copy[i]);
-//				printing_unicode(&p->data_uint_copy[i]);
-//				i++;
-//			}
 		}
 		return (res);
 	}
