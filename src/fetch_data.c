@@ -7,9 +7,7 @@ int 		fetch_data(va_list *l, t_p *p)
         p->data_sig = va_arg(*l, ssize_t);
     else if (ft_strchr("uU", p->conv_let))
         p->data_uns = va_arg(*l, size_t);
-    else if (ft_strchr("s", p->conv_let))
-        p->data = va_arg(*l, char*);
-    else if (ft_strchr("S", p->conv_let))
+    else if (ft_strchr("sS", p->conv_let))
         p->data_uint = va_arg(*l, unsigned int*);
 	else if (ft_strchr("p", p->conv_let))
 		p->data_uns = va_arg(*l, size_t);

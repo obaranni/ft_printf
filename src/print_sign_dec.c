@@ -7,9 +7,13 @@ int		int_to_sign_dec(t_p *p)
 
 	flags_priority(p);
 	init_sign(p);
+	if (p->minus && NEG)
+		p->space = 0;
 	find_sig_digit_len(p);
 	arg_len = calc_arg_len(p);
 	res = arg_len + p->data_len;
+	if (p->plus && NEG && !p->width)
+		res--;
 	if ((NEG && p->width < p->data_len) ||
 			(p->space && p->width <= p->data_len))
 		res++;
@@ -28,6 +32,8 @@ int		int_to_sign_dec(t_p *p)
 		arg_len--;
 	}
 
+	if (p->plus && !p->width)
+		res++;
 
 	if (p->minus)
 	{
