@@ -19,12 +19,27 @@ int		int_to_sign_dec(t_p *p)
 		res++;
 	if (p->precision > 0)
 		p->zero = 0;
-	p->precision -= DLEN;
+	if (p->data_sig)
+		p->precision -= DLEN;
+
 	if (p->precision > 0)
 	{
-		p->width -= p->precision;
+		if (p->width)
+			p->width -= p->precision;
+		if (p->width < 0)
+			p->width = 0;
 		arg_len -= p->precision;
+		if (!p->data_sig)
+			res--;
 	}
+
+
+
+	if ((p->precision  && p->precision > p->width && p->width > 0))
+		res += p->precision - p->data_len ;
+
+
+
 	if ((p->space && p->width < DLEN)
 		|| (p->space && p->minus && DLEN))
 	{
@@ -45,14 +60,20 @@ int		int_to_sign_dec(t_p *p)
 			arg_len--;
 		}
 		print_precision(p->precision);
-		printing_sig_dec(p);
+		if (p->data_sig || (!p->data_sig && (p->plus || p->size)))
+			printing_sig_dec(p);
+		else
+			res--;
 		print_width(arg_len, p);
 	}
 	else
 	{
 		print_width(arg_len, p);
 		print_precision(p->precision);
-		printing_sig_dec(p);
+		if (p->data_sig || (!p->data_sig && (p->plus || p->size)))
+			printing_sig_dec(p);
+		else
+			res--;
 	}
 //	if (p->space && !p->minus)
 //		res--;

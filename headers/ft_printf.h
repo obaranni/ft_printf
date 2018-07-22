@@ -36,6 +36,7 @@ typedef struct		s_properties
 	int 			minus;
 	int 			plus;
 	int 			width;
+	int 			is_data_zero;
 	int 			precision;
 	char 			size;
 	char 			conv_let;

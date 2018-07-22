@@ -20,6 +20,7 @@ int 		read_flags(char ***s, t_p *p)
 	p->plus = 0;
 	p->minus = 0;
 	p->space = 0;
+//	p->is_data_zero = 0;
 	while (***s)
 	{
 		if (***s == '+')

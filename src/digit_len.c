@@ -5,6 +5,9 @@ int 				init_sign(t_p *p)
 	int 			flag;
 
 	flag = 0;
+//	if (!(ssize_t)p->data_sig)
+//		p->is_data_zero = 1;
+
 	if (p->size == 'z')
         (intmax_t)p->data_sig < 0 ? flag = 1 : 0;
 	else if (p->size == 'j')
