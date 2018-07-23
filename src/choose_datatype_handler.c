@@ -7,8 +7,8 @@ int 	choose_datatype_handler(t_p *p)
 		return (int_to_sign_dec(p));
 	else if (ft_strchr("uU", p->conv_let))
 		return (int_to_unsign_dec(p));
-    else if (ft_strchr("sS", p->conv_let))
-        return (print_any_string(p));
+//    else if (ft_strchr("sS", p->conv_let))
+//        return (print_any_string(p));
 	else if (ft_strchr("pxX", p->conv_let))
 		return (print_hex(p));
 	else if (ft_strchr("oO", p->conv_let))

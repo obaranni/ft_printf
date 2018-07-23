@@ -45,7 +45,8 @@ void		printing_any_str(t_p *p)
 	char 	c;
 
 	i = 0;
-	if (p->conv_let == 'S' || (p->conv_let == 's' && p->size == 'l'))
+	p->local = 1; //////////////
+	if ((p->conv_let == 'S' || (p->conv_let == 's' && p->size == 'l')) && p->local)
 	{
 		while ((i < p->precision && p->data_uint_copy[i]) || (p->data_uint_copy[i] && !p->precision))
 		{
