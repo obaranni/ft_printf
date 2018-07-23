@@ -19,7 +19,7 @@ int					printing_sig_dec(t_p *p)
 		p->data = any_signed_dec_to_str((int)p->data_sig);
 
 	ft_putstr(p->data);
-    if (p->data)
-        free(p->data);
+//    if (p->data)
+//        free(p->data);
 	return (0);
 }

@@ -57,7 +57,7 @@ int			print_octal(t_p *p)
 		else
 			res--;
 	}
-	if (p->data)
-		free(p->data);
+//	if (p->data)
+//		free(p->data);
 	return (res);
 }

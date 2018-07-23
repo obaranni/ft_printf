@@ -18,6 +18,6 @@ int				printing_usig_dec(t_p *p)
         p->data= any_unsigned_dec_to_str((unsigned int)p->data_uns);
 
     ft_putstr(p->data);
-    free(p->data);
+//    free(p->data);
     return (0);
 }
