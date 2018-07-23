@@ -17,7 +17,10 @@ int			queue(char ***box, t_p *p)
 
 void		is_local(t_p *p)
 {
+	char 	*s;
 
+	s = setlocale( 1, NULL) ;
+	printf("local_is:%s:");
 }
 
 int			ft_printf(char *s, ...)
