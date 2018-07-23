@@ -52,6 +52,10 @@ CMakeFiles/ft_printf.dir/src/choose_datatype_handler.c.o: ../headers/ft_printf.h
 CMakeFiles/ft_printf.dir/src/choose_datatype_handler.c.o: ../libft/libft.h
 CMakeFiles/ft_printf.dir/src/choose_datatype_handler.c.o: ../src/choose_datatype_handler.c
 
+CMakeFiles/ft_printf.dir/src/count_spaces.c.o: ../headers/ft_printf.h
+CMakeFiles/ft_printf.dir/src/count_spaces.c.o: ../libft/libft.h
+CMakeFiles/ft_printf.dir/src/count_spaces.c.o: ../src/count_spaces.c
+
 CMakeFiles/ft_printf.dir/src/count_uni_string_len.c.o: ../headers/ft_printf.h
 CMakeFiles/ft_printf.dir/src/count_uni_string_len.c.o: ../libft/libft.h
 CMakeFiles/ft_printf.dir/src/count_uni_string_len.c.o: ../src/count_uni_string_len.c
@@ -92,10 +96,6 @@ CMakeFiles/ft_printf.dir/src/precision.c.o: ../headers/ft_printf.h
 CMakeFiles/ft_printf.dir/src/precision.c.o: ../libft/libft.h
 CMakeFiles/ft_printf.dir/src/precision.c.o: ../src/precision.c
 
-CMakeFiles/ft_printf.dir/src/print_any_string.c.o: ../headers/ft_printf.h
-CMakeFiles/ft_printf.dir/src/print_any_string.c.o: ../libft/libft.h
-CMakeFiles/ft_printf.dir/src/print_any_string.c.o: ../src/print_any_string.c
-
 CMakeFiles/ft_printf.dir/src/print_hex.c.o: ../headers/ft_printf.h
 CMakeFiles/ft_printf.dir/src/print_hex.c.o: ../libft/libft.h
 CMakeFiles/ft_printf.dir/src/print_hex.c.o: ../src/print_hex.c
@@ -123,10 +123,6 @@ CMakeFiles/ft_printf.dir/src/print_string.c.o: ../src/print_string.c
 CMakeFiles/ft_printf.dir/src/print_uni_char.c.o: ../headers/ft_printf.h
 CMakeFiles/ft_printf.dir/src/print_uni_char.c.o: ../libft/libft.h
 CMakeFiles/ft_printf.dir/src/print_uni_char.c.o: ../src/print_uni_char.c
-
-CMakeFiles/ft_printf.dir/src/print_uni_string.c.o: ../headers/ft_printf.h
-CMakeFiles/ft_printf.dir/src/print_uni_string.c.o: ../libft/libft.h
-CMakeFiles/ft_printf.dir/src/print_uni_string.c.o: ../src/print_uni_string.c
 
 CMakeFiles/ft_printf.dir/src/print_unsign_dec.c.o: ../headers/ft_printf.h
 CMakeFiles/ft_printf.dir/src/print_unsign_dec.c.o: ../libft/libft.h

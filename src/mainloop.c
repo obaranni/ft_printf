@@ -20,9 +20,9 @@ void		is_local(t_p *p)
 	char 	*s;
 
 	s = setlocale( LC_ALL, NULL) ;
-	if (*s == 'C')
-		p->local = 0;
-	else
+//	if (*s == 'C')
+//		p->local = 0;
+//	else
 		p->local = 1;
 }
 

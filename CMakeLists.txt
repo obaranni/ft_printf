@@ -38,11 +38,16 @@ add_executable( ft_printf
         src/any_signed_dec_to_str.c
         src/print_letter.c
         src/printing_usig_dec.c
-        src/print_string.c
         src/print_hex.c
         src/print_octal.c
         src/itoa_base_size.c
         src/print_width_char.c
-        src/print_uni_string.c
         src/print_uni_char.c
-        src/masks_for_unicode.c src/printing_unicode.c src/duplicate_array.c src/count_uni_string_len.c src/printing_octal.c src/any_octal_to_str.c src/print_any_string.c)
+        src/masks_for_unicode.c
+        src/duplicate_array.c
+        src/count_uni_string_len.c
+        src/printing_octal.c
+        src/any_octal_to_str.c
+        src/print_string.c
+        src/printing_unicode.c
+        src/count_spaces.c)

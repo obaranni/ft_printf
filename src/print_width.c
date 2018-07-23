@@ -31,6 +31,6 @@ void		print_width(int arg_len, t_p *p)
 	}
 	if (NEG && !p->zero && !p->minus)
 		write(1, "-", 1);
-	if ((POS && !p->zero && !p->minus && p->plus) || (p->precision > 0 && p->plus && p->zero))
+	if (((POS && !p->zero && !p->minus && p->plus) || (p->precision > 0 && p->plus && p->zero)) && !strchr("uU", p->conv_let))
 		write(1, "+", 1);
 }

@@ -128,6 +128,9 @@
 		<Unit filename="/Users/obaranni/projects/ft_printf/src/choose_datatype_handler.c">
 			<Option target="ft_printf"/>
 		</Unit>
+		<Unit filename="/Users/obaranni/projects/ft_printf/src/count_spaces.c">
+			<Option target="ft_printf"/>
+		</Unit>
 		<Unit filename="/Users/obaranni/projects/ft_printf/src/count_uni_string_len.c">
 			<Option target="ft_printf"/>
 		</Unit>
@@ -158,9 +161,6 @@
 		<Unit filename="/Users/obaranni/projects/ft_printf/src/precision.c">
 			<Option target="ft_printf"/>
 		</Unit>
-		<Unit filename="/Users/obaranni/projects/ft_printf/src/print_any_string.c">
-			<Option target="ft_printf"/>
-		</Unit>
 		<Unit filename="/Users/obaranni/projects/ft_printf/src/print_hex.c">
 			<Option target="ft_printf"/>
 		</Unit>
@@ -180,9 +180,6 @@
 			<Option target="ft_printf"/>
 		</Unit>
 		<Unit filename="/Users/obaranni/projects/ft_printf/src/print_uni_char.c">
-			<Option target="ft_printf"/>
-		</Unit>
-		<Unit filename="/Users/obaranni/projects/ft_printf/src/print_uni_string.c">
 			<Option target="ft_printf"/>
 		</Unit>
 		<Unit filename="/Users/obaranni/projects/ft_printf/src/print_unsign_dec.c">

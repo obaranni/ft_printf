@@ -7,7 +7,7 @@ int		int_to_sign_dec(t_p *p)
 
 	flags_priority(p);
 	init_sign(p);
-	if (p->minus && NEG)
+	if (NEG)
 		p->space = 0;
 	find_sig_digit_len(p);
 	arg_len = calc_arg_len(p);

@@ -92,6 +92,10 @@ headers/ft_printf.h
 ../headers/ft_printf.h
 /Users/obaranni/projects/ft_printf/headers/ft_printf.h
 
+/Users/obaranni/projects/ft_printf/src/count_spaces.c
+../headers/ft_printf.h
+/Users/obaranni/projects/ft_printf/headers/ft_printf.h
+
 /Users/obaranni/projects/ft_printf/src/count_uni_string_len.c
 ../headers/ft_printf.h
 /Users/obaranni/projects/ft_printf/headers/ft_printf.h
@@ -132,10 +136,6 @@ headers/ft_printf.h
 ../headers/ft_printf.h
 /Users/obaranni/projects/ft_printf/headers/ft_printf.h
 
-/Users/obaranni/projects/ft_printf/src/print_any_string.c
-../headers/ft_printf.h
-/Users/obaranni/projects/ft_printf/headers/ft_printf.h
-
 /Users/obaranni/projects/ft_printf/src/print_hex.c
 ../headers/ft_printf.h
 /Users/obaranni/projects/ft_printf/headers/ft_printf.h
@@ -161,10 +161,6 @@ headers/ft_printf.h
 /Users/obaranni/projects/ft_printf/headers/ft_printf.h
 
 /Users/obaranni/projects/ft_printf/src/print_uni_char.c
-../headers/ft_printf.h
-/Users/obaranni/projects/ft_printf/headers/ft_printf.h
-
-/Users/obaranni/projects/ft_printf/src/print_uni_string.c
 ../headers/ft_printf.h
 /Users/obaranni/projects/ft_printf/headers/ft_printf.h
 

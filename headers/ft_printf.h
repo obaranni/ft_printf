@@ -47,6 +47,7 @@ typedef struct		s_properties
     int             prec_finded;
 	int 			local;
 }					t_p;
+int					count_spaces(t_p *p);
 int 				print_any_string(t_p *p);
 char        		*any_octal_to_str(t_p *p, size_t nb);
 void				forme_oct(t_p *p);

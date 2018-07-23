@@ -528,6 +528,33 @@ src/choose_datatype_handler.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/choose_datatype_handler.c.s
 .PHONY : src/choose_datatype_handler.c.s
 
+src/count_spaces.o: src/count_spaces.c.o
+
+.PHONY : src/count_spaces.o
+
+# target to build an object file
+src/count_spaces.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/count_spaces.c.o
+.PHONY : src/count_spaces.c.o
+
+src/count_spaces.i: src/count_spaces.c.i
+
+.PHONY : src/count_spaces.i
+
+# target to preprocess a source file
+src/count_spaces.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/count_spaces.c.i
+.PHONY : src/count_spaces.c.i
+
+src/count_spaces.s: src/count_spaces.c.s
+
+.PHONY : src/count_spaces.s
+
+# target to generate assembly for a file
+src/count_spaces.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/count_spaces.c.s
+.PHONY : src/count_spaces.c.s
+
 src/count_uni_string_len.o: src/count_uni_string_len.c.o
 
 .PHONY : src/count_uni_string_len.o
@@ -798,33 +825,6 @@ src/precision.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/precision.c.s
 .PHONY : src/precision.c.s
 
-src/print_any_string.o: src/print_any_string.c.o
-
-.PHONY : src/print_any_string.o
-
-# target to build an object file
-src/print_any_string.c.o:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_any_string.c.o
-.PHONY : src/print_any_string.c.o
-
-src/print_any_string.i: src/print_any_string.c.i
-
-.PHONY : src/print_any_string.i
-
-# target to preprocess a source file
-src/print_any_string.c.i:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_any_string.c.i
-.PHONY : src/print_any_string.c.i
-
-src/print_any_string.s: src/print_any_string.c.s
-
-.PHONY : src/print_any_string.s
-
-# target to generate assembly for a file
-src/print_any_string.c.s:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_any_string.c.s
-.PHONY : src/print_any_string.c.s
-
 src/print_hex.o: src/print_hex.c.o
 
 .PHONY : src/print_hex.o
@@ -1013,33 +1013,6 @@ src/print_uni_char.s: src/print_uni_char.c.s
 src/print_uni_char.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_uni_char.c.s
 .PHONY : src/print_uni_char.c.s
-
-src/print_uni_string.o: src/print_uni_string.c.o
-
-.PHONY : src/print_uni_string.o
-
-# target to build an object file
-src/print_uni_string.c.o:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_uni_string.c.o
-.PHONY : src/print_uni_string.c.o
-
-src/print_uni_string.i: src/print_uni_string.c.i
-
-.PHONY : src/print_uni_string.i
-
-# target to preprocess a source file
-src/print_uni_string.c.i:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_uni_string.c.i
-.PHONY : src/print_uni_string.c.i
-
-src/print_uni_string.s: src/print_uni_string.c.s
-
-.PHONY : src/print_uni_string.s
-
-# target to generate assembly for a file
-src/print_uni_string.c.s:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/print_uni_string.c.s
-.PHONY : src/print_uni_string.c.s
 
 src/print_unsign_dec.o: src/print_unsign_dec.c.o
 
@@ -1392,6 +1365,9 @@ help:
 	@echo "... src/choose_datatype_handler.o"
 	@echo "... src/choose_datatype_handler.i"
 	@echo "... src/choose_datatype_handler.s"
+	@echo "... src/count_spaces.o"
+	@echo "... src/count_spaces.i"
+	@echo "... src/count_spaces.s"
 	@echo "... src/count_uni_string_len.o"
 	@echo "... src/count_uni_string_len.i"
 	@echo "... src/count_uni_string_len.s"
@@ -1422,9 +1398,6 @@ help:
 	@echo "... src/precision.o"
 	@echo "... src/precision.i"
 	@echo "... src/precision.s"
-	@echo "... src/print_any_string.o"
-	@echo "... src/print_any_string.i"
-	@echo "... src/print_any_string.s"
 	@echo "... src/print_hex.o"
 	@echo "... src/print_hex.i"
 	@echo "... src/print_hex.s"
@@ -1446,9 +1419,6 @@ help:
 	@echo "... src/print_uni_char.o"
 	@echo "... src/print_uni_char.i"
 	@echo "... src/print_uni_char.s"
-	@echo "... src/print_uni_string.o"
-	@echo "... src/print_uni_string.i"
-	@echo "... src/print_uni_string.s"
 	@echo "... src/print_unsign_dec.o"
 	@echo "... src/print_unsign_dec.i"
 	@echo "... src/print_unsign_dec.s"
