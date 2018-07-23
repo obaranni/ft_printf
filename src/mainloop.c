@@ -20,10 +20,10 @@ void		is_local(t_p *p)
 	char 	*s;
 
 	s = setlocale( LC_ALL, NULL) ;
-	if (*s)
-		p->local = 1;
-	else
+	if (*s == 'C')
 		p->local = 0;
+	else
+		p->local = 1;
 }
 
 int			ft_printf(char *s, ...)

@@ -16,11 +16,11 @@
 int			main(void) {
     int i = 0;
     char *s;
-    setlocale(LC_CTYPE,"de_DE.UTF-8");
+//    setlocale(LC_CTYPE,"de_DE.UTF-8");
     while (i++ != 1) {
 
-//		printf("Returned: %d\n", printf("%1C", 200));
-//		printf("Returned: %d\n\n", ft_printf("%1C", 200));
+		printf("Returned: %d\n", printf("%1C", 200));
+		printf("Returned: %d\n\n", ft_printf("%1C", 200));
 
 		printf("Returned: %d\n", printf("%c", 200));
 		printf("Returned: %d\n\n", ft_printf("%c", 200));
