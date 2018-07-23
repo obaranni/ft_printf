@@ -42,13 +42,26 @@ void				str_preparation(t_p *p)
 void		printing_any_str(t_p *p)
 {
 	int 	i;
+	char 	c;
 
 	i = 0;
-	while ((i < p->precision && p->data_uint_copy[i]) || (p->data_uint_copy[i] && !p->precision))
+	if (p->conv_let == 'S' || (p->conv_let == 's' && p->size == 'l'))
 	{
-		masks(&p->data_uint_copy[i]);
-		printing_unicode(&p->data_uint_copy[i]);
-		i++;
+		while ((i < p->precision && p->data_uint_copy[i]) || (p->data_uint_copy[i] && !p->precision))
+		{
+			masks(&p->data_uint_copy[i]);
+			printing_unicode(&p->data_uint_copy[i]);
+			i++;
+		}
+	}
+	else
+	{
+		while ((i < p->precision && p->data_uint_copy[i]) || (p->data_uint_copy[i] && !p->precision))
+		{
+			c = (char)(p->data_uint_copy[i] & 0x000000FF);
+			write(1, &c, 1);
+			i++;
+		}
 	}
 	free(p->data_uint_copy);
 }
@@ -56,18 +69,10 @@ void		printing_any_str(t_p *p)
 void		which_string(t_p *p)
 {
 	if (p->conv_let == 's' && !p->size)
-	{
-
 		str_preparation(p);
-		p->data_len = count_uni_string_len(&p->data_uint_copy);
-	}
 	else
-	{
 		dup_arr(&p->data_uint, &p->data_uint_copy);
-		p->data_len = count_uni_string_len(&p->data_uint_copy);
-		free(p->data_uint_copy);
-		dup_arr(&p->data_uint, &p->data_uint_copy);
-	}
+	p->data_len = count_uni_string_len(&p->data_uint_copy);
 }
 
 int 		print_any_string(t_p *p)

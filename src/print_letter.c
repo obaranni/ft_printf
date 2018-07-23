@@ -21,7 +21,7 @@ int		letter(t_p *p)
             arg_len--;
         }
         print_precision(p->precision);
-        ft_putchar(p->conv_let);
+        write(1, &p->conv_let, 1);
         res++;
         print_width_char(arg_len, p);
     }

@@ -17,14 +17,20 @@ int			main(void) {
     int i = 0;
     char *s;
     setlocale(LC_CTYPE,"de_DE.UTF-8");
-    while (i++ != 1) {
+    while (i++ != 10000) {
 
 
-		printf("Returned: %d\n", printf("% d", 9999));
-		printf("Returned: %d\n\n", ft_printf("% d", 9999));
+		printf("Returned: %d\n", printf("%c", 200));
+		printf("Returned: %d\n\n", ft_printf("%c", 200));
 
-		printf("Returned: %d\n", printf("% d", 42));
-		printf("Returned: %d\n\n", ft_printf("% d", 42));
+//		printf("Returned: %d\n", printf("%- d", 9999));
+//		printf("Returned: %d\n\n", ft_printf("%- d", 9999));
+//
+//		printf("Returned: %d\n", printf("%- i", 42));
+//		printf("Returned: %d\n\n", ft_printf("%- i", 42));
+//
+//		printf("Returned: %d\n", printf("% d", 42));
+//		printf("Returned: %d\n\n", ft_printf("% d", 42));
 
 //		printf("Returned: %d\n", printf("%03.2d", 0));
 //		printf("Returned: %d\n\n", ft_printf("%03.2d", 0));
