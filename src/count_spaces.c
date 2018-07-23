@@ -8,7 +8,7 @@ int			count_spaces(t_p *p)
 
 	count = 0;
 	i = 0;
-	if ((p->conv_let == 'S' || (p->conv_let == 's' && p->size == 'l')) && p->local)
+	if ((p->conv_let == 'S' || (p->conv_let == 's' && p->size == 'l')))
 	{
 		while (p->data_uint_copy[i])
 		{

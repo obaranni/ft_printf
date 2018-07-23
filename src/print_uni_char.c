@@ -26,7 +26,7 @@ int		print_uni_char(t_p *p)
 
 
 
-	if ((p->conv_let == 'C' || (p->conv_let == 'c' && p->size == 'l')) && p->local)
+	if ((p->conv_let == 'C' || (p->conv_let == 'c' && p->size == 'l')))
 	{
 		c = (unsigned int *)malloc(sizeof(unsigned int) * 2);
 		c[0] = p->data_uni_char;
@@ -56,7 +56,7 @@ int		print_uni_char(t_p *p)
 	if (p->minus)
 	{
 		print_precision(p->precision);
-		if ((p->conv_let == 'C' || (p->conv_let == 'c' && p->size == 'l')) && p->local)
+		if ((p->conv_let == 'C' || (p->conv_let == 'c' && p->size == 'l')))
 			printing_unicode(c);
 		else
 			write(1, c, 1);
@@ -66,12 +66,12 @@ int		print_uni_char(t_p *p)
 	{
 		print_width_char(arg_len, p);
 		print_precision(p->precision);
-		if ((p->conv_let == 'C' || (p->conv_let == 'c' && p->size == 'l')) && p->local)
+		if ((p->conv_let == 'C' || (p->conv_let == 'c' && p->size == 'l')))
 			printing_unicode(c);
 		else
 			write(1, c, 1);
 	}
-	if ((p->conv_let == 'C' || (p->conv_let == 'c' && p->size == 'l')) && p->local)
+	if ((p->conv_let == 'C' || (p->conv_let == 'c' && p->size == 'l')))
 		free(c);
 	return (res);
 }

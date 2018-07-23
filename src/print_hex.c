@@ -94,20 +94,19 @@ int 		print_hex_cont(t_p *p, char *str)
 	}
 	else
 	{
-		if ((p->sharp && p->data_uns != 0 && p->conv_let == 'x') && (p->width - p->data_len > 0 && p->zero == 1))
+		if (((p->sharp && p->data_uns != 0 && p->conv_let == 'x') && (p->width - p->data_len > 0 && p->zero == 1)) || (!p->data_uns && p->conv_let == 'p' && p->zero))
 			ft_putstr("0x");
 		else if (p->sharp && p->data_uns != 0 && p->conv_let == 'X' && (p->width - p->data_len > 0 && p->zero == 1))
 			ft_putstr("0X");
 		print_width_hex(arg_len, p);
 		print_precision(p->precision);
-		if (p->conv_let == 'p' || (p->sharp && p->data_uns != 0 && p->conv_let == 'x') && !(p->width - p->data_len > 0 && p->zero == 1))
+		if ((p->conv_let == 'p' && (p->data_uns || !p->zero)) || (p->sharp && p->data_uns != 0 && p->conv_let == 'x') && !(p->width - p->data_len > 0 && p->zero == 1))
 			ft_putstr("0x");
 		else if (p->sharp && p->data_uns != 0 && p->conv_let == 'X' && !(p->width - p->data_len > 0 && p->zero == 1))
 			ft_putstr("0X");
         if (!(p->prec_finded && p->precision == 0 && p->data_uns == 0))
 		    ft_putstr(str);
 	}
-//    printf("\n%d  %d  %lu\n", p->width, p->precision, p->data_uns);
     if (!p->data_uns && p->prec_finded && !p->precision && p->width)
     {
         write(1, " ", 1);

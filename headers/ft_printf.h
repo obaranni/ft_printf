@@ -36,7 +36,6 @@ typedef struct		s_properties
 	int 			minus;
 	int 			plus;
 	int 			width;
-	int 			is_data_zero;
 	int 			precision;
 	char 			size;
 	char 			conv_let;
@@ -45,7 +44,6 @@ typedef struct		s_properties
 	int 			data_len;
 	int 			pos;
     int             prec_finded;
-	int 			local;
 }					t_p;
 int					count_spaces(t_p *p);
 int 				print_any_string(t_p *p);

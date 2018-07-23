@@ -25,7 +25,7 @@ static char    set_char(ssize_t i)
     if (i < 0)
         i = -i;
     if (i >= 0 && i <= 9)
-        c = i + '0';
+        c = (char)(i + '0');
     else if (i == 10)
         c = 'A';
     else if (i == 11)
@@ -41,10 +41,10 @@ static char    set_char(ssize_t i)
     return (c);
 }
 
-static void    f(ssize_t value, ssize_t base, char *s, int *i)
+static void    fill(ssize_t value, ssize_t base, char *s, int *i)
 {
     if (value <= -base || value >= base)
-        f(value / base, base, s, i);
+        fill(value / base, base, s, i);
     s[(*i)++] = set_char(value % base);
 }
 
@@ -58,13 +58,15 @@ char        *ft_itoa_base_nominus(ssize_t value, ssize_t base)
     len = f_len(value) + 1;
     if (base < 2 || base > 16 || !(s = (char*)malloc(sizeof(char) * len)))
         return (0);
-    f(value, base, s, &i);
+    fill(value, base, s, &i);
     s[i] = '\0';
     return (s);
 }
 
+
 char        *any_signed_dec_to_str(ssize_t nb)
 {
+
 	return (ft_itoa_base_nominus(nb, 10));
 //    return (ft_itoa_base(nb, 10));
 }
