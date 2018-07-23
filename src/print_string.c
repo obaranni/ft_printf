@@ -82,7 +82,7 @@ void		printing_any_str(t_p *p)
 			i++;
 		}
 	}
-	free(p->data_uint_copy);
+//	free(p->data_uint_copy);
 }
 
 void		which_string(t_p *p)

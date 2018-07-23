@@ -71,7 +71,7 @@ int		print_uni_char(t_p *p)
 		else
 			write(1, c, 1);
 	}
-	if ((p->conv_let == 'C' || (p->conv_let == 'c' && p->size == 'l')))
-		free(c);
+//	if ((p->conv_let == 'C' || (p->conv_let == 'c' && p->size == 'l')))
+//		free(c);
 	return (res);
 }
