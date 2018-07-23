@@ -20,17 +20,36 @@ int		print_uni_char(t_p *p)
 		return (arg_len + 1);
 	}
 
-	c = (unsigned int *)malloc(sizeof(unsigned int) * 2);
-	c[0] = p->data_uni_char;
-	c[1] = 0;
 
-	if (p->width > 1)
+
+
+
+
+
+	p->local = 1; //////////////
+	if ((p->conv_let == 'C' || (p->conv_let == 'c' && p->size == 'l')) && p->local)
 	{
-		p->width = p->width - count_uni_string_len(&c);
+		c = (unsigned int *)malloc(sizeof(unsigned int) * 2);
+		c[0] = p->data_uni_char;
+		c[1] = 0;
+		if (p->width > 0)
+		{
+			p->width = p->width - count_uni_string_len(&c);
+			if (p->width < 0)
+				p->width = 0;
+		}
+		arg_len = p->width;
+		res = arg_len + count_uni_string_len(&c);
+		masks(c);
 	}
-	arg_len = p->width;
-	res = arg_len + count_uni_string_len(&c);
-	masks(c);
+	else
+	{
+		if (p->width > 0)
+			p->width--;
+		arg_len = p->width;
+		res = arg_len + 1;
+		c = &p->data_uni_char;
+	}
 
 
 
@@ -38,15 +57,22 @@ int		print_uni_char(t_p *p)
 	if (p->minus)
 	{
 		print_precision(p->precision);
-		printing_unicode(c);
+		if ((p->conv_let == 'C' || (p->conv_let == 'c' && p->size == 'l')) && p->local)
+			printing_unicode(c);
+		else
+			write(1, c, 1);
 		print_width_char(arg_len, p);
 	}
 	else
 	{
 		print_width_char(arg_len, p);
 		print_precision(p->precision);
-		printing_unicode(c);
+		if ((p->conv_let == 'C' || (p->conv_let == 'c' && p->size == 'l')) && p->local)
+			printing_unicode(c);
+		else
+			write(1, c, 1);
 	}
-	free(c);
+	if ((p->conv_let == 'C' || (p->conv_let == 'c' && p->size == 'l')) && p->local)
+		free(c);
 	return (res);
 }

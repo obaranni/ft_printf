@@ -73,7 +73,17 @@ void		which_string(t_p *p)
 		str_preparation(p);
 	else
 		dup_arr(&p->data_uint, &p->data_uint_copy);
-	p->data_len = count_uni_string_len(&p->data_uint_copy);
+	if ((p->conv_let == 'S' || (p->conv_let == 's' && p->size == 'l')) && p->local)
+		p->data_len = count_uni_string_len(&p->data_uint_copy);
+	else
+	{
+		int i;
+		i=0;
+
+		while (p->data_uint_copy[i])
+			i++;
+		p->data_len = i;
+	}
 }
 
 int 		print_any_string(t_p *p)
