@@ -19,8 +19,11 @@ void		is_local(t_p *p)
 {
 	char 	*s;
 
-	s = setlocale( 1, NULL) ;
-	printf("local_is:%s:");
+	s = setlocale( LC_ALL, NULL) ;
+	if (*s)
+		p->local = 1;
+	else
+		p->local = 0;
 }
 
 int			ft_printf(char *s, ...)

@@ -26,7 +26,6 @@ int		print_uni_char(t_p *p)
 
 
 
-	p->local = 1; //////////////
 	if ((p->conv_let == 'C' || (p->conv_let == 'c' && p->size == 'l')) && p->local)
 	{
 		c = (unsigned int *)malloc(sizeof(unsigned int) * 2);
