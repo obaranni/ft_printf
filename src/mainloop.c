@@ -15,7 +15,7 @@ int			queue(char ***box, t_p *p)
 		return (0);
 }
 
-int			ft_printf(char *s, ...)
+int			ft_printf(const char *s, ...)
 {
 	t_p		p;
 	char 	**box;

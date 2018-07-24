@@ -1113,6 +1113,54 @@ CMakeFiles/ft_printf.dir/src/count_spaces.c.o.provides: CMakeFiles/ft_printf.dir
 CMakeFiles/ft_printf.dir/src/count_spaces.c.o.provides.build: CMakeFiles/ft_printf.dir/src/count_spaces.c.o
 
 
+CMakeFiles/ft_printf.dir/libft/ft_strcmp.c.o: CMakeFiles/ft_printf.dir/flags.make
+CMakeFiles/ft_printf.dir/libft/ft_strcmp.c.o: ../libft/ft_strcmp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obaranni/projects/ft_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/ft_printf.dir/libft/ft_strcmp.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf.dir/libft/ft_strcmp.c.o   -c /Users/obaranni/projects/ft_printf/libft/ft_strcmp.c
+
+CMakeFiles/ft_printf.dir/libft/ft_strcmp.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_printf.dir/libft/ft_strcmp.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obaranni/projects/ft_printf/libft/ft_strcmp.c > CMakeFiles/ft_printf.dir/libft/ft_strcmp.c.i
+
+CMakeFiles/ft_printf.dir/libft/ft_strcmp.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_printf.dir/libft/ft_strcmp.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obaranni/projects/ft_printf/libft/ft_strcmp.c -o CMakeFiles/ft_printf.dir/libft/ft_strcmp.c.s
+
+CMakeFiles/ft_printf.dir/libft/ft_strcmp.c.o.requires:
+
+.PHONY : CMakeFiles/ft_printf.dir/libft/ft_strcmp.c.o.requires
+
+CMakeFiles/ft_printf.dir/libft/ft_strcmp.c.o.provides: CMakeFiles/ft_printf.dir/libft/ft_strcmp.c.o.requires
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/libft/ft_strcmp.c.o.provides.build
+.PHONY : CMakeFiles/ft_printf.dir/libft/ft_strcmp.c.o.provides
+
+CMakeFiles/ft_printf.dir/libft/ft_strcmp.c.o.provides.build: CMakeFiles/ft_printf.dir/libft/ft_strcmp.c.o
+
+
+CMakeFiles/ft_printf.dir/capture.c.o: CMakeFiles/ft_printf.dir/flags.make
+CMakeFiles/ft_printf.dir/capture.c.o: ../capture.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/obaranni/projects/ft_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/ft_printf.dir/capture.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf.dir/capture.c.o   -c /Users/obaranni/projects/ft_printf/capture.c
+
+CMakeFiles/ft_printf.dir/capture.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_printf.dir/capture.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/obaranni/projects/ft_printf/capture.c > CMakeFiles/ft_printf.dir/capture.c.i
+
+CMakeFiles/ft_printf.dir/capture.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_printf.dir/capture.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/obaranni/projects/ft_printf/capture.c -o CMakeFiles/ft_printf.dir/capture.c.s
+
+CMakeFiles/ft_printf.dir/capture.c.o.requires:
+
+.PHONY : CMakeFiles/ft_printf.dir/capture.c.o.requires
+
+CMakeFiles/ft_printf.dir/capture.c.o.provides: CMakeFiles/ft_printf.dir/capture.c.o.requires
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/capture.c.o.provides.build
+.PHONY : CMakeFiles/ft_printf.dir/capture.c.o.provides
+
+CMakeFiles/ft_printf.dir/capture.c.o.provides.build: CMakeFiles/ft_printf.dir/capture.c.o
+
+
 # Object files for target ft_printf
 ft_printf_OBJECTS = \
 "CMakeFiles/ft_printf.dir/main.c.o" \
@@ -1158,7 +1206,9 @@ ft_printf_OBJECTS = \
 "CMakeFiles/ft_printf.dir/src/any_octal_to_str.c.o" \
 "CMakeFiles/ft_printf.dir/src/print_string.c.o" \
 "CMakeFiles/ft_printf.dir/src/printing_unicode.c.o" \
-"CMakeFiles/ft_printf.dir/src/count_spaces.c.o"
+"CMakeFiles/ft_printf.dir/src/count_spaces.c.o" \
+"CMakeFiles/ft_printf.dir/libft/ft_strcmp.c.o" \
+"CMakeFiles/ft_printf.dir/capture.c.o"
 
 # External object files for target ft_printf
 ft_printf_EXTERNAL_OBJECTS =
@@ -1207,9 +1257,11 @@ ft_printf: CMakeFiles/ft_printf.dir/src/any_octal_to_str.c.o
 ft_printf: CMakeFiles/ft_printf.dir/src/print_string.c.o
 ft_printf: CMakeFiles/ft_printf.dir/src/printing_unicode.c.o
 ft_printf: CMakeFiles/ft_printf.dir/src/count_spaces.c.o
+ft_printf: CMakeFiles/ft_printf.dir/libft/ft_strcmp.c.o
+ft_printf: CMakeFiles/ft_printf.dir/capture.c.o
 ft_printf: CMakeFiles/ft_printf.dir/build.make
 ft_printf: CMakeFiles/ft_printf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/obaranni/projects/ft_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Linking C executable ft_printf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/obaranni/projects/ft_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Linking C executable ft_printf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ft_printf.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -1261,6 +1313,8 @@ CMakeFiles/ft_printf.dir/requires: CMakeFiles/ft_printf.dir/src/any_octal_to_str
 CMakeFiles/ft_printf.dir/requires: CMakeFiles/ft_printf.dir/src/print_string.c.o.requires
 CMakeFiles/ft_printf.dir/requires: CMakeFiles/ft_printf.dir/src/printing_unicode.c.o.requires
 CMakeFiles/ft_printf.dir/requires: CMakeFiles/ft_printf.dir/src/count_spaces.c.o.requires
+CMakeFiles/ft_printf.dir/requires: CMakeFiles/ft_printf.dir/libft/ft_strcmp.c.o.requires
+CMakeFiles/ft_printf.dir/requires: CMakeFiles/ft_printf.dir/capture.c.o.requires
 
 .PHONY : CMakeFiles/ft_printf.dir/requires
 

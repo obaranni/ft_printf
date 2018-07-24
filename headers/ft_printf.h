@@ -85,6 +85,6 @@ int					fetch_data(va_list *l, t_p *p);
 int 				digit_len_sig(ssize_t digit);
 int                 digit_len_uns(size_t digit);
 int					calc_arg_len(t_p *p);
-int					ft_printf(char *s, ...);
+int					ft_printf(const char *s, ...);
 
 #endif

@@ -6,6 +6,26 @@
 
 #IncludeRegexTransform: 
 
+/Users/obaranni/projects/ft_printf/capture.c
+stdio.h
+-
+fcntl.h
+-
+unistd.h
+-
+stdlib.h
+-
+capture.h
+/Users/obaranni/projects/ft_printf/capture.h
+errno.h
+-
+assert.h
+-
+unistd.h
+-
+
+/Users/obaranni/projects/ft_printf/capture.h
+
 /Users/obaranni/projects/ft_printf/headers/ft_printf.h
 ../libft/libft.h
 /Users/obaranni/projects/ft_printf/libft/libft.h
@@ -46,6 +66,10 @@ libft.h
 libft.h
 /Users/obaranni/projects/ft_printf/libft/libft.h
 
+/Users/obaranni/projects/ft_printf/libft/ft_strcmp.c
+libft.h
+/Users/obaranni/projects/ft_printf/libft/libft.h
+
 /Users/obaranni/projects/ft_printf/libft/ft_strcpy.c
 libft.h
 /Users/obaranni/projects/ft_printf/libft/libft.h
@@ -71,6 +95,8 @@ string.h
 /Users/obaranni/projects/ft_printf/main.c
 headers/ft_printf.h
 /Users/obaranni/projects/ft_printf/headers/ft_printf.h
+capture.h
+/Users/obaranni/projects/ft_printf/capture.h
 
 /Users/obaranni/projects/ft_printf/src/any_octal_to_str.c
 ../headers/ft_printf.h

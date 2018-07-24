@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/obaranni/projects/ft_printf/capture.c">
+			<Option target="ft_printf"/>
+		</Unit>
+		<Unit filename="/Users/obaranni/projects/ft_printf/capture.h">
+			<Option target="ft_printf"/>
+		</Unit>
 		<Unit filename="/Users/obaranni/projects/ft_printf/headers/ft_printf.h">
 			<Option target="ft_printf"/>
 		</Unit>
@@ -99,6 +105,9 @@
 			<Option target="ft_printf"/>
 		</Unit>
 		<Unit filename="/Users/obaranni/projects/ft_printf/libft/ft_strchr.c">
+			<Option target="ft_printf"/>
+		</Unit>
+		<Unit filename="/Users/obaranni/projects/ft_printf/libft/ft_strcmp.c">
 			<Option target="ft_printf"/>
 		</Unit>
 		<Unit filename="/Users/obaranni/projects/ft_printf/libft/ft_strcpy.c">
