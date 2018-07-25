@@ -5,6 +5,10 @@ int		letter(t_p *p)
     int 	arg_len;
     int 	res;
 
+
+
+    p->pos = 1;
+    p->precision = 0;
     flags_priority(p);
     if (p->width > 1)
         arg_len = p->width - 1;

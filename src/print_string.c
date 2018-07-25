@@ -61,13 +61,16 @@ void				str_preparation(t_p *p)
 void		printing_any_str(t_p *p)
 {
 	int 	i;
+    int     printed_b;
 	char 	c;
 
 	i = 0;
+    printed_b = 0;
 	if ((p->conv_let == 'S' || (p->conv_let == 's' && p->size == 'l')))
 	{
-		while ((i < p->precision && p->data_uint_copy[i]) || (p->data_uint_copy[i] && !p->precision && !p->prec_finded))
+		while ((printed_b < p->precision && i < p->precision && p->data_uint_copy[i]) || (printed_b < p->precision && p->data_uint_copy[i] && !p->precision && !p->prec_finded))
 		{
+            printed_b += count_uni_char_len(p->data_uint_copy[i]);
 			masks(&p->data_uint_copy[i]);
 			printing_unicode(&p->data_uint_copy[i]);
 			i++;
@@ -75,10 +78,11 @@ void		printing_any_str(t_p *p)
 	}
 	else
 	{
-		while ((i < p->precision && p->data_uint_copy[i]) || (p->data_uint_copy[i] && !p->precision && !p->prec_finded))
+		while ((printed_b < p->precision && i < p->precision && p->data_uint_copy[i]) || (p->data_uint_copy[i] && !p->precision && !p->prec_finded))
 		{
 			c = (char)(p->data_uint_copy[i] & 0x000000FF);
 			write(1, &c, 1);
+            printed_b += count_uni_char_len(p->data_uint_copy[i] & 0x000000FF);
 			i++;
 		}
 	}
@@ -106,7 +110,7 @@ void		which_string(t_p *p)
 
 int 		print_any_string(t_p *p)
 {
-	if (!p->data_uint)
+	if (!p->data_uint && !p->width)
 	{
 		ft_putstr("(null)");
 		return ((int) ft_strlen("(null)"));
@@ -116,10 +120,9 @@ int 		print_any_string(t_p *p)
 		int res;
 
 		flags_priority(p);
-		which_string(p);
-//		p->precision = p->precision - p->data_len;
-//		if (p->precision < 0)
-//			p->precision = 0;
+        if (p->data_uint)
+		    which_string(p);
+
 
 		if (!p->precision && p->prec_finded)
 			p->precision = 0;
@@ -141,13 +144,15 @@ int 		print_any_string(t_p *p)
 		///////////////////////////// width = width - numbOfSpacesInString
 		if (p->minus)
 		{
-			printing_any_str(p);
+            if (p->data_uint_copy[0])
+			    printing_any_str(p);
 			print_width_str(p);
 		}
 		else
 		{
 			print_width_str(p);
-			printing_any_str(p);
+            if (p->data_uint_copy[0])
+                printing_any_str(p);
 		}
 		return (res);
 	}

@@ -22,10 +22,6 @@ int		print_uni_char(t_p *p)
 
 
 
-
-
-
-
 	if ((p->conv_let == 'C' || (p->conv_let == 'c' && p->size == 'l')))
 	{
 		c = (unsigned int *)malloc(sizeof(unsigned int) * 2);
@@ -49,7 +45,7 @@ int		print_uni_char(t_p *p)
 		res = arg_len + 1;
 		c = &p->data_uni_char;
 	}
-
+	p->precision = 0;
 
 
 

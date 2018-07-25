@@ -49,6 +49,7 @@ int					count_spaces(t_p *p);
 int 				print_any_string(t_p *p);
 char        		*any_octal_to_str(t_p *p, size_t nb);
 void				forme_oct(t_p *p);
+int                 count_uni_char_len(unsigned int c);
 int 				count_uni_string_len(unsigned int **arr);
 void 				dup_arr(unsigned int **arr1, unsigned int **arr2);
 void				printing_unicode(unsigned int *u);

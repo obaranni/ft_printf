@@ -17,7 +17,7 @@ int			print_octal(t_p *p)
 		p->precision = p->precision - p->data_len;
 
 
-	if (p->sharp && p->precision > 0 && p->data_uns)
+	if (p->sharp && !p->precision && p->data_uns)
 		p->precision++;
 	else if (p->sharp && !p->precision && p->data_uns)
 		p->precision = 1;

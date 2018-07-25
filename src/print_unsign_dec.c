@@ -31,14 +31,20 @@ int		int_to_unsign_dec(t_p *p)
 	if (p->minus)
 	{
 		print_precision(p->precision);
-		printing_usig_dec(p);
+        if (p->data_uns || (!p->data_uns && ((!(!p->precision && p->prec_finded)) || p->size)))
+			printing_usig_dec(p);
+		else
+			res--;
 		print_width(arg_len, p);
 	}
 	else
 	{
 		print_width(arg_len, p);
 		print_precision(p->precision);
-		printing_usig_dec(p);
+		if (p->data_uns || (!p->data_uns && (((p->precision && !p->prec_finded)) || p->size)))
+			printing_usig_dec(p);
+		else
+			res--;
 	}
 	return (res);
 }

@@ -39,12 +39,36 @@ int 		cast_hex(t_p *p)
 int		calc_arg_len_hex(t_p *p)
 {
 	int len;
+    int data_len;
 
 	len = 0;
-	if (p->width > DLEN)
-		len = p->width - DLEN;
-	else if (p->precision > 0 && p->precision > p->width)
-		len = p->precision - DLEN;
+
+    if ((p->sharp || p->conv_let == 'p') && p->precision > DLEN - 2)
+        data_len = DLEN - 2;
+    else
+        data_len = DLEN;
+
+    if (p->precision)
+        p->precision = p->precision - data_len;
+
+    if (p->precision < 0)
+        p->precision = 0;
+
+	if (p->width && !p->precision)
+        p->width = p->width - data_len;
+
+    if (p->width < 0)
+        p->width = 0;
+
+
+    if (p->precision > 0 && p->width > 0)
+        p->width -= p->precision + data_len;
+
+    if (p->width < 0)
+        p->width = 0;
+    len = p->width + p->precision;
+    if (len < 0)
+        len = 0;
 	return (len);
 }
 
@@ -54,25 +78,16 @@ int 		print_hex_cont(t_p *p, char *str)
 	int 	res;
 
 	flags_priority(p);
-	p->data_len = (int)ft_strlen(str); //
+	DLEN = (int)ft_strlen(str); //
 	if (p->conv_let == 'p' || (p->sharp && p->data_uns != 0))
-		p->data_len += 2;
+		DLEN += 2;
 	arg_len = calc_arg_len_hex(p);
-	if (arg_len < 0)//
-		arg_len = 0;//
 	res = arg_len + DLEN;
 	p->plus = 0;
 	if (p->precision > 0)
 		p->zero = 0;
-    if (p->precision > DLEN)
-	    p->precision -= DLEN;
     else
         p->precision = 0;
-	if (p->precision > 0)
-	{
-		p->width -= p->precision;
-		arg_len -= p->precision;
-	}
 	if (p->width < DLEN || p->minus)
 		p->space = 0;
 	if ((p->space && p->width < DLEN)
@@ -90,19 +105,19 @@ int 		print_hex_cont(t_p *p, char *str)
 			ft_putstr("0X");
         if (!(p->prec_finded && p->precision == 0 && p->data_uns == 0))
             ft_putstr(str);
-		print_width_hex(arg_len, p);
+		print_width_hex(p->width, p);
 	}
 	else
 	{
-		if (((p->sharp && p->data_uns != 0 && p->conv_let == 'x') && (p->width - p->data_len > 0 && p->zero == 1)) || (!p->data_uns && p->conv_let == 'p' && p->zero))
+		if (((p->sharp && p->data_uns != 0 && p->conv_let == 'x') && ((p->width && p->zero) || p ->precision)) || (p->conv_let == 'p' && (p->zero || p->precision)))
 			ft_putstr("0x");
-		else if (p->sharp && p->data_uns != 0 && p->conv_let == 'X' && (p->width - p->data_len > 0 && p->zero == 1))
+		else if (p->sharp && p->data_uns != 0 && p->conv_let == 'X' && (p->width > 0 && p->zero == 1))
 			ft_putstr("0X");
-		print_width_hex(arg_len, p);
+		print_width_hex(p->width, p);
 		print_precision(p->precision);
-		if ((p->conv_let == 'p' && (p->data_uns || !p->zero)) || (p->sharp && p->data_uns != 0 && p->conv_let == 'x') && !(p->width - p->data_len > 0 && p->zero == 1))
+		if ((p->conv_let == 'p' && ((!p->zero && !p->precision))) || (p->sharp && p->data_uns != 0 && p->conv_let == 'x' && !p->precision) && !(p->width > 0 && p->zero == 1))
 			ft_putstr("0x");
-		else if (p->sharp && p->data_uns != 0 && p->conv_let == 'X' && !(p->width - p->data_len > 0 && p->zero == 1))
+		else if (p->sharp && p->data_uns != 0 && p->conv_let == 'X' && !(p->width > 0 && p->zero == 1))
 			ft_putstr("0X");
         if (!(p->prec_finded && p->precision == 0 && p->data_uns == 0))
 		    ft_putstr(str);

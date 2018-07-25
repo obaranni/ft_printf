@@ -15,12 +15,16 @@ int		int_to_sign_dec(t_p *p)
 	if (p->plus && NEG && !p->width)
 		res--;
 	if ((NEG && p->width < p->data_len) ||
-			(p->space && p->width <= p->data_len))
+			(p->space && p->width <= p->data_len) ||
+			(NEG && p->width > p->data_len && p->precision
+			 && p->width < p->precision))
 		res++;
 	if (p->precision > 0)
 		p->zero = 0;
 	if (p->data_sig)
 		p->precision -= DLEN;
+
+
 
 	if (p->precision > 0)
 	{
@@ -32,7 +36,6 @@ int		int_to_sign_dec(t_p *p)
 		if (!p->data_sig)
 			res--;
 	}
-
 
 
 	if ((p->precision  && p->precision > p->width && p->width > 0))
@@ -50,6 +53,14 @@ int		int_to_sign_dec(t_p *p)
 	if (p->plus && !p->width)
 		res++;
 
+	if (!p->data_sig && (p->plus || p->minus) && p->width)
+	{
+		res--;
+		arg_len--;
+	}
+	if (p->data_sig && p->plus && p->width && p->width <= DLEN)
+		res++;
+
 	if (p->minus)
 	{
 		if (NEG)
@@ -60,7 +71,7 @@ int		int_to_sign_dec(t_p *p)
 			arg_len--;
 		}
 		print_precision(p->precision);
-		if (p->data_sig || (!p->data_sig && (p->plus || p->size)))
+		if (p->data_sig || (!p->data_sig && (p->plus || p->size || p->minus)))
 			printing_sig_dec(p);
 		else
 			res--;
@@ -70,7 +81,7 @@ int		int_to_sign_dec(t_p *p)
 	{
 		print_width(arg_len, p);
 		print_precision(p->precision);
-		if (p->data_sig || (!p->data_sig && (p->plus || p->size)))
+		if (p->data_sig || (!p->data_sig && (p->plus || p->size || p->minus)))
 			printing_sig_dec(p);
 		else
 			res--;

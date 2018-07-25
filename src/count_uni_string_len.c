@@ -28,6 +28,20 @@
 //	return (len);
 //}
 
+int 			count_uni_char_len(unsigned int c)
+{
+	if (c <= 0x7F)
+		return (1);
+	else if (c <= 0x7FF)
+		return (2);
+	else if (c <= 0xFFFF)
+		return (3);
+	else if (c <= 0x1FFFFF)
+		return (4);
+	else
+		return (0);
+}
+
 int 			count_uni_string_len(unsigned int **arr)
 {
 	unsigned int *box;
@@ -38,14 +52,7 @@ int 			count_uni_string_len(unsigned int **arr)
 	len = 0;
 	while (*(*arr))
 	{
-		if (*(*arr) <= 0x7F)
-			len += 1;
-		else if (*(*arr) <= 0x7FF)
-			len += 2;
-		else if (*(*arr) <= 0xFFFF)
-			len += 3;
-		else if (*(*arr) <= 0x1FFFFF)
-			len += 4;
+		len += count_uni_char_len(*(*arr));
 		(*arr)++;
 	}
 	*arr = box;
