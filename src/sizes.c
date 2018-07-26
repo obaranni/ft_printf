@@ -89,7 +89,7 @@ read_size(char ***s, t_p *p)
         find_sizes(end, p);
         while (SIZES(START))
             (**s)++;
-//        free(end);
+        free(end);
     }
     return (0);
 }

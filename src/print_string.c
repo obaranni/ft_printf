@@ -68,10 +68,10 @@ void		printing_any_str(t_p *p)
     printed_b = 0;
 	if ((p->conv_let == 'S' || (p->conv_let == 's' && p->size == 'l')))
 	{
-		while ((printed_b <= p->precision && i < p->precision && p->data_uint_copy[i]) || (printed_b <= p->precision && p->data_uint_copy[i] && !p->precision && !p->prec_finded))
+		while ((printed_b < p->precision && i < p->precision && p->data_uint_copy[i]) || (printed_b < p->precision && p->data_uint_copy[i] && !p->precision && !p->prec_finded))
 		{
             printed_b += count_uni_char_len(p->data_uint_copy[i]);
-            if (printed_b  <= p->precision)
+            if (printed_b <= p->precision)
             {
                 masks(&p->data_uint_copy[i]);
                 printing_unicode(&p->data_uint_copy[i]);
@@ -81,7 +81,7 @@ void		printing_any_str(t_p *p)
 	}
 	else
 	{
-		while ((printed_b <= p->precision && i < p->precision && p->data_uint_copy[i]) || (p->data_uint_copy[i] && !p->precision && !p->prec_finded))
+		while ((printed_b < p->precision && i < p->precision && p->data_uint_copy[i]) || (p->data_uint_copy[i] && !p->precision && !p->prec_finded))
 		{
 			c = (char)(p->data_uint_copy[i] & 0x000000FF);
 			write(1, &c, 1);
@@ -89,7 +89,8 @@ void		printing_any_str(t_p *p)
 			i++;
 		}
 	}
-//	free(p->data_uint_copy);
+    if (p->data_uint_copy[0])
+	    free(p->data_uint_copy);
 }
 
 void		which_string(t_p *p)
@@ -107,56 +108,70 @@ void		which_string(t_p *p)
 
 		while (p->data_uint_copy[i])
 			i++;
-		p->data_len = i;
+        DLEN = i;
 	}
 }
 
 int 		print_any_string(t_p *p)
 {
-	if (!p->data_uint && !p->width)
+	if (!p->data_uint && !p->width)///////////tut rabotaem
 	{
 		ft_putstr("(null)");
 		return ((int) ft_strlen("(null)"));
 	}
-	else
-	{
-		int res;
+	else {
+        int res;
 
-		flags_priority(p);
+        flags_priority(p);
         if (p->data_uint)
-		    which_string(p);
+            which_string(p);
 
 
-		if (!p->precision && p->prec_finded)
-			p->precision = 0;
-		else if (!p->precision || DLEN <= p->precision)
-			p->precision = DLEN;
+        if (!p->precision && p->prec_finded)
+            p->precision = 0;
+        else if (!p->precision || DLEN <= p->precision)
+            p->precision = p->data_len;
+        else if (DLEN > p->precision)
+        {
+            int new_prec = 0;
+            int i = 0;
+
+            while (p->data_uint_copy[i])
+            {
+                if (count_uni_char_len(p->data_uint_copy[i]) + new_prec > p->precision)
+                    break ;
+                else
+                    new_prec += count_uni_char_len(p->data_uint_copy[i]);
+                i++;
+            }
+            p->precision = new_prec;
+        }
+
+        if (p->width && p->precision)
+        {
+            p->width -= p->precision;
+        }
 
 
-		if (p->data_uint_copy[0])
-			p->width = p->width - p->precision;
-
-
-        if (p->width)
-            p->width -= p->data_len/4;
 		if (p->width < 0)
 			p->width = 0;
 
-		if (p->data_uint_copy[0])
+		if (p->data_uint_copy)
 			res = p->width + p->precision;
 		else
 			res = p->width;
 		///////////////////////////// width = width - numbOfSpacesInString
+        ///////////////////////////// incorrect precision calculation => incorrect width calculation => incorrect output!
 		if (p->minus)
 		{
-            if (p->data_uint_copy[0])
+            if (p->data_uint_copy)
 			    printing_any_str(p);
 			print_width_str(p);
 		}
 		else
 		{
 			print_width_str(p);
-            if (p->data_uint_copy[0])
+            if (p->data_uint_copy)
                 printing_any_str(p);
 		}
 		return (res);

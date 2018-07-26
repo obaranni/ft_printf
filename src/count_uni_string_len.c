@@ -38,8 +38,7 @@ int 			count_uni_char_len(unsigned int c)
 		return (3);
 	else if (c <= 0x1FFFFF)
 		return (4);
-	else
-		return (0);
+    return (0);
 }
 
 int 			count_uni_string_len(unsigned int **arr)

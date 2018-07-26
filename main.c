@@ -31,12 +31,12 @@ int			main(void) {
 
     while (i++ != 1) {
 		capture_stdout();
-		printf_ret = printf("%15.4S", L"我是一只猫。");
+		printf_ret = printf("%*d", 5, 42);
 		printf_out = strdup(capture_stdout_get_buffer());
 //
 //
 //
-		ft_printf_ret = ft_printf("%15.4S", L"我是一只猫。");
+		ft_printf_ret = ft_printf("%*d", 5, 42);
 		ft_printf_out = strdup(capture_stdout_get_buffer());
 		capture_stdout_destroy();
 		if (ft_strcmp(ft_printf_out, printf_out) != 0 || printf_ret != ft_printf_ret)
@@ -53,9 +53,9 @@ int			main(void) {
 
 //		printf("40 Hello \"%s %C %d %p %x %% %S\"\n", "bonjour ", L'該', 42, &free, 42, L"لحم خنزير");
 //		ft_printf("40 Hello \"%s %C %d %p %x %% %S\"\n", "bonjour ", L'該', 42, &free, 42, L"لحم خنزير");
-
-
-
+//
+//
+//
 //		printf("Returned: %d\n", printf("%1C", 200));
 //		printf("Returned: %d\n\n", ft_printf("%1C", 200));
 //
