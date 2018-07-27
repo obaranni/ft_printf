@@ -31,12 +31,12 @@ int			main(void) {
 
     while (i++ != 1) {
 		capture_stdout();
-		printf_ret = printf("%*d", 5, 42);
+		printf_ret = printf("%.4d\n", 2147483647);
 		printf_out = strdup(capture_stdout_get_buffer());
 //
 //
 //
-		ft_printf_ret = ft_printf("%*d", 5, 42);
+		ft_printf_ret = ft_printf("%.4d\n", 2147483647);
 		ft_printf_out = strdup(capture_stdout_get_buffer());
 		capture_stdout_destroy();
 		if (ft_strcmp(ft_printf_out, printf_out) != 0 || printf_ret != ft_printf_ret)

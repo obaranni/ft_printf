@@ -58,7 +58,8 @@ int		int_to_sign_dec(t_p *p)
 		res--;
 		arg_len--;
 	}
-	if (p->data_sig && p->plus && p->width && p->width <= DLEN)
+	if ((p->data_sig && p->plus && p->width && p->width <= DLEN) ||
+			(p->space && (p->width < p->precision)))
 		res++;
 
 	if (p->minus)
