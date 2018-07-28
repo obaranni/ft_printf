@@ -27,16 +27,16 @@ int			main(void) {
 
     int i = 0;
     char *s;
-    setlocale(LC_CTYPE,"de_DE.UTF-8");
+    setlocale(LC_ALL, "");
 
-    while (i++ != 1) {
+    while (i++ != 100) {
 		capture_stdout();
-		printf_ret = printf("%.4d\n", 2147483647);
+		printf_ret = printf("%s %C %d %p %x %% %S", "bonjour ", L'該', 42, &free, 42, L"لحم خنزير");
 		printf_out = strdup(capture_stdout_get_buffer());
-//
-//
-//
-		ft_printf_ret = ft_printf("%.4d\n", 2147483647);
+
+
+
+		ft_printf_ret = ft_printf("%s %C %d %p %x %% %S", "bonjour ", L'該', 42, &free, 42, L"لحم خنزير");
 		ft_printf_out = strdup(capture_stdout_get_buffer());
 		capture_stdout_destroy();
 		if (ft_strcmp(ft_printf_out, printf_out) != 0 || printf_ret != ft_printf_ret)
