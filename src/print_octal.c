@@ -1,44 +1,46 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   print_octal.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: obaranni <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/07/28 21:05:24 by obaranni          #+#    #+#             */
+/*   Updated: 2018/07/28 21:05:30 by obaranni         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../headers/ft_printf.h"
 
-int			print_octal(t_p *p)
+void		shame_octal(t_p *p, int *res)
 {
-	int 	res;
-
-
 	p->pos = 1;
 	p->plus = 0;
 	flags_priority(p);
 	forme_oct(p);
-
-
-	res = p->data_len;
-
+	*res = p->data_len;
 	if (p->precision > 0)
 		p->precision = p->precision - p->data_len;
-
-
 	if (p->sharp && !p->precision && p->data_uns)
 		p->precision++;
 	else if (p->sharp && !p->precision && p->data_uns)
 		p->precision = 1;
-
-
-
 	if (p->precision > 0)
 	{
-		res += p->precision;
+		*res += p->precision;
 		p->width -= p->precision;
 	}
-
 	if (p->width && p->data_uns)
-	{
 		p->width -= p->data_len;
-
-	}
 	if (p->width > 0)
-		res += p->width;
+		*res += p->width;
+}
 
+int			print_octal(t_p *p)
+{
+	int		res;
 
+	shame_octal(p, &res);
 	if (p->minus)
 	{
 		print_precision(p->precision);

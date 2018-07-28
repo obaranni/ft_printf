@@ -1,13 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   itoa_base_size.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: obaranni <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/07/28 19:00:00 by obaranni          #+#    #+#             */
+/*   Updated: 2018/07/28 19:01:18 by obaranni         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../headers/ft_printf.h"
 
-/*
- * uppercase - 55
- * lowercase - 83
- */
-
-char 			*zero()
+char			*zero(void)
 {
-	char 		*str;
+	char		*str;
+
 	if (!(str = (char*)malloc(sizeof(char) * 2)))
 		return (0);
 	str[0] = '0';
@@ -17,9 +25,9 @@ char 			*zero()
 
 char			*itoa_base_sized(size_t n, int base, int size)
 {
-	char 		*res;
-	size_t  	tmp;
-	int 		i;
+	char		*res;
+	size_t		tmp;
+	int			i;
 
 	i = 0;
 	tmp = n;

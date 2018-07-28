@@ -134,6 +134,9 @@
 		<Unit filename="/Users/obaranni/projects/ft_printf/src/calculate_argument_lenth.c">
 			<Option target="ft_printf"/>
 		</Unit>
+		<Unit filename="/Users/obaranni/projects/ft_printf/src/cast_hex.c">
+			<Option target="ft_printf"/>
+		</Unit>
 		<Unit filename="/Users/obaranni/projects/ft_printf/src/choose_datatype_handler.c">
 			<Option target="ft_printf"/>
 		</Unit>
@@ -204,6 +207,9 @@
 			<Option target="ft_printf"/>
 		</Unit>
 		<Unit filename="/Users/obaranni/projects/ft_printf/src/printing_sig_dec.c">
+			<Option target="ft_printf"/>
+		</Unit>
+		<Unit filename="/Users/obaranni/projects/ft_printf/src/printing_string.c">
 			<Option target="ft_printf"/>
 		</Unit>
 		<Unit filename="/Users/obaranni/projects/ft_printf/src/printing_unicode.c">

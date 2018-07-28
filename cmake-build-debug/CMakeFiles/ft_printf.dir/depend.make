@@ -55,6 +55,10 @@ CMakeFiles/ft_printf.dir/src/calculate_argument_lenth.c.o: ../headers/ft_printf.
 CMakeFiles/ft_printf.dir/src/calculate_argument_lenth.c.o: ../libft/libft.h
 CMakeFiles/ft_printf.dir/src/calculate_argument_lenth.c.o: ../src/calculate_argument_lenth.c
 
+CMakeFiles/ft_printf.dir/src/cast_hex.c.o: ../headers/ft_printf.h
+CMakeFiles/ft_printf.dir/src/cast_hex.c.o: ../libft/libft.h
+CMakeFiles/ft_printf.dir/src/cast_hex.c.o: ../src/cast_hex.c
+
 CMakeFiles/ft_printf.dir/src/choose_datatype_handler.c.o: ../headers/ft_printf.h
 CMakeFiles/ft_printf.dir/src/choose_datatype_handler.c.o: ../libft/libft.h
 CMakeFiles/ft_printf.dir/src/choose_datatype_handler.c.o: ../src/choose_datatype_handler.c

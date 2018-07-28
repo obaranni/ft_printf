@@ -1,5 +1,37 @@
 #include "../headers/ft_printf.h"
 
+void			print_width_str(t_p *p)
+{
+    int 		arg_len;
+
+    arg_len = p->width;
+    while (arg_len > 0)
+    {
+        if (p->zero)
+            write(1, "0", 1);
+        else
+            write(1, " ", 1);
+        arg_len--;
+    }
+}
+
+void		print_width_hex(int arg_len, t_p *p)
+{
+	if (p->space && p->zero)
+	{
+		write(1, " ", 1);
+		arg_len--;
+	}
+	while (arg_len > 0)
+	{
+		if (p->zero)
+			write(1, "0", 1);
+		else
+			write(1, " ", 1);
+		arg_len--;
+	}
+}
+
 void		print_width(int arg_len, t_p *p)
 {
 	if (NEG && p->zero)

@@ -555,6 +555,33 @@ src/calculate_argument_lenth.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/calculate_argument_lenth.c.s
 .PHONY : src/calculate_argument_lenth.c.s
 
+src/cast_hex.o: src/cast_hex.c.o
+
+.PHONY : src/cast_hex.o
+
+# target to build an object file
+src/cast_hex.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/cast_hex.c.o
+.PHONY : src/cast_hex.c.o
+
+src/cast_hex.i: src/cast_hex.c.i
+
+.PHONY : src/cast_hex.i
+
+# target to preprocess a source file
+src/cast_hex.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/cast_hex.c.i
+.PHONY : src/cast_hex.c.i
+
+src/cast_hex.s: src/cast_hex.c.s
+
+.PHONY : src/cast_hex.s
+
+# target to generate assembly for a file
+src/cast_hex.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/cast_hex.c.s
+.PHONY : src/cast_hex.c.s
+
 src/choose_datatype_handler.o: src/choose_datatype_handler.c.o
 
 .PHONY : src/choose_datatype_handler.o
@@ -1203,6 +1230,33 @@ src/printing_sig_dec.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/printing_sig_dec.c.s
 .PHONY : src/printing_sig_dec.c.s
 
+src/printing_string.o: src/printing_string.c.o
+
+.PHONY : src/printing_string.o
+
+# target to build an object file
+src/printing_string.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/printing_string.c.o
+.PHONY : src/printing_string.c.o
+
+src/printing_string.i: src/printing_string.c.i
+
+.PHONY : src/printing_string.i
+
+# target to preprocess a source file
+src/printing_string.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/printing_string.c.i
+.PHONY : src/printing_string.c.i
+
+src/printing_string.s: src/printing_string.c.s
+
+.PHONY : src/printing_string.s
+
+# target to generate assembly for a file
+src/printing_string.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/printing_string.c.s
+.PHONY : src/printing_string.c.s
+
 src/printing_unicode.o: src/printing_unicode.c.o
 
 .PHONY : src/printing_unicode.o
@@ -1422,6 +1476,9 @@ help:
 	@echo "... src/calculate_argument_lenth.o"
 	@echo "... src/calculate_argument_lenth.i"
 	@echo "... src/calculate_argument_lenth.s"
+	@echo "... src/cast_hex.o"
+	@echo "... src/cast_hex.i"
+	@echo "... src/cast_hex.s"
 	@echo "... src/choose_datatype_handler.o"
 	@echo "... src/choose_datatype_handler.i"
 	@echo "... src/choose_datatype_handler.s"
@@ -1494,6 +1551,9 @@ help:
 	@echo "... src/printing_sig_dec.o"
 	@echo "... src/printing_sig_dec.i"
 	@echo "... src/printing_sig_dec.s"
+	@echo "... src/printing_string.o"
+	@echo "... src/printing_string.i"
+	@echo "... src/printing_string.s"
 	@echo "... src/printing_unicode.o"
 	@echo "... src/printing_unicode.i"
 	@echo "... src/printing_unicode.s"

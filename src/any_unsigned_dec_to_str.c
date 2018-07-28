@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   any_unsigned_dec_to_str.c                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: obaranni <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/07/28 20:35:12 by obaranni          #+#    #+#             */
+/*   Updated: 2018/07/28 20:35:13 by obaranni         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../headers/ft_printf.h"
 
-char        *any_unsigned_dec_to_str(size_t nb)
+char		*any_unsigned_dec_to_str(size_t nb)
 {
-    return (ft_itoa_base(nb, 10));
+	return (ft_itoa_base(nb, 10));
 }

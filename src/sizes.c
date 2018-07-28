@@ -1,12 +1,24 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   sizes.c                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: obaranni <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/07/28 18:39:41 by obaranni          #+#    #+#             */
+/*   Updated: 2018/07/28 18:40:52 by obaranni         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../headers/ft_printf.h"
 #define START ***s
 #define END *end
 #define SUBSTR (*s == 'h' || *s == 'l' || *s == 'j' || *s == 'z' || *s == '*')
 #define SIZES(p) (p == 'h' || p == 'l' || p == 'j' || p == 'z')
 
-int 		find_pair(char *s, char c)
+int			find_pair(char *s, char c)
 {
-	int 	flag;
+	int		flag;
 
 	flag = 0;
 	while (SUBSTR)
@@ -22,17 +34,12 @@ int 		find_pair(char *s, char c)
 	return (flag);
 }
 
-
-
-
-
 int			find_char(char *s, char c)
 {
-	int 	flag;
+	int		flag;
 
 	flag = 0;
 	while (*s == 'h' || *s == 'l' || *s == 'j' || *s == 'z' || *s == '*')
-//    while ()
 	{
 		if (*s == c)
 		{
@@ -44,7 +51,7 @@ int			find_char(char *s, char c)
 	return (flag);
 }
 
-int 		find_sizes(char *s, t_p *p)
+int			find_sizes(char *s, t_p *p)
 {
 	if (find_char(s, 'z'))
 		p->size = 'z';
@@ -65,31 +72,26 @@ int 		find_sizes(char *s, t_p *p)
 	return (0);
 }
 
-
-int
-
-read_size(char ***s, t_p *p)
+int			read_size(char ***s, t_p *p)
 {
-    char 	*end;
-    size_t	len;
+	char	*end;
+	size_t	len;
 
-    p->size = 0;
-    len = 0;
-
-
-    if ((***s == 'h' || ***s == 'l' || ***s == 'j' || ***s == 'z'))
-    {
-        end = **s;
-        while (SIZES(END))
-        {
-            len++;
-            end++;
-        }
-        end = ft_strsub(**s, 0, len);
-        find_sizes(end, p);
-        while (SIZES(START))
-            (**s)++;
-        free(end);
-    }
-    return (0);
+	p->size = 0;
+	len = 0;
+	if ((***s == 'h' || ***s == 'l' || ***s == 'j' || ***s == 'z'))
+	{
+		end = **s;
+		while (SIZES(END))
+		{
+			len++;
+			end++;
+		}
+		end = ft_strsub(**s, 0, len);
+		find_sizes(end, p);
+		while (SIZES(START))
+			(**s)++;
+		free(end);
+	}
+	return (0);
 }

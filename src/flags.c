@@ -1,26 +1,35 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   flags.c                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: obaranni <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/07/28 18:57:11 by obaranni          #+#    #+#             */
+/*   Updated: 2018/07/28 18:57:13 by obaranni         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../headers/ft_printf.h"
 
-int 		flags_priority(t_p *p)
+int			flags_priority(t_p *p)
 {
 	if (p->minus)
 		p->zero = 0;
 	if (p->plus)
 		p->space = 0;
-//	if (p->space && !p->pos)
-//		p->space = 0;
 	if (ft_strchr("DOU", p->conv_let))
 		p->size = 'z';
 	return (0);
 }
 
-int 		read_flags(char ***s, t_p *p)
+int			read_flags(char ***s, t_p *p)
 {
 	p->sharp = 0;
 	p->zero = 0;
 	p->plus = 0;
 	p->minus = 0;
 	p->space = 0;
-//	p->is_data_zero = 0;
 	while (***s)
 	{
 		if (***s == '+')

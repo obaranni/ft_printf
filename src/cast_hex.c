@@ -1,30 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   type_cast.c                                        :+:      :+:    :+:   */
+/*   cast_hex.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: obaranni <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/07/28 18:39:04 by obaranni          #+#    #+#             */
-/*   Updated: 2018/07/28 18:39:06 by obaranni         ###   ########.fr       */
+/*   Created: 2018/07/28 20:59:40 by obaranni          #+#    #+#             */
+/*   Updated: 2018/07/28 20:59:41 by obaranni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../headers/ft_printf.h"
 
-int			type_cast(t_p *p)
+int			cast_hex(t_p *p)
 {
 	if (p->size == 'z')
-		printf("I will cast it to size_t!\n");
+		p->data_uns = ((size_t)p->data_uns);
 	else if (p->size == 'j')
-		printf("I will cast it to intmax_t!\n");
+		p->data_uns = ((intmax_t)p->data_uns);
 	else if (p->size == 'L')
-		printf("I will cast it to long long!\n");
+		p->data_uns = ((unsigned long long)p->data_uns);
 	else if (p->size == 'l')
-		printf("I will cast it to long!\n");
+		p->data_uns = (((unsigned long long)p->data_uns));
 	else if (p->size == 'h')
-		printf("I will cast it to short!\n");
+		p->data_uns = (((unsigned short)p->data_uns));
 	else if (p->size == 'H')
-		printf("I will cast it to char!\n");
+		p->data_uns = (((unsigned char)p->data_uns));
+	else
+		p->data_uns = (((unsigned int)p->data_uns));
 	return (0);
 }

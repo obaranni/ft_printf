@@ -44,7 +44,14 @@ typedef struct		s_properties
 	int 			data_len;
 	int 			pos;
     int             prec_finded;
+    int             *b;
+    va_list         l;
 }					t_p;
+void                printing_any_str(t_p *p);
+void                print_width_str(t_p *p);
+int                 cast_hex(t_p *p);
+int                 calc_arg_len_hex(t_p *p);
+void                print_width_hex(int arg_len, t_p *p);
 int					count_spaces(t_p *p);
 int 				print_any_string(t_p *p);
 char        		*any_octal_to_str(t_p *p, size_t nb);

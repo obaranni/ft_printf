@@ -1,8 +1,20 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   printing_unicode.c                                 :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: obaranni <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/07/28 18:46:09 by obaranni          #+#    #+#             */
+/*   Updated: 2018/07/28 18:46:32 by obaranni         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../headers/ft_printf.h"
 
-void			printing_unicode(unsigned int *u)
+void				printing_unicode(unsigned int *u)
 {
-	int 		i;
+	int				i;
 	unsigned int	f;
 
 	i = 0;

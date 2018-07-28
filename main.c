@@ -29,26 +29,26 @@ int			main(void) {
     char *s;
     setlocale(LC_ALL, "");
 
-    while (i++ != 100) {
-		capture_stdout();
-		printf_ret = printf("%s %C %d %p %x %% %S", "bonjour ", L'該', 42, &free, 42, L"لحم خنزير");
-		printf_out = strdup(capture_stdout_get_buffer());
-
-
-
-		ft_printf_ret = ft_printf("%s %C %d %p %x %% %S", "bonjour ", L'該', 42, &free, 42, L"لحم خنزير");
-		ft_printf_out = strdup(capture_stdout_get_buffer());
-		capture_stdout_destroy();
-		if (ft_strcmp(ft_printf_out, printf_out) != 0 || printf_ret != ft_printf_ret)
-		{
-			fprintf(stderr, "\nTEST not my\n");
-			fprintf(stderr, "=====   printf_out  =====\nret: %d\n%s\n", printf_ret, printf_out);
-			fprintf(stderr,   "=========================\n");
-
-			fprintf(stderr, "\nTEST my my\n");
-			fprintf(stderr, "=====   printf_out  =====\nret: %d\n%s\n", ft_printf_ret, ft_printf_out);
-			fprintf(stderr,   "=========================\n");
-		}
+    while (i++ != 1) {
+//		capture_stdout();
+//		printf_ret = printf(" %C  ",  L'該');
+//		printf_out = strdup(capture_stdout_get_buffer());
+//
+//
+//
+//		ft_printf_ret = ft_printf(" %C   ",  L'該');
+//		ft_printf_out = strdup(capture_stdout_get_buffer());
+//		capture_stdout_destroy();
+//		if (ft_strcmp(ft_printf_out, printf_out) != 0 || printf_ret != ft_printf_ret)
+//		{
+//			fprintf(stderr, "\nTEST not my\n");
+//			fprintf(stderr, "=====   printf_out  =====\nret: %d\n%s\n", printf_ret, printf_out);
+//			fprintf(stderr,   "=========================\n");
+//
+//			fprintf(stderr, "\nTEST my my\n");
+//			fprintf(stderr, "=====   printf_out  =====\nret: %d\n%s\n", ft_printf_ret, ft_printf_out);
+//			fprintf(stderr,   "=========================\n");
+//		}
 
 
 //		printf("40 Hello \"%s %C %d %p %x %% %S\"\n", "bonjour ", L'該', 42, &free, 42, L"لحم خنزير");
@@ -56,8 +56,8 @@ int			main(void) {
 //
 //
 //
-//		printf("Returned: %d\n", printf("%1C", 200));
-//		printf("Returned: %d\n\n", ft_printf("%1C", 200));
+		printf("Returned: %d\n", printf("%"));
+		printf("Returned: %d\n\n", ft_printf("%"));
 //
 //		printf("Returned: %d\n", printf("%1C", 200));
 //		printf("Returned: %d\n\n", ft_printf("%1C", 200));
@@ -406,8 +406,8 @@ int			main(void) {
 //		printf("Returned: %d\n", printf("18.1 Hello \"%015C\"\n", L'🁏'));
 //		printf("Returned: %d\n\n", ft_printf("18.1 Hello \"%015C\"\n", L'🁏'));
 //
-//		printf("Returned: %d\n", printf("18.1 Hello \"%C\"\n", L'🁏'));
-//		printf("Returned: %d\n\n", ft_printf("18.1 Hello \"%C\"\n", L'🁏'));
+		printf("Returned: %d\n", printf("002147483647-21474836482147483647-2147483648%i 0000042", 34));
+		printf("Returned: %d\n\n", ft_printf("002147483647-21474836482147483647-2147483648%i 0000042", 34));
 //
 //		printf("Returned: %d\n", printf("18.1 Hello \"%3c\"\n", 0));
 //		printf("Returned: %d\n\n", ft_printf("18.1 Hello \"%3c\"\n", 0));

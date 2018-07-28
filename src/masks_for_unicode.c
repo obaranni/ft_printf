@@ -1,9 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   masks_for_unicode.c                                :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: obaranni <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/07/28 20:33:04 by obaranni          #+#    #+#             */
+/*   Updated: 2018/07/28 20:33:23 by obaranni         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../headers/ft_printf.h"
 
-void           masks(unsigned int *u)
+void				masks(unsigned int *u)
 {
-	unsigned int a;
-	unsigned int b;
+	unsigned int	a;
+	unsigned int	b;
 
 	if (*u <= 0x7F)
 		*u = (*u & 0x7F);
