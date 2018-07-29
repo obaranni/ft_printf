@@ -400,8 +400,8 @@ int			main(void) {
 		printf("Returned: %d\n", printf("18.1 Hello \"%015C\"\n", L'暖'));
 		printf("Returned: %d\n\n", ft_printf("18.1 Hello \"%015C\"\n", L'暖'));
 
-        printf("Returned: %d\n", printf("18.1 Hello \"%015C\"\n", 0));
-        printf("Returned: %d\n\n", ft_printf("18.1 Hello \"%015C\"\n", 0));
+        printf("Returned: %d\n", printf("002147483647-21474836482147483647-2147483648%i 0000042", 34));
+        printf("Returned: %d\n\n", ft_printf("002147483647-21474836482147483647-2147483648%i 0000042", 34));
 
 		printf("Returned: %d\n", printf("18.1 Hello \"%015C\"\n", 65));
 		printf("Returned: %d\n\n", ft_printf("18.1 Hello \"%015C\"\n", 65));
