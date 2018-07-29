@@ -31,6 +31,6 @@ void		printing_any_str(t_p *p)
             i++;
         }
     }
-    if (p->data_uint_copy[0])
-        free(p->data_uint_copy);
+//    if (p->data_uint_copy[0])
+//        free(p->data_uint_copy);
 }
