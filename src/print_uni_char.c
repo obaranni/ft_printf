@@ -83,7 +83,7 @@ int					print_uni_char(t_p *p)
 	}
 	uni_char_shame(p, &arg_len, &res, &c);
 	p->precision = 0;
-	uni_char_shame2(p, &arg_len, &c);
+//	uni_char_shame2(p, &arg_len, &c);
 //	if ((p->conv_let == 'C' || (p->conv_let == 'c' && p->size == 'l')))
 //		free(c);
 	return (res);
