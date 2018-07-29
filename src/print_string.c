@@ -6,7 +6,7 @@
 /*   By: obaranni <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/29 18:43:47 by obaranni          #+#    #+#             */
-/*   Updated: 2018/07/29 18:45:59 by obaranni         ###   ########.fr       */
+/*   Updated: 2018/07/29 18:46:25 by obaranni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,7 +74,7 @@ int			print_any_string(t_p *p)
 	if (!p->data_uint && !p->width)
 	{
 		ft_putstr("(null)");
-		return ((int) ft_strlen("(null)"));
+		return ((int)ft_strlen("(null)"));
 	}
 	else
 		return (preparing_strings(p));
