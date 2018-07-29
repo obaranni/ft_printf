@@ -19,8 +19,11 @@ void			dup_arr(unsigned int **arr1, unsigned int **arr2)
 
 	i = 0;
 	len = 0;
-	while ((*arr1)[i++])
+	while ((*arr1)[i])
+	{
 		len++;
+		i++;
+	}
 	*arr2 = (unsigned int*)malloc(sizeof(unsigned int) * len + 1);
 	(*arr2)[len] = 0;
 	i = 0;

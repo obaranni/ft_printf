@@ -113,6 +113,9 @@
 		<Unit filename="/Users/obaranni/projects/ft_printf/libft/ft_strcpy.c">
 			<Option target="ft_printf"/>
 		</Unit>
+		<Unit filename="/Users/obaranni/projects/ft_printf/libft/ft_strdup.c">
+			<Option target="ft_printf"/>
+		</Unit>
 		<Unit filename="/Users/obaranni/projects/ft_printf/libft/ft_strlen.c">
 			<Option target="ft_printf"/>
 		</Unit>

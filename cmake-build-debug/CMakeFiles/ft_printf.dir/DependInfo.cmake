@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/obaranni/projects/ft_printf/libft/ft_strchr.c" "/Users/obaranni/projects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_strchr.c.o"
   "/Users/obaranni/projects/ft_printf/libft/ft_strcmp.c" "/Users/obaranni/projects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_strcmp.c.o"
   "/Users/obaranni/projects/ft_printf/libft/ft_strcpy.c" "/Users/obaranni/projects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_strcpy.c.o"
+  "/Users/obaranni/projects/ft_printf/libft/ft_strdup.c" "/Users/obaranni/projects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_strdup.c.o"
   "/Users/obaranni/projects/ft_printf/libft/ft_strlen.c" "/Users/obaranni/projects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_strlen.c.o"
   "/Users/obaranni/projects/ft_printf/libft/ft_strsub.c" "/Users/obaranni/projects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/libft/ft_strsub.c.o"
   "/Users/obaranni/projects/ft_printf/main.c" "/Users/obaranni/projects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/main.c.o"

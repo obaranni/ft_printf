@@ -52,6 +52,7 @@ add_executable( ft_printf
         src/printing_unicode.c
         src/count_spaces.c
         libft/ft_strcmp.c
+        libft/ft_strdup.c
         capture.c
 
         src/cast_hex.c src/printing_string.c)

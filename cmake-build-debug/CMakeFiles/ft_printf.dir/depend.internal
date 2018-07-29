@@ -28,6 +28,9 @@ CMakeFiles/ft_printf.dir/libft/ft_strcmp.c.o
 CMakeFiles/ft_printf.dir/libft/ft_strcpy.c.o
  /Users/obaranni/projects/ft_printf/libft/ft_strcpy.c
  /Users/obaranni/projects/ft_printf/libft/libft.h
+CMakeFiles/ft_printf.dir/libft/ft_strdup.c.o
+ /Users/obaranni/projects/ft_printf/libft/ft_strdup.c
+ /Users/obaranni/projects/ft_printf/libft/libft.h
 CMakeFiles/ft_printf.dir/libft/ft_strlen.c.o
  /Users/obaranni/projects/ft_printf/libft/ft_strlen.c
  /Users/obaranni/projects/ft_printf/libft/libft.h
