@@ -70,17 +70,17 @@ int					print_uni_char(t_p *p)
 	int				res;
 
 	flags_priority(p);
-//	p->plus = 0;
-//	if (p->data_uni_char == 0)
-//	{
-//		if (p->width > 0)
-//			arg_len = p->width - 1;
-//		else
-//			arg_len = 0;
-//		print_width_char(arg_len, p);
-//		write(1, "", 1);
-//		return (arg_len + 1);
-//	}
+	p->plus = 0;
+	if (p->data_uni_char == 0)
+	{
+		if (p->width > 0)
+			arg_len = p->width - 1;
+		else
+			arg_len = 0;
+		print_width_char(arg_len, p);
+		write(1, "", 1);
+		return (arg_len + 1);
+	}
 //	uni_char_shame(p, &arg_len, &res, &c);
 //	p->precision = 0;
 //	uni_char_shame2(p, &arg_len, &c);
