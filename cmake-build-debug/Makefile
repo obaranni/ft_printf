@@ -906,6 +906,33 @@ src/precision.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/precision.c.s
 .PHONY : src/precision.c.s
 
+src/preparation_string.o: src/preparation_string.c.o
+
+.PHONY : src/preparation_string.o
+
+# target to build an object file
+src/preparation_string.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/preparation_string.c.o
+.PHONY : src/preparation_string.c.o
+
+src/preparation_string.i: src/preparation_string.c.i
+
+.PHONY : src/preparation_string.i
+
+# target to preprocess a source file
+src/preparation_string.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/preparation_string.c.i
+.PHONY : src/preparation_string.c.i
+
+src/preparation_string.s: src/preparation_string.c.s
+
+.PHONY : src/preparation_string.s
+
+# target to generate assembly for a file
+src/preparation_string.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/preparation_string.c.s
+.PHONY : src/preparation_string.c.s
+
 src/print_hex.o: src/print_hex.c.o
 
 .PHONY : src/print_hex.o
@@ -1515,6 +1542,9 @@ help:
 	@echo "... src/precision.o"
 	@echo "... src/precision.i"
 	@echo "... src/precision.s"
+	@echo "... src/preparation_string.o"
+	@echo "... src/preparation_string.i"
+	@echo "... src/preparation_string.s"
 	@echo "... src/print_hex.o"
 	@echo "... src/print_hex.i"
 	@echo "... src/print_hex.s"

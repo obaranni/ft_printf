@@ -47,6 +47,7 @@ typedef struct		s_properties
     int             *b;
     va_list         l;
 }					t_p;
+void                which_string(t_p *p);
 void                printing_any_str(t_p *p);
 void                print_width_str(t_p *p);
 int                 cast_hex(t_p *p);

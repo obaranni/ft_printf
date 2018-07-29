@@ -166,6 +166,10 @@ capture.h
 ../headers/ft_printf.h
 /Users/obaranni/projects/ft_printf/headers/ft_printf.h
 
+/Users/obaranni/projects/ft_printf/src/preparation_string.c
+../headers/ft_printf.h
+/Users/obaranni/projects/ft_printf/headers/ft_printf.h
+
 /Users/obaranni/projects/ft_printf/src/print_hex.c
 ../headers/ft_printf.h
 /Users/obaranni/projects/ft_printf/headers/ft_printf.h

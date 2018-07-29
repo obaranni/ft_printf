@@ -54,4 +54,4 @@ add_executable( ft_printf
         libft/ft_strdup.c
         capture.c
 
-        src/cast_hex.c src/printing_string.c)
+        src/cast_hex.c src/printing_string.c src/preparation_string.c)

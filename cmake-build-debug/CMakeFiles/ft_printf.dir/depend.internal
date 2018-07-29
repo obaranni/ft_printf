@@ -106,6 +106,10 @@ CMakeFiles/ft_printf.dir/src/precision.c.o
  /Users/obaranni/projects/ft_printf/headers/ft_printf.h
  /Users/obaranni/projects/ft_printf/libft/libft.h
  /Users/obaranni/projects/ft_printf/src/precision.c
+CMakeFiles/ft_printf.dir/src/preparation_string.c.o
+ /Users/obaranni/projects/ft_printf/headers/ft_printf.h
+ /Users/obaranni/projects/ft_printf/libft/libft.h
+ /Users/obaranni/projects/ft_printf/src/preparation_string.c
 CMakeFiles/ft_printf.dir/src/print_hex.c.o
  /Users/obaranni/projects/ft_printf/headers/ft_printf.h
  /Users/obaranni/projects/ft_printf/libft/libft.h
