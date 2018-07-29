@@ -16,11 +16,13 @@ void				printing_unicode(unsigned int *u)
 {
 	int				i;
 	unsigned int	f;
+	unsigned int	box;
 
 	i = 0;
+	box = *u;
 	while (i < 4)
 	{
-		f = ((*u << (i * 8)) >> 24);
+		f = ((box << (i * 8)) >> 24);
 		if (f)
 			write(1, &f, 1);
 		i++;
