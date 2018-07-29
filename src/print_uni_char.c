@@ -20,14 +20,14 @@ void				uni_char_shame(t_p *p,
 //		*c = (unsigned int *)malloc(sizeof(unsigned int) * 2);
 //		*c[0] = p->data_uni_char;
 //		*c[1] = 0;
-//		if (p->width > 0)
-//		{
-//			p->width = p->width - count_uni_string_len(c);
-//			if (p->width < 0)
-//				p->width = 0;
-//		}
+		if (p->width > 0)
+		{
+			p->width = p->width - count_uni_string_len(c);
+			if (p->width < 0)
+				p->width = 0;
+		}
 		(*arg_len) = p->width;
-//		(*res) = (*arg_len) + count_uni_string_len(c);
+		(*res) = (*arg_len) + count_uni_string_len(c);
 //		masks(*c);
 	}
 	else
