@@ -30,9 +30,7 @@ static char	set_char(size_t i)
 	char	c;
 
 	c = 'Z';
-	if (i < 0)
-		i = -i;
-	if (i >= 0 && i <= 9)
+	if (i <= 9)
 		c = i + '0';
 	else if (i == 10)
 		c = 'A';

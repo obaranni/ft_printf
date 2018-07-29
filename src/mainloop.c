@@ -46,12 +46,12 @@ int			ft_printf(const char *s, ...)
 
 	b = 0;
 	p.b = &b;
-	box = &s;
+	box = (char**)(&s);
 	va_start(p.l, s);
 	while (**box)
 	{
 		if (**box == '%')
-			if_percent(&p, &box, &s);
+			if_percent(&p, &box, (char**)&s);
 		else
 		{
 			write(1, s, 1);

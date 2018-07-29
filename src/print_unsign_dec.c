@@ -12,7 +12,7 @@
 
 #include "../headers/ft_printf.h"
 
-int		unsign_dec_shame(t_p *p, int *arg_len, int *res)
+void	unsign_dec_shame(t_p *p, int *arg_len, int *res)
 {
 	flags_priority(p);
 	p->pos = 1;

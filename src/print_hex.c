@@ -29,10 +29,7 @@ void		shame_hex(t_p *p, char *str, int *arg_len, int *res)
 		p->space = 0;
 	if ((p->space && p->width < DLEN)
 		|| (p->space && p->minus && DLEN))
-	{
 		write(1, " ", 1);
-		*arg_len--;
-	}
 }
 
 void		shame_hex2(t_p *p, char *str)
@@ -59,9 +56,9 @@ void		shame_hex3(t_p *p, char *str)
 		ft_putstr("0X");
 	print_width_hex(p->width, p);
 	print_precision(p->precision);
-	if ((p->conv_let == 'p' && ((!p->zero && !p->precision))) ||
-		(p->sharp && p->data_uns != 0 && p->conv_let == 'x' &&
-		!p->precision) && !(p->width > 0 && p->zero == 1))
+	if ((p->conv_let == 'p' && ((!p->zero && !p->precision)))
+        || ((p->sharp && p->data_uns != 0 && p->conv_let == 'x'
+        && !p->precision) && !(p->width > 0 && p->zero == 1)))
 		ft_putstr("0x");
 	else if (p->sharp && p->data_uns != 0 && p->conv_let == 'X'
 		&& !(p->width > 0 && p->zero == 1))

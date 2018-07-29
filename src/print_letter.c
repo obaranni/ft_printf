@@ -23,15 +23,12 @@ void	shame_letter(t_p *p, int *arg_len)
 		*arg_len = 0;
 }
 
-void	shame_letter2(t_p *p, int *arg_len)
+void	shame_letter2(t_p *p)
 {
 	if (NEG)
 		write(1, "-", 1);
 	if (POS && p->plus)
-	{
 		write(1, "+", 1);
-		*arg_len--;
-	}
 }
 
 int		letter(t_p *p)
@@ -43,7 +40,7 @@ int		letter(t_p *p)
 	res = arg_len;
 	if (p->minus)
 	{
-		shame_letter2(p, &arg_len);
+		shame_letter2(p);
 		print_precision(p->precision);
 		write(1, &p->conv_let, 1);
 		res++;
