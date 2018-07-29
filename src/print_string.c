@@ -6,7 +6,8 @@ void				str_preparation(t_p *p)
 	int 			i;
 
 	i = 0;
-	y = (unsigned char *)p->data_uint;
+    dup_arr(&p->data_uint, &p->data_uint_copy);
+    y = (unsigned char *)p->data_uint_copy;
 	while (*y)
 	{
 		y++;
@@ -25,9 +26,9 @@ void				str_preparation(t_p *p)
 
 void		which_string(t_p *p)
 {
-//	if (p->conv_let == 's' && !p->size)
-//		str_preparation(p);
-//	else
+	if (p->conv_let == 's' && !p->size)
+		str_preparation(p);
+	else
 		dup_arr(&p->data_uint, &p->data_uint_copy);
 	if ((p->conv_let == 'S' || (p->conv_let == 's' && p->size == 'l')))
         DLEN = count_uni_string_len(&p->data_uint_copy);
