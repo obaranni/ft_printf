@@ -28,7 +28,7 @@ void				uni_char_shame(t_p *p,
 		}
 		(*arg_len) = p->width;
 		(*res) = (*arg_len) + count_uni_string_len(c);
-		masks(c);
+		masks(*c);
 	}
 	else
 	{
@@ -81,7 +81,7 @@ int					print_uni_char(t_p *p)
 		write(1, "", 1);
 		return (arg_len + 1);
 	}
-	uni_char_shame(p, &arg_len, &res, &c);
+//	uni_char_shame(p, &arg_len, &res, &c);
 	p->precision = 0;
 	uni_char_shame2(p, &arg_len, &c);
 	if ((p->conv_let == 'C' || (p->conv_let == 'c' && p->size == 'l')))
