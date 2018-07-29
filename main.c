@@ -29,7 +29,7 @@ int			main(void) {
     char *s;
     setlocale(LC_ALL, "");
 
-    while (i++ != 1100) {
+    while (i++ != 110000) {
 //		capture_stdout();
 //
 //		printf_ret = printf("%s%d%p%%%S%D%i%o%O%u%U%x%X%c%C","bonjour", 42, &c, L"暖炉", LONG_MAX, 42, 42, 42, 100000, ULONG_MAX, 42, 42, 'c', L'플');
