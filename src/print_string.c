@@ -8,7 +8,7 @@ unsigned char       *duplicate_for_s(t_p *p)
     dup_arr(&p->data_uint, &copy);
 
     newstr = (unsigned char*)ft_strdup((char*)copy);
-    free(copy);
+//    free(copy);
     return (newstr);
 }
 
