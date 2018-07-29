@@ -15,29 +15,29 @@
 void				uni_char_shame(t_p *p,
 		int *arg_len, int *res, unsigned int **c)
 {
-	if ((p->conv_let == 'C' || (p->conv_let == 'c' && p->size == 'l')))
-	{
-		*c = (unsigned int *)malloc(sizeof(unsigned int) * 2);
-		*c[0] = p->data_uni_char;
-		*c[1] = 0;
-		if (p->width > 0)
-		{
-			p->width = p->width - count_uni_string_len(c);
-			if (p->width < 0)
-				p->width = 0;
-		}
-		(*arg_len) = p->width;
-		(*res) = (*arg_len) + count_uni_string_len(c);
-		masks(*c);
-	}
-	else
-	{
+//	if ((p->conv_let == 'C' || (p->conv_let == 'c' && p->size == 'l')))
+//	{
+//		*c = (unsigned int *)malloc(sizeof(unsigned int) * 2);
+//		*c[0] = p->data_uni_char;
+//		*c[1] = 0;
+//		if (p->width > 0)
+//		{
+//			p->width = p->width - count_uni_string_len(c);
+//			if (p->width < 0)
+//				p->width = 0;
+//		}
+//		(*arg_len) = p->width;
+//		(*res) = (*arg_len) + count_uni_string_len(c);
+//		masks(*c);
+//	}
+//	else
+//	{
 		if (p->width > 0)
 			p->width--;
 		(*arg_len) = p->width;
 		(*res) = (*arg_len) + 1;
 		*c = &p->data_uni_char;
-	}
+//	}
 }
 
 void				uni_char_shame2(t_p *p,
