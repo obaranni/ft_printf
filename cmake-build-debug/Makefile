@@ -636,33 +636,6 @@ src/choose_datatype_handler.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/choose_datatype_handler.c.s
 .PHONY : src/choose_datatype_handler.c.s
 
-src/count_spaces.o: src/count_spaces.c.o
-
-.PHONY : src/count_spaces.o
-
-# target to build an object file
-src/count_spaces.c.o:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/count_spaces.c.o
-.PHONY : src/count_spaces.c.o
-
-src/count_spaces.i: src/count_spaces.c.i
-
-.PHONY : src/count_spaces.i
-
-# target to preprocess a source file
-src/count_spaces.c.i:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/count_spaces.c.i
-.PHONY : src/count_spaces.c.i
-
-src/count_spaces.s: src/count_spaces.c.s
-
-.PHONY : src/count_spaces.s
-
-# target to generate assembly for a file
-src/count_spaces.c.s:
-	$(MAKE) -f CMakeFiles/ft_printf.dir/build.make CMakeFiles/ft_printf.dir/src/count_spaces.c.s
-.PHONY : src/count_spaces.c.s
-
 src/count_uni_string_len.o: src/count_uni_string_len.c.o
 
 .PHONY : src/count_uni_string_len.o
@@ -1512,9 +1485,6 @@ help:
 	@echo "... src/choose_datatype_handler.o"
 	@echo "... src/choose_datatype_handler.i"
 	@echo "... src/choose_datatype_handler.s"
-	@echo "... src/count_spaces.o"
-	@echo "... src/count_spaces.i"
-	@echo "... src/count_spaces.s"
 	@echo "... src/count_uni_string_len.o"
 	@echo "... src/count_uni_string_len.i"
 	@echo "... src/count_uni_string_len.s"

@@ -27,16 +27,15 @@ int					count_uni_char_len(unsigned int c)
 
 int					count_uni_string_len(unsigned int **arr)
 {
-	unsigned int	*box;
+    int             i;
 	int				len;
 
-	box = arr[0];
+    i = 0;
 	len = 0;
-	while (*(*arr))
+	while ((*arr)[i])
 	{
-		len += count_uni_char_len(*(*arr));
-		(*arr)++;
+		len += count_uni_char_len((*arr)[i]);
+		i++;
 	}
-	*arr = box;
 	return (len);
 }

@@ -23,7 +23,6 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/obaranni/projects/ft_printf/src/calculate_argument_lenth.c" "/Users/obaranni/projects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/src/calculate_argument_lenth.c.o"
   "/Users/obaranni/projects/ft_printf/src/cast_hex.c" "/Users/obaranni/projects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/src/cast_hex.c.o"
   "/Users/obaranni/projects/ft_printf/src/choose_datatype_handler.c" "/Users/obaranni/projects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/src/choose_datatype_handler.c.o"
-  "/Users/obaranni/projects/ft_printf/src/count_spaces.c" "/Users/obaranni/projects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/src/count_spaces.c.o"
   "/Users/obaranni/projects/ft_printf/src/count_uni_string_len.c" "/Users/obaranni/projects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/src/count_uni_string_len.c.o"
   "/Users/obaranni/projects/ft_printf/src/digit_len.c" "/Users/obaranni/projects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/src/digit_len.c.o"
   "/Users/obaranni/projects/ft_printf/src/duplicate_array.c" "/Users/obaranni/projects/ft_printf/cmake-build-debug/CMakeFiles/ft_printf.dir/src/duplicate_array.c.o"

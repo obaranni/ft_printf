@@ -8,7 +8,7 @@ unsigned char       *duplicate_for_s(t_p *p)
     dup_arr(&p->data_uint, &copy);
 
     newstr = (unsigned char*)ft_strdup((char*)copy);
-//    free(copy);
+    free(copy);
     return (newstr);
 }
 
@@ -36,7 +36,7 @@ void				str_preparation(t_p *p)
 		y++;
 	}
     p->data_uint_copy[i] = 0;
-//    free(box);
+    free(box);
 }
 
 void		which_string(t_p *p)

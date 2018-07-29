@@ -66,10 +66,6 @@ CMakeFiles/ft_printf.dir/src/choose_datatype_handler.c.o: ../headers/ft_printf.h
 CMakeFiles/ft_printf.dir/src/choose_datatype_handler.c.o: ../libft/libft.h
 CMakeFiles/ft_printf.dir/src/choose_datatype_handler.c.o: ../src/choose_datatype_handler.c
 
-CMakeFiles/ft_printf.dir/src/count_spaces.c.o: ../headers/ft_printf.h
-CMakeFiles/ft_printf.dir/src/count_spaces.c.o: ../libft/libft.h
-CMakeFiles/ft_printf.dir/src/count_spaces.c.o: ../src/count_spaces.c
-
 CMakeFiles/ft_printf.dir/src/count_uni_string_len.c.o: ../headers/ft_printf.h
 CMakeFiles/ft_printf.dir/src/count_uni_string_len.c.o: ../libft/libft.h
 CMakeFiles/ft_printf.dir/src/count_uni_string_len.c.o: ../src/count_uni_string_len.c

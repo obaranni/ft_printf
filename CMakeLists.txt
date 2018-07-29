@@ -50,7 +50,6 @@ add_executable( ft_printf
         src/any_octal_to_str.c
         src/print_string.c
         src/printing_unicode.c
-        src/count_spaces.c
         libft/ft_strcmp.c
         libft/ft_strdup.c
         capture.c
