@@ -44,28 +44,10 @@ void			print_width_hex(int arg_len, t_p *p)
 	}
 }
 
-void			print_width_plugin(int arg_len, t_p *p)
-{
-	if (p->space && p->zero)
-	{
-		write(1, " ", 1);
-		arg_len--;
-	}
-	while (arg_len > 0)
-	{
-		if (p->zero)
-			write(1, "0", 1);
-		else
-			write(1, " ", 1);
-		arg_len--;
-	}
-	if (NEG && !p->zero && !p->minus)
-		write(1, "-", 1);
-	if (((POS && !p->zero && !p->minus && p->plus)
-		|| (p->precision > 0 && p->plus && p->zero))
-		&& !strchr("uU", p->conv_let))
-		write(1, "+", 1);
-}
+//void			print_width_plugin(int arg_len, t_p *p)
+//{
+//
+//}
 
 void			print_width(int arg_len, t_p *p)
 {
@@ -85,5 +67,24 @@ void			print_width(int arg_len, t_p *p)
 		write(1, "+", 1);
 		arg_len--;
 	}
-	print_width_plugin(arg_len, p);
+//	print_width_plugin(arg_len, p);
+	if (p->space && p->zero)
+	{
+		write(1, " ", 1);
+		arg_len--;
+	}
+	while (arg_len > 0)
+	{
+		if (p->zero)
+			write(1, "0", 1);
+		else
+			write(1, " ", 1);
+		arg_len--;
+	}
+	if (NEG && !p->zero && !p->minus)
+		write(1, "-", 1);
+	if (((POS && !p->zero && !p->minus && p->plus)
+		 || (p->precision > 0 && p->plus && p->zero))
+		&& !strchr("uU", p->conv_let))
+		write(1, "+", 1);
 }
