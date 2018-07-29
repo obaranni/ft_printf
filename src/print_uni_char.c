@@ -28,7 +28,7 @@ void				uni_char_shame(t_p *p,
 		}
 		(*arg_len) = p->width;
 		(*res) = (*arg_len) + count_uni_string_len(c);
-		masks(*c);
+		masks(c);
 	}
 	else
 	{
