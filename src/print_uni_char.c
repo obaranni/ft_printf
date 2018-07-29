@@ -17,7 +17,7 @@ void				uni_char_shame(t_p *p,
 {
 	if ((p->conv_let == 'C' || (p->conv_let == 'c' && p->size == 'l')))
 	{
-//		*c = (unsigned int *)malloc(sizeof(unsigned int) * 2);
+		*c = (unsigned int *)malloc(sizeof(unsigned int) * 2);
 //		*c[0] = p->data_uni_char;
 //		*c[1] = 0;
 		if (p->width > 0)
