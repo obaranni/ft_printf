@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: obaranni <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/07/28 21:32:15 by obaranni          #+#    #+#             */
-/*   Updated: 2018/07/28 21:34:03 by obaranni         ###   ########.fr       */
+/*   Created: 2018/07/29 18:48:49 by obaranni          #+#    #+#             */
+/*   Updated: 2018/07/29 18:48:51 by obaranni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@ void				uni_char_shame(t_p *p,
 	if ((p->conv_let == 'C' || (p->conv_let == 'c' && p->size == 'l')))
 	{
 		*c = (unsigned int *)malloc(sizeof(unsigned int) * 2);
-        (*c)[0] = p->data_uni_char;
-        (*c)[1] = 0;
+		(*c)[0] = p->data_uni_char;
+		(*c)[1] = 0;
 		if (p->width > 0)
 		{
 			p->width = p->width - count_uni_string_len(c);
