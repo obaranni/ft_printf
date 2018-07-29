@@ -36,7 +36,7 @@ void				str_preparation(t_p *p)
 		y++;
 	}
     p->data_uint_copy[i] = 0;
-    free(box);
+//    free(box);
 }
 
 void		which_string(t_p *p)
