@@ -25,7 +25,7 @@ void				str_preparation(t_p *p)
 		i++;
 	}
     y = box;
-	p->data_uint_copy = (unsigned int *)malloc(sizeof(unsigned int) * i + 1);
+	p->data_uint_copy = (unsigned int *)malloc(sizeof(unsigned int) * i);
 	i = 0;
 	while (*y)
 	{
