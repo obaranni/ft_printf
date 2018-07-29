@@ -155,6 +155,10 @@ CMakeFiles/ft_printf.dir/src/printing_sig_dec.c.o: ../headers/ft_printf.h
 CMakeFiles/ft_printf.dir/src/printing_sig_dec.c.o: ../libft/libft.h
 CMakeFiles/ft_printf.dir/src/printing_sig_dec.c.o: ../src/printing_sig_dec.c
 
+CMakeFiles/ft_printf.dir/src/printing_string.c.o: ../headers/ft_printf.h
+CMakeFiles/ft_printf.dir/src/printing_string.c.o: ../libft/libft.h
+CMakeFiles/ft_printf.dir/src/printing_string.c.o: ../src/printing_string.c
+
 CMakeFiles/ft_printf.dir/src/printing_unicode.c.o: ../headers/ft_printf.h
 CMakeFiles/ft_printf.dir/src/printing_unicode.c.o: ../libft/libft.h
 CMakeFiles/ft_printf.dir/src/printing_unicode.c.o: ../src/printing_unicode.c
