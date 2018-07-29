@@ -1,12 +1,13 @@
 #include "../headers/ft_printf.h"
 
-unsigned char       *duplicate_for_s(unsigned int **a)
+unsigned char       *duplicate_for_s(t_p *p)
 {
     unsigned char   *newstr;
-    unsigned char   *p;
-    int             j;
+    unsigned int    *copy;
 
-    newstr = (unsigned char*)ft_strdup(*a);
+    dup_arr(&p->data_uint, &copy);
+
+    newstr = (unsigned char*)ft_strdup((char*)copy);
     return (newstr);
 }
 
@@ -17,7 +18,7 @@ void				str_preparation(t_p *p)
 	int 			i;
 
 	i = 0;
-    y = duplicate_for_s(&p->data_uint);
+    y = duplicate_for_s(p);
     box = y;
 	while (*y)
 	{
