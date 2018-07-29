@@ -13,6 +13,7 @@ void				str_preparation(t_p *p)
 		y++;
 		i++;
 	}
+    free(p->data_uint_copy);
 	p->data_uint_copy = (unsigned int *)malloc(sizeof(unsigned int) * i);
 	y = (unsigned char *)p->data_uint;
 	i = 0;
