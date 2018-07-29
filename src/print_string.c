@@ -27,7 +27,7 @@ void				str_preparation(t_p *p)
 		i++;
 	}
     y = box;
-	p->data_uint_copy = (unsigned int *)malloc(sizeof(unsigned int) * i);
+	p->data_uint_copy = (unsigned int *)malloc(sizeof(unsigned int) * i + 1);
 	i = 0;
 	while (*y)
 	{
@@ -41,9 +41,9 @@ void				str_preparation(t_p *p)
 
 void		which_string(t_p *p)
 {
-//	if (p->conv_let == 's' && !p->size)
-//		str_preparation(p);
-//	else
+	if (p->conv_let == 's' && !p->size)
+		str_preparation(p);
+	else
 		dup_arr(&p->data_uint, &p->data_uint_copy);
 	if ((p->conv_let == 'S' || (p->conv_let == 's' && p->size == 'l')))
         DLEN = count_uni_string_len(&p->data_uint_copy);
