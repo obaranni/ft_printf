@@ -27,8 +27,7 @@ void		printing_any_str(t_p *p)
         {
             c = (char)(p->data_uint_copy[i] & 0x000000FF);
             write(1, &c, 1);
-
-                printed_b ++; //// for simple string ist work
+            printed_b ++; //// for simple string ist work
             i++;
         }
     }
