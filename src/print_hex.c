@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: obaranni <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/07/28 21:01:18 by obaranni          #+#    #+#             */
-/*   Updated: 2018/07/28 21:02:42 by obaranni         ###   ########.fr       */
+/*   Created: 2018/07/29 19:33:33 by obaranni          #+#    #+#             */
+/*   Updated: 2018/07/29 19:33:35 by obaranni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,8 +57,8 @@ void		shame_hex3(t_p *p, char *str)
 	print_width_hex(p->width, p);
 	print_precision(p->precision);
 	if ((p->conv_let == 'p' && ((!p->zero && !p->precision)))
-        || ((p->sharp && p->data_uns != 0 && p->conv_let == 'x'
-        && !p->precision) && !(p->width > 0 && p->zero == 1)))
+		|| ((p->sharp && p->data_uns != 0 && p->conv_let == 'x'
+		&& !p->precision) && !(p->width > 0 && p->zero == 1)))
 		ft_putstr("0x");
 	else if (p->sharp && p->data_uns != 0 && p->conv_let == 'X'
 		&& !(p->width > 0 && p->zero == 1))
